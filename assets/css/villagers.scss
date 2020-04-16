@@ -1,3 +1,72 @@
-p {
-    color: blue;
+#villager-section {
+
+    #villager-header {
+
+        display: flex;
+        flex-direction: row;
+        
+        padding: 20px 0;
+
+        h1, h2 {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        h1 {
+            font-size: 20pt;
+            margin: auto 5px;
+        }
+
+        h2 {
+            font-size: 14pt;
+            margin: auto auto auto 0;
+        }
+    }
+
+    #main-villager-content {
+
+        display: flex;
+        flex-direction: row;
+    
+        #villager-content {
+
+
+            div {
+
+                display: grid;
+                grid-template-areas: 
+                    "gender personality species"
+                    "birthday birthday style"
+                    "phrase clothes request"
+                    "song goal skill"
+                    "coffee coffee coffee"
+                    "appearances appearances appearances"
+                    ;
+
+                div {
+                    h4 { margin: auto 0 auto 0; }
+
+                    p { margin: auto auto auto 5px; }
+                }
+
+                #gender { grid-area: gender }
+                #personality { grid-area: personality }
+                #species { grid-area: species }
+                #birthday { grid-area: birthday }
+                #style { grid-area: style }
+                #phrase { grid-area: phrase }
+                #clothes { grid-area: clothes }
+                #request { grid-area: request }
+                #song { grid-area: song }
+                #goal { grid-area: goal }
+                #skill { grid-area: skill }
+                #coffee { grid-area: coffee }
+                #appearances { grid-area: appearances }
+            }
+
+           
+        }
+
+    }
+
 }

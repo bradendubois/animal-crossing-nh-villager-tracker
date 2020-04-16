@@ -1,8 +1,39 @@
-p {
-  color: blue;
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  max-height: 100vh;
+  overflow-y: hidden;
 }
 
-#coffee-preference {
-  color: blue;
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  overflow: hidden;
+  visibility: hidden;
+  max-height: 100%;
+  width: 100%;
+  margin-left: 30px;
+}
+
+section, #villager-button-section {
+  visibility: hidden;
+  color: green;
+  position: absolute;
+  width: 100%;
+  overflow-y: auto;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.shown {
+  visibility: visible;
 }
 /*# sourceMappingURL=index.css.map */

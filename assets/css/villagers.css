@@ -1,4 +1,131 @@
-p {
-  color: blue;
+#villager-section #villager-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px 0;
+}
+
+#villager-section #villager-header h1, #villager-section #villager-header h2 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#villager-section #villager-header h1 {
+  font-size: 20pt;
+  margin: auto 5px;
+}
+
+#villager-section #villager-header h2 {
+  font-size: 14pt;
+  margin: auto auto auto 0;
+}
+
+#villager-section #main-villager-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#villager-section #main-villager-content #villager-content div {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "gender personality species" "birthday birthday style" "phrase clothes request" "song goal skill" "coffee coffee coffee" "appearances appearances appearances";
+}
+
+#villager-section #main-villager-content #villager-content div div h4 {
+  margin: auto 0 auto 0;
+}
+
+#villager-section #main-villager-content #villager-content div div p {
+  margin: auto auto auto 5px;
+}
+
+#villager-section #main-villager-content #villager-content div #gender {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: gender;
+}
+
+#villager-section #main-villager-content #villager-content div #personality {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: personality;
+}
+
+#villager-section #main-villager-content #villager-content div #species {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: species;
+}
+
+#villager-section #main-villager-content #villager-content div #birthday {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: birthday;
+}
+
+#villager-section #main-villager-content #villager-content div #style {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: style;
+}
+
+#villager-section #main-villager-content #villager-content div #phrase {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: phrase;
+}
+
+#villager-section #main-villager-content #villager-content div #clothes {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: clothes;
+}
+
+#villager-section #main-villager-content #villager-content div #request {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: request;
+}
+
+#villager-section #main-villager-content #villager-content div #song {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: song;
+}
+
+#villager-section #main-villager-content #villager-content div #goal {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: goal;
+}
+
+#villager-section #main-villager-content #villager-content div #skill {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: skill;
+}
+
+#villager-section #main-villager-content #villager-content div #coffee {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: coffee;
+}
+
+#villager-section #main-villager-content #villager-content div #appearances {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: appearances;
 }
 /*# sourceMappingURL=villagers.css.map */

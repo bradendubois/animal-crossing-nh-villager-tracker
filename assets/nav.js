@@ -6,17 +6,19 @@ document.body.addEventListener('click', (event) => {
     console.log("Event fired from", event.target.id)
 
   if (event.target.tagName == "BUTTON") {
+
+    if (event.target.id === "toggle-favorite")
+      return;
     
 
     if (event.target.id.includes("villager")) {
       console.log("Clicked a villager")
-      showVillager(event)
+      
 
 
-    } else {
-      console.log("Clicked a button.")
+    } 
       handleSectionTrigger(event)
-    }
+   
   } 
   
   /*
@@ -39,10 +41,13 @@ function handleSectionTrigger (event) {
   event.target.classList.add('shown')
 
   // Display the current section
-  const sectionId = `${event.target.id}-section`
+  let sectionId = `${event.target.id}-section`
+
+  if (event.target.id.includes("villager")) {
+    sectionId = "villager-section";
+  }
 
   console.log(sectionId)
-
   document.getElementById(sectionId).classList.add('shown')
 
   // Save currently active button in localStorage
