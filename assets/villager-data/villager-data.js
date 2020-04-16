@@ -1,4 +1,4 @@
-{
+exports.villagerData = {
     "Admiral": {
         "name_en": "Admiral",
         "name_jp": "\u30a4\u30c3\u30c6\u30c4 Ittetsu",

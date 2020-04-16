@@ -1,15 +1,22 @@
 const settings = require('electron-settings')
 
-console.log("Loaded")
-
 document.body.addEventListener('click', (event) => {
+  
+  if (event.target.id)
+    console.log("Event fired from", event.target.id)
 
-    console.log(event.target.id)
-
-  if (event.target.id) {
+  if (event.target.tagName == "BUTTON") {
     
-    console.log("Triggered show")
-    handleSectionTrigger(event)
+
+    if (event.target.id.includes("villager")) {
+      console.log("Clicked a villager")
+      showVillager(event)
+
+
+    } else {
+      console.log("Clicked a button.")
+      handleSectionTrigger(event)
+    }
   } 
   
   /*
@@ -19,7 +26,7 @@ document.body.addEventListener('click', (event) => {
     hideAllModals()
   }
   */
- console.log(document.querySelectorAll(".shown"))
+  // console.log(document.querySelectorAll(".shown"))
 })
 
 
@@ -33,6 +40,9 @@ function handleSectionTrigger (event) {
 
   // Display the current section
   const sectionId = `${event.target.id}-section`
+
+  console.log(sectionId)
+
   document.getElementById(sectionId).classList.add('shown')
 
   // Save currently active button in localStorage
@@ -40,14 +50,11 @@ function handleSectionTrigger (event) {
   //settings.set('activeSectionButtonId', buttonId)
 }
 
-function activateDefaultSection () {
-  document.getElementById('button-windows').click()
+function showVillager(event) {
+  console.log("I would show a villager here")
 }
 
-function showMainContent () {
-  document.querySelector('.js-nav').classList.add('is-shown')
-  document.querySelector('.js-content').classList.add('is-shown')
-}
+
 
 function hideAllSectionsAndDeselectButtons () {
   const sections = document.querySelectorAll('.shown')
@@ -60,4 +67,3 @@ function hideAllSectionsAndDeselectButtons () {
     button.classList.remove('is-selected')
   })
 }
-

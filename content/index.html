@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../assets/css/villagers.css" type="text/css">
 
   <!-- Main Tabs -->
-  <link rel="import" href="./sections/main-tabs/favorite-villagers.html">
+  <link rel="import" href="./sections/main-tabs/favorites.html">
   <link rel="import" href="./sections/main-tabs/upcoming-birthdays.html">
 
 
@@ -18,7 +18,8 @@
   
   
   <!-- Villagers -->
-  <link rel="import" href="./sections/villagers/zucker.html">
+  <link rel="import" href="./sections/villagers/villager-button.html">
+  <link rel="import" href="./sections/villagers/villager.html">
 
   <style>
     .shown {
@@ -29,21 +30,21 @@
 </head>
 <body>
   
-  <nav class="nav js-nav">
+  <nav id="nav">
     <header class="nav-header">
-      <h1 class="nav-title">Electron <strong>API Demos</strong></h1>
+      <h1 class="nav-title">Animal Crossing Villager Tracker</h1>
       <!-- <svg class="nav-header-icon"><use xlink:href="assets/img/icons.svg#icon-electron"></use></svg> -->
     </header>
 
-    <div class="nav-category">
+    <div id="main-tabs" class="nav-category">
       <h5>Favorites & Upcoming</h5>
 
-      <button id="favorite-villagers">Favorites</button>
-      <button id="upcoming">Upcoming</button>
+      <button id="favorites">Favorites</button>
+      <button id="upcoming-birthdays">Upcoming</button>
 
     </div>
 
-    <div class="nav-category">
+    <div id="attributes" class="nav-category">
       <h5>By Attribute</h5>
 
       <button id="coffee-preference">Coffee Preference</button>
@@ -51,11 +52,11 @@
 
     </div>
 
-    <div class="nav-category">
+    <div id="villagers" class="nav-category">
       <h5>All Villagers</h5>
 
-      <button id="zucker">Zucker</button>
-      <button id="not-zucker">Not Zucker</button>
+      <button id="villager">Zucker</button>
+      <button id="villager-admiral">Not Zucker</button>
 
     </div>
   
@@ -73,10 +74,10 @@
 
   <script>
     require("./index.js")
-    // require('../assets/imports')
-    //require('./assets/ex-links')
-    //require('../assets/nav')
-    //require('./assets/demo-btns')
+    require('../assets/imports')
+    //require('../assets/ex-links')
+    require('../assets/nav')
+    require('../assets/villager-imports')
     //require('./assets/code-blocks')
     //require('./assets/normalize-shortcuts')
   </script>
