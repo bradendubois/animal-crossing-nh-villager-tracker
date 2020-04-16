@@ -3,9 +3,26 @@
 <head>
   <meta charset="utf-8">
 
-  <link rel="import" href="sections/home.html">
+  <link rel="css/stylesheet" href="../assets/css/index.css" />
+
+  <!-- Main Tabs -->
+  <link rel="import" href="./sections/main-tabs/favorite-villagers.html">
+  <link rel="import" href="./sections/main-tabs/upcoming-birthdays.html">
+
+
+  <!-- Attributes -->
+  <link rel="import" href="./sections/attributes/coffee-preference.html">
+  <link rel="import" href="./sections/attributes/favorite-song.html">
   
-  <link rel="import" href="sections/villagers/zucker.html">
+  
+  <!-- Villagers -->
+  <link rel="import" href="./sections/villagers/zucker.html">
+
+  <style>
+    .shown {
+      color: red;
+    }
+  </style>
 
 </head>
 <body>
@@ -13,13 +30,13 @@
   <nav class="nav js-nav">
     <header class="nav-header">
       <h1 class="nav-title">Electron <strong>API Demos</strong></h1>
-      <svg class="nav-header-icon"><use xlink:href="assets/img/icons.svg#icon-electron"></use></svg>
+      <!-- <svg class="nav-header-icon"><use xlink:href="assets/img/icons.svg#icon-electron"></use></svg> -->
     </header>
 
     <div class="nav-category">
       <h5>Favorites & Upcoming</h5>
 
-      <button id="favorites">Favorites</button>
+      <button id="favorite-villagers">Favorites</button>
       <button id="upcoming">Upcoming</button>
 
     </div>
@@ -45,21 +62,21 @@
     <footer class="nav-footer">
       <button type="button" id="button-about" data-modal="about" class="nav-footer-button">About</button>
       <a class="nav-footer-logo" href="https://github.com" aria-label="Homepage">
-        <svg class="nav-footer-icon"><use xlink:href="assets/img/icons.svg#icon-love"></use></svg>
+        <!-- <svg class="nav-footer-icon"><use xlink:href="assets/img/icons.svg#icon-love"></use></svg> -->
       </a>
     </footer>
   </nav>
 
-  <main class="content js-content"><p>Definitely Rendering</p></main>
+  <main class="content"></main>
 
   <script>
     require("./index.js")
-    require('./assets/imports')
-    require('./assets/ex-links')
-    require('../assets/nav')
-    require('./assets/demo-btns')
-    require('./assets/code-blocks')
-    require('./assets/normalize-shortcuts')
+    // require('../assets/imports')
+    //require('./assets/ex-links')
+    //require('../assets/nav')
+    //require('./assets/demo-btns')
+    //require('./assets/code-blocks')
+    //require('./assets/normalize-shortcuts')
   </script>
 </body>
 </html>
