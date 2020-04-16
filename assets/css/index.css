@@ -1,10 +1,8 @@
-.entry  {
-    color: red;
-    font-size: 12pt;
-
+p {
+  color: blue;
 }
 
-.text {
-    opacity: 1;
-    color: blue;
+#coffee-preference {
+  color: blue;
 }
+/*# sourceMappingURL=index.css.map */
