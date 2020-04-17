@@ -73,6 +73,25 @@
 }
 
 #nav #footer {
-  margin-top: 20px;
+  background-color: #cecece;
+  border-top: 1px solid black;
+}
+
+#nav #footer button {
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+#nav #footer .shown {
+  background-color: #3cc283;
+}
+
+#nav #footer .shown:hover {
+  background-color: #36ac75;
+}
+
+#nav #footer .shown:active {
+  background-color: #2c855b;
 }
 /*# sourceMappingURL=nav.css.map */

@@ -72,6 +72,29 @@
     }
 
     #footer {
-        margin-top: 20px;
+
+        background-color: rgb(206, 206, 206);
+
+        border-top: 1px solid black;
+
+
+        button {
+            text-align: center;
+            padding: 10px 0;
+            font-weight: 500;
+        }
+
+        .shown {
+
+            background-color: #3cc283;
+
+            &:hover {
+                background-color: #36ac75;
+            }
+
+            &:active {
+                background-color: #2c855b;
+            }
+        }
     }
 }

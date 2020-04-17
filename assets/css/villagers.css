@@ -33,11 +33,21 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #villager-section #main-villager-content h3 {
   font-weight: 300;
   font-style: italic;
+}
+
+#villager-section #main-villager-content img {
+  max-height: 500px;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
 }
 
 #villager-section #main-villager-content #villager-content div {
