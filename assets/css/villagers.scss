@@ -23,6 +23,13 @@
             margin: auto auto auto 0;
         }
 
+        #toggle-favorite {
+            margin-right: 30px;
+
+            &.is_favorite {
+                background-color: gold;
+            }
+        }
         
     }
 

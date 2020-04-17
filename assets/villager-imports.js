@@ -45,18 +45,32 @@ function populateVillagerInformation(villager) {
 
     sections.caption.innerText = info.caption || "Unknown";
 
+    
+    sections.favoriteButton.classList.remove("is_favorite");
+    
     // Favorite Button
     sections.favoriteButton.onclick = () => {
+
+        sections.favoriteButton.classList.remove("is_favorite");
 
         if (store.get("favorite") === undefined) {
             store.set("favorite", {})
         }
 
         let current = store.get("favorite." + villager, false);
-        console.log("Was", current);
-        store.set("favorite." + villager, !current);
-        console.log("Now", store.get("favorite." + villager, false));   
+        let newStatus = !current;
+        store.set("favorite." + villager, newStatus);
+
+        if (newStatus) {
+            sections.favoriteButton.classList.add("is_favorite");
+        }
+
+        console.log(villager, "is a favorite:", store.get("favorite." + villager));   
     };
+
+    if (store.get("favorite." + villager, false)) {
+        sections.favoriteButton.classList.add("is_favorite");
+    }
 
     // Attributes
     sections.gender.innerText = info.gender || "Unknown";

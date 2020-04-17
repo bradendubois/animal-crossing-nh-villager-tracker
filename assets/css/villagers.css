@@ -25,6 +25,14 @@
   margin: auto auto auto 0;
 }
 
+#villager-section #villager-header #toggle-favorite {
+  margin-right: 30px;
+}
+
+#villager-section #villager-header #toggle-favorite.is_favorite {
+  background-color: gold;
+}
+
 #villager-section #main-villager-content {
   display: -webkit-box;
   display: -ms-flexbox;

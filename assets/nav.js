@@ -1,4 +1,9 @@
 const settings = require('electron-settings')
+const favorites = require("../assets/favorites")
+
+document.getElementById("favorites").addEventListener("click", () => {
+  favorites.loadFavoritesTable()
+});
 
 document.body.addEventListener('click', (event) => {
   
