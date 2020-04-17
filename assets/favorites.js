@@ -28,7 +28,6 @@ module.exports = { loadFavoritesTable: () => {
     // Add each villager
     for (let villager of villagers) {
 
-
         let newRow = document.createElement("tr");
 
         // TODO - May change the data shown
@@ -52,7 +51,7 @@ module.exports = { loadFavoritesTable: () => {
 
     // Old tbody to replace
     let oldBody = document.getElementById("villager-table-body");
-    
+
     table.replaceChild(emptyBody, oldBody);
 
 }

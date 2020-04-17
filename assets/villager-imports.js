@@ -12,25 +12,18 @@ if (villagerData === undefined) {
 // The nav section that will list a button for each villager
 const villagerNavSection = document.getElementById("villagers")
 
-// Will clone this button template to create new ones for each villager
-const villagerButton = document.getElementById("villager-button-section");
-
 // One for each villager
 for (let villager in villagerData) {
 
-    // Clone the button
-    let template = villagerButton.cloneNode(true)
-
-    // Update its text and corresponding ID
-    template.textContent = villager;
-    template.id = "villager-" + villager;   // This might cause issues?
-
-    template.addEventListener('click', () => {
+    let button = document.createElement("button");
+    button.id = "villager-" + villager;
+    button.textContent = villager;
+    button.addEventListener('click', () => {
         populateVillagerInformation(villager)
     });
 
     // Insert into the nav section
-    villagerNavSection.appendChild(template)
+    villagerNavSection.appendChild(button)
 }
 
 // Populates the villager information page
@@ -47,7 +40,7 @@ function populateVillagerInformation(villager) {
 
     
     sections.favoriteButton.classList.remove("is_favorite");
-    
+
     // Favorite Button
     sections.favoriteButton.onclick = () => {
 
