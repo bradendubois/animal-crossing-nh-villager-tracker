@@ -47,3 +47,9 @@ section, #villager-button-section {
 .shown {
     visibility: visible;       
 }
+
+table {
+    width: max-content;
+    border-spacing: 20px 10px;;
+    text-align: left;
+}

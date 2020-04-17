@@ -33,7 +33,7 @@ module.exports = {
 
         // Create a new tbody that will contain the villagers
         let emptyBody = document.createElement("tbody")
-        emptyBody.id = "villager-table-body";
+        emptyBody.id = "favorite-villager-table-body";
 
         // Add each villager
         for (let villager of villagers) {
@@ -65,7 +65,7 @@ module.exports = {
         }
 
         // Old tbody to replace
-        let oldBody = document.getElementById("villager-table-body");
+        let oldBody = document.getElementById("favorite-villager-table-body");
 
         table.replaceChild(emptyBody, oldBody);
 

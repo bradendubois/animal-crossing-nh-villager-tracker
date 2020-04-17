@@ -42,4 +42,12 @@ section, #villager-button-section {
 .shown {
   visibility: visible;
 }
+
+table {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-spacing: 20px 10px;
+  text-align: left;
+}
 /*# sourceMappingURL=index.css.map */
