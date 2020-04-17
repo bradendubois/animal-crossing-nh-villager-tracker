@@ -59,6 +59,13 @@
   grid-column-gap: 20px;
 }
 
+@media screen and (max-width: 800px) {
+  #villager-section #main-villager-content #villager-content div {
+        grid-template-areas: "gender personality" "birthday birthday" "species style" "phrase clothes" "request song" "goal skill" "coffee coffee" "appearances appearances";
+    grid-row-gap: 10px;
+  }
+}
+
 #villager-section #main-villager-content #villager-content div div {
   margin-top: unset;
   display: -webkit-box;

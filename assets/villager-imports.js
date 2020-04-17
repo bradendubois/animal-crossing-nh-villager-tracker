@@ -1,3 +1,7 @@
+
+const Store = require("electron-store");
+const store = new Store();
+
 const villagerData = require("./villager-data/villager-data").villagerData;
 
 // Ensure it was imported correctly
@@ -43,7 +47,15 @@ function populateVillagerInformation(villager) {
 
     // Favorite Button
     sections.favoriteButton.onclick = () => {
-        console.log("Favorite Toggle")
+
+        if (store.get("favorite") === undefined) {
+            store.set("favorite", {})
+        }
+
+        let current = store.get("favorite." + villager, false);
+        console.log("Was", current);
+        store.set("favorite." + villager, !current);
+        console.log("Now", store.get("favorite." + villager, false));   
     };
 
     // Attributes
@@ -68,9 +80,6 @@ function populateVillagerInformation(villager) {
 
     // Image of the villager
     sections.image.src = encodeURI("../assets/villager-data/images/" + villager + ".jpg");
-
-
-
 }
 
 // Helper function get each parameter in the villager page

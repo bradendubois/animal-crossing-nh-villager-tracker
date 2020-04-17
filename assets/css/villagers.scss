@@ -47,8 +47,7 @@
         
     
         #villager-content {
-
-
+ 
             div {
 
                 margin-top: 20px;
@@ -62,6 +61,21 @@
                     "coffee coffee coffee"
                     "appearances appearances appearances"
                     ;
+
+               
+                @media screen and (max-width: 800px) {
+                    grid-template-areas:
+                    "gender personality"
+                    "birthday birthday"
+                    "species style"
+                    "phrase clothes"
+                    "request song"
+                    "goal skill"
+                    "coffee coffee"
+                    "appearances appearances";
+
+                    grid-row-gap: 10px;
+                }
                 
                 grid-row-gap: 20px;
                 grid-column-gap: 20px;
@@ -118,11 +132,6 @@
                     }
                 }
             }
-
-           
         }
-
-
     }
-
 }
