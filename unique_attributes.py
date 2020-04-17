@@ -1,6 +1,6 @@
 import json
 
-with open('./villager-data/villager-data.json', 'r') as f:
+with open('./assets/villager-data/villager-data.json', 'r') as f:
     villager_data = json.load(f)
 
 

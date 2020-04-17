@@ -36,12 +36,13 @@ function populateVillagerInformation(villager) {
     sections.primaryName.innerText = info.name_en || info.name_jp || "A mysterious, unnamed villager.";
     sections.secondaryName.innerText = "(" + info.name_jp + ")" || info.name_en || "A mysterious, unnamed villager.";
 
+    // Caption
     sections.caption.innerText = info.caption || "Unknown";
 
-    
+    // Favorites button (clear on load for safety)
     sections.favoriteButton.classList.remove("is_favorite");
 
-    // Favorite Button
+    // Favorite Button clicker
     sections.favoriteButton.onclick = () => {
 
         sections.favoriteButton.classList.remove("is_favorite");

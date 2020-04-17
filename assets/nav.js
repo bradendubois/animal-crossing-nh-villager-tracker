@@ -39,7 +39,6 @@ document.body.addEventListener('click', (event) => {
 
 function handleSectionTrigger (event) {
 
-    console.log("Here")
   hideAllSectionsAndDeselectButtons()
 
   // Highlight clicked button and show view
