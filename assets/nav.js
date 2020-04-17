@@ -1,6 +1,12 @@
 const settings = require('electron-settings')
+
 const favorites = require("../assets/favorites")
 const coffee = require("../assets/coffee-preference")
+const song = require("../assets/favorite-song");
+
+document.getElementById("favorite-song").addEventListener("click", () => {
+  song.loadFavoriteSongTable();
+});
 
 document.getElementById("favorites").addEventListener("click", () => {
   favorites.loadFavoritesTable();
