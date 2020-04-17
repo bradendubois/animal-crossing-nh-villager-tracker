@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap');
+
 #nav {
 
+    background-color: #ebebeb;
+
+    width: 200px;
 
     top: 0;
     bottom: 0;    
@@ -9,16 +14,63 @@
     flex-direction: column;
 
 
+    .nav-header {
+        margin-left: 10px;
+    }
+
     .nav-category {
+
+        h5 {
+            margin: 15px auto 5px 5px;
+            font-size: 14pt;
+        }
 
         display: flex;
         flex-direction: column;
 
         position: relative;
         height: min-content;
+
+        button {
+
+            transition: 0.3s;
+            background-color: unset;
+            outline: none;
+            border: none;
+
+            text-align: left;
+            padding: 5px 0 5px 25px;
+
+            &:hover {
+                background-color: #d4d4d4;
+            }
+
+            &:active {
+                background-color: #adadad;
+            }
+
+            
+        }
+
+        .shown {
+
+            background-color: #309ec0;
+
+            &:hover {
+                background-color: #3296b4;
+            }
+
+            &:active {
+                background-color: #309ec0b2;
+            }
+        }
     }
 
     #villagers {
         overflow-y: scroll;
+    }
+
+    #footer {
+        margin-top: 20px;
     }
 }

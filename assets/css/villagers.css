@@ -38,6 +38,20 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: "gender personality species" "birthday birthday style" "phrase clothes request" "song goal skill" "coffee coffee coffee" "appearances appearances appearances";
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+#villager-section #main-villager-content #villager-content div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#villager-section #main-villager-content #villager-content div div h4, #villager-section #main-villager-content #villager-content div div p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 #villager-section #main-villager-content #villager-content div div h4 {

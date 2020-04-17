@@ -17,16 +17,12 @@
   <link rel="import" href="./sections/attributes/coffee-preference.html">
   <link rel="import" href="./sections/attributes/favorite-song.html">
   
-  
   <!-- Villagers -->
   <link rel="import" href="./sections/villagers/villager-button.html">
   <link rel="import" href="./sections/villagers/villager.html">
 
-  <style>
-    .shown {
-      color: red;
-    }
-  </style>
+  <!-- Footer -->
+  <link rel="import" href="./sections/about.html">
 
 </head>
 <body>
@@ -55,31 +51,19 @@
 
     <div id="villagers" class="nav-category">
       <h5>All Villagers</h5>
-      
-
-      </div>
     </div>
   
-
-
-    <footer class="nav-footer">
-      <button type="button" id="button-about" data-modal="about" class="nav-footer-button">About</button>
-      <a class="nav-footer-logo" href="https://github.com" aria-label="Homepage">
-        <!-- <svg class="nav-footer-icon"><use xlink:href="assets/img/icons.svg#icon-love"></use></svg> -->
-      </a>
-    </footer>
+    <div id="footer" class="nav-category">
+      <button id="about" class="nav-footer-button">About</button>
+    </div>
   </nav>
 
   <main class="content"></main>
 
   <script>
-    require("./index.js")
     require('../assets/imports')
-    //require('../assets/ex-links')
     require('../assets/nav')
     require('../assets/villager-imports')
-    //require('./assets/code-blocks')
-    //require('./assets/normalize-shortcuts')
   </script>
 </body>
 </html>

@@ -42,8 +42,18 @@
                     "coffee coffee coffee"
                     "appearances appearances appearances"
                     ;
+                
+                grid-row-gap: 20px;
+                grid-column-gap: 20px;
 
                 div {
+
+                    display: flex;
+
+                    h4, p {
+                        width: max-content;
+                    }
+
                     h4 { margin: auto 0 auto 0; }
 
                     p { margin: auto auto auto 5px; }

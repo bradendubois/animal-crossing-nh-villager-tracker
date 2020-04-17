@@ -1,6 +1,5 @@
 const villagerData = require("./villager-data/villager-data").villagerData;
 
-
 // Ensure it was imported correctly
 if (villagerData === undefined) {
     console.log("Failed to load villager data.");
@@ -53,7 +52,7 @@ function populateVillagerInformation(villager) {
     sections.species.innerText = info.species || "Unknown";
     sections.birthday.innerText = info.birthday || "Unknown";
     sections.style.innerText = info.style || "Unknown";
-    sections.initialPhrase.innerText = info.initialPhrase || "Unknown";
+    sections.initialPhrase.innerText = info["initial phrase"] || "Unknown";
     sections.initialClothes.innerText = info["initial clothes"] || "Unknown";
     sections.favoriteSong.innerText = info["favorite song"] || "Unknown";
     sections.homeRequest.innerText = info["home request"] || "Unknown";
@@ -63,7 +62,7 @@ function populateVillagerInformation(villager) {
     sections.appearances.innerText = info.appearances || "Unknown";
 
     // Image of the villager
-    sections.image.image = info.image;
+    sections.image.src = encodeURI("../assets/villager-data/images/" + villager + ".jpg");
 
 
 

@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap");
 #nav {
+  background-color: #ebebeb;
+  width: 200px;
   top: 0;
   bottom: 0;
   max-height: 100%;
@@ -9,6 +12,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#nav .nav-header {
+  margin-left: 10px;
 }
 
 #nav .nav-category {
@@ -25,7 +32,46 @@
   height: min-content;
 }
 
+#nav .nav-category h5 {
+  margin: 15px auto 5px 5px;
+  font-size: 14pt;
+}
+
+#nav .nav-category button {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: unset;
+  outline: none;
+  border: none;
+  text-align: left;
+  padding: 5px 0 5px 25px;
+}
+
+#nav .nav-category button:hover {
+  background-color: #d4d4d4;
+}
+
+#nav .nav-category button:active {
+  background-color: #adadad;
+}
+
+#nav .nav-category .shown {
+  background-color: #309ec0;
+}
+
+#nav .nav-category .shown:hover {
+  background-color: #3296b4;
+}
+
+#nav .nav-category .shown:active {
+  background-color: #309ec0b2;
+}
+
 #nav #villagers {
   overflow-y: scroll;
+}
+
+#nav #footer {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=nav.css.map */
