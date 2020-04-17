@@ -10,6 +10,7 @@
         h1, h2 {
             margin-top: auto;
             margin-bottom: auto;
+            font-weight: 400;
         }
 
         h1 {
@@ -21,17 +22,26 @@
             font-size: 14pt;
             margin: auto auto auto 0;
         }
+
+        
     }
 
     #main-villager-content {
-
+        
         display: flex;
         flex-direction: row;
+
+        h3 {
+            font-weight: 300;
+            font-style: italic;
+        }
+
     
         #villager-content {
 
-
             div {
+
+                margin-top: 20px;
 
                 display: grid;
                 grid-template-areas: 
@@ -47,7 +57,8 @@
                 grid-column-gap: 20px;
 
                 div {
-
+                    
+                    margin-top: unset;
                     display: flex;
 
                     h4, p {
@@ -70,8 +81,32 @@
                 #song { grid-area: song }
                 #goal { grid-area: goal }
                 #skill { grid-area: skill }
-                #coffee { grid-area: coffee }
+                #coffee { 
+            
+                    grid-area: coffee;
+                    
+                    h4 {
+                        margin-top: 0;
+                    }
+                }
+
                 #appearances { grid-area: appearances }
+
+
+
+                ul {
+
+                    margin-top: 0;
+                    list-style-type: circle;
+                    
+                    p {
+                        font-weight: 500;
+
+                        span {
+                            font-weight: 300;
+                        }
+                    }
+                }
             }
 
            

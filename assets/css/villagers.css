@@ -12,6 +12,7 @@
 #villager-section #villager-header h1, #villager-section #villager-header h2 {
   margin-top: auto;
   margin-bottom: auto;
+  font-weight: 400;
 }
 
 #villager-section #villager-header h1 {
@@ -34,7 +35,13 @@
           flex-direction: row;
 }
 
+#villager-section #main-villager-content h3 {
+  font-weight: 300;
+  font-style: italic;
+}
+
 #villager-section #main-villager-content #villager-content div {
+  margin-top: 20px;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "gender personality species" "birthday birthday style" "phrase clothes request" "song goal skill" "coffee coffee coffee" "appearances appearances appearances";
@@ -43,6 +50,7 @@
 }
 
 #villager-section #main-villager-content #villager-content div div {
+  margin-top: unset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,10 +144,27 @@
   grid-area: coffee;
 }
 
+#villager-section #main-villager-content #villager-content div #coffee h4 {
+  margin-top: 0;
+}
+
 #villager-section #main-villager-content #villager-content div #appearances {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: appearances;
+}
+
+#villager-section #main-villager-content #villager-content div ul {
+  margin-top: 0;
+  list-style-type: circle;
+}
+
+#villager-section #main-villager-content #villager-content div ul p {
+  font-weight: 500;
+}
+
+#villager-section #main-villager-content #villager-content div ul p span {
+  font-weight: 300;
 }
 /*# sourceMappingURL=villagers.css.map */

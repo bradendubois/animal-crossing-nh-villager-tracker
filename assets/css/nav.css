@@ -38,6 +38,7 @@
 }
 
 #nav .nav-category button {
+  font-family: "Manrope", sans-serif;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: unset;

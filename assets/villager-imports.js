@@ -58,7 +58,12 @@ function populateVillagerInformation(villager) {
     sections.homeRequest.innerText = info["home request"] || "Unknown";
     sections.goal.innerText = info.goal || "Unknown";
     sections.skill.innerText = info.skill || "Unknown";
-    sections.coffee.innerText = info.coffee || "Unknown";
+    
+    sections.beans.innerText = info.coffee[0] || "Unknown";
+    sections.milk.innerText = info.coffee[1] || "Unknown";
+    sections.sugar.innerText = info.coffee[2] || "Unknown";
+    
+    
     sections.appearances.innerText = info.appearances || "Unknown";
 
     // Image of the villager
@@ -85,7 +90,13 @@ function getVillagerSections() {
         favoriteSong: document.getElementById("villager-favorite-song"),
         goal: document.getElementById("villager-goal"),
         skill: document.getElementById("villager-skill"),
-        coffee: document.getElementById("villager-coffee"),
+        
+        // Coffee
+        beans: document.getElementById("villager-beans"),
+        milk: document.getElementById("villager-milk"),
+        sugar: document.getElementById("villager-sugar"),
+
+
         appearances: document.getElementById("villager-appearances"),
         image: document.getElementById("villager-image"),
         favoriteButton: document.getElementById("toggle-favorite")
