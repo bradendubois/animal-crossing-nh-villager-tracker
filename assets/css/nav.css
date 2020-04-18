@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap");
+@import url(/home/braden/Projects/animal-crossing-nh-villager-tracker/assets/css/variables.css);
 #nav {
   background-color: #ebebeb;
   width: 200px;
@@ -56,16 +57,28 @@
   background-color: #adadad;
 }
 
+#nav .nav-category .is_favorite {
+  background-color: gold;
+}
+
+#nav .nav-category .is_favorite:hover {
+  background-color: #ccac00;
+}
+
+#nav .nav-category .is_favorite:active {
+  background-color: #b39700;
+}
+
 #nav .nav-category .shown {
   background-color: #309ec0;
 }
 
 #nav .nav-category .shown:hover {
-  background-color: #3296b4;
+  background-color: #267c97;
 }
 
 #nav .nav-category .shown:active {
-  background-color: #309ec0b2;
+  background-color: #216c83;
 }
 
 #nav #villagers {

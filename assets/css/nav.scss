@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap');
+@import "./variables.css";
 
 #nav {
 
@@ -49,20 +50,29 @@
             &:active {
                 background-color: #adadad;
             }
-
-            
         }
 
-        .shown {
-
-            background-color: #309ec0;
+        .is_favorite {
+            background-color: gold;   
 
             &:hover {
-                background-color: #3296b4;
+                background-color: darken(gold, 10%);
             }
 
             &:active {
-                background-color: #309ec0b2;
+                background-color: darken(gold, 15%);
+            }
+        }
+
+        .shown {
+            background-color: #309ec0;   
+
+            &:hover {
+                background-color: darken(#309ec0, 10%);
+            }
+
+            &:active {
+                background-color: darken(#309ec0, 15%);
             }
         }
     }

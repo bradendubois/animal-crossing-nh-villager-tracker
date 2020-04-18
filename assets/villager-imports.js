@@ -1,6 +1,7 @@
 const about = require("./about")
 const Store = require("electron-store");
 const store = new Store();
+const nav = require("./nav")
 
 store.onDidChange("favorite", (newVal, oldVal) => {
     console.log("Here")
@@ -23,13 +24,19 @@ for (let villager in villagerData) {
     let button = document.createElement("button");
     button.id = "villager-" + villager;
     button.textContent = villager;
+    button.classList.add("nav-button");
+    button.classList.add("villager-button");
+
     button.addEventListener('click', () => {
-        populateVillagerInformation(villager)
+        populateVillagerInformation(villager);
     });
 
     // Insert into the nav section
-    villagerNavSection.appendChild(button)
+    villagerNavSection.appendChild(button);
 }
+
+// Update the nav to show favorited villagers
+nav.updateFavorites()
 
 // Populates the villager information page
 function populateVillagerInformation(villager) {
@@ -52,10 +59,6 @@ function populateVillagerInformation(villager) {
 
         sections.favoriteButton.classList.remove("is_favorite");
 
-        if (store.get("favorite") === undefined) {
-            store.set("favorite", {})
-        }
-
         let current = store.get("favorite." + villager, false);
         let newStatus = !current;
         store.set("favorite." + villager, newStatus);
@@ -64,6 +67,7 @@ function populateVillagerInformation(villager) {
             sections.favoriteButton.classList.add("is_favorite");
         }
 
+        nav.updateFavorites();
         console.log(villager, "is a favorite:", store.get("favorite." + villager));   
     };
 

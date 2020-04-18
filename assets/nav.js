@@ -1,11 +1,16 @@
 const settings = require('electron-settings')
 
-const species = require("./species")
 const favorites = require("../assets/favorites")
 const coffee = require("../assets/coffee-preference")
-const song = require("../assets/favorite-song");
-const personality = require("../assets/personality")
+
 const tableGenerate = require("../assets/table-generation")
+const Store = require("electron-store")
+const store = new Store();
+
+document.getElementById("style").addEventListener("click", () => {
+  tableGenerate.generateTable("style");
+})
+
 
 document.getElementById("personality").addEventListener("click", () => {
   tableGenerate.generateTable("personality");
@@ -27,6 +32,7 @@ document.getElementById("coffee-preference").addEventListener("click", () => {
   coffee.loadCoffeePreferencesTable();
 });
 
+
 document.body.addEventListener('click', (event) => {
   
   if (event.target.id)
@@ -42,9 +48,11 @@ document.body.addEventListener('click', (event) => {
       console.log("Clicked a villager")
     } 
 
-
-    handleSectionTrigger(event)
-   
+    console.log(event.target.classList)
+    if (event.target.classList.contains("nav-button")) {
+      console.log("NAV")
+    }
+    sectionChange(event)
   } 
   
   /*
@@ -58,22 +66,27 @@ document.body.addEventListener('click', (event) => {
 })
 
 
-function handleSectionTrigger (event) {
+function sectionChange(event) {
 
+  // Deselect everything
   hideAllSectionsAndDeselectButtons()
 
-  // Highlight clicked button and show view
-  event.target.classList.add('shown')
+    // Highlight clicked button and show view
+    updateButtonColor(event.target)
 
-  // Display the current section
-  let sectionId = `${event.target.id}-section`
+    // Display the current section
+    let sectionId = `${event.target.id}-section`
 
-  if (event.target.id.includes("villager")) {
-    sectionId = "villager-section";
-  }
+    if (event.target.id.includes("villager")) {
+      console.log("VillagerClick")
+      sectionId = "villager-section";
+    }
 
-  console.log(sectionId)
-  document.getElementById(sectionId).classList.add('shown')
+    console.log(sectionId)
+    document.getElementById(sectionId).classList.add('shown')
+}
+
+function navButtonTrigger (event) {
 
   // Save currently active button in localStorage
   //const buttonId = event.target.getAttribute('id')
@@ -84,7 +97,35 @@ function showVillager(event) {
   console.log("I would show a villager here")
 }
 
+function updateButtonColor(button) {
+  button.classList.add("shown")
+}
 
+function updateFavorites() {
+
+
+    const buttons = document.getElementsByClassName("nav-button");
+    for (let button of buttons) {
+
+      if (button.id.includes("villager")) {
+
+        button.classList.remove("is_favorite");
+
+        let villagerName = button.id.substr("villager-".length);
+
+        if (store.get("favorite."+ villagerName)) {
+          button.classList.add("is_favorite");
+        }
+      }
+    }
+}
+
+updateFavorites()
+
+module.exports = {
+
+    updateFavorites: () => updateFavorites()
+}
 
 function hideAllSectionsAndDeselectButtons () {
   const sections = document.querySelectorAll('.shown')
@@ -92,9 +133,9 @@ function hideAllSectionsAndDeselectButtons () {
     section.classList.remove('shown')
   })
 
-  const buttons = document.querySelectorAll('.nav-button.is-selected')
+  const buttons = document.querySelectorAll('.nav-button')
   Array.prototype.forEach.call(buttons, (button) => {
-    button.classList.remove('is-selected')
+    button.classList.remove('selected')
   })
 }
 

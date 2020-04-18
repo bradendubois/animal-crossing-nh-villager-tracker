@@ -13,6 +13,11 @@ if (store.get("favorite") === undefined) {
 if (store.get("favorite") === undefined) {
     store.set("favorite", {});
 }
+if (store.get("shownButtonColor") === undefined) {
+    store.set("shownButtonColor", "#309ec0");
+    store.set("shownButtonColor", "green");
+    
+}
 
 const favorited = document.getElementById("number-favorited");
 
@@ -35,7 +40,6 @@ function resetFavorites() {
 }
 
 updateAboutSection()
-
 
 document.getElementById("reset-favorites").addEventListener("click", () => {
     resetFavorites();

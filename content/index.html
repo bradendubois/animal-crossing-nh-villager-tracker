@@ -20,6 +20,7 @@
   <link rel="import" href="./sections/attributes/favorite-song.html">
   <link rel="import" href="./sections/attributes/species.html">
   <link rel="import" href="./sections/attributes/personality.html">
+  <link rel="import" href="./sections/attributes/style.html">
   
   <!-- Villagers -->
   <link rel="import" href="./sections/villagers/villager.html">
@@ -39,18 +40,19 @@
     <div id="main-tabs" class="nav-category">
       <h5>Favorites & Upcoming</h5>
 
-      <button id="favorites">Favorites</button>
-      <button id="upcoming-birthdays">Upcoming</button>
+      <button id="favorites" class="nav-button">Favorites</button>
+      <button id="upcoming-birthdays" class="nav-button">Upcoming</button>
 
     </div>
 
     <div id="attributes" class="nav-category">
       <h5>By Attribute</h5>
 
-      <button id="coffee-preference">Coffee Preference</button>
-      <button id="favorite-song">Favorite Song</button>
-      <button id="personality">Personality</button>
-      <button id="species">Species</button>
+      <button id="coffee-preference" class="nav-button">Coffee Preference</button>
+      <button id="favorite-song" class="nav-button">Favorite Song</button>
+      <button id="personality" class="nav-button">Personality</button>
+      <button id="species" class="nav-button">Species</button>
+      <button id="style" class="nav-button">Style</button>
 
     </div>
 
@@ -68,14 +70,13 @@
   <script>
     
     require('../assets/imports')
-    require('../assets/nav')
     require('../assets/villager-imports')
     require("../assets/favorites")
     require("../assets/coffee-preference")
-    require("../assets/favorite-song")
-    require("../assets/personality")
-    require("../assets/species")
     require("../assets/about")
+
+    require('../assets/nav')
+
 
   </script>
 </body>
