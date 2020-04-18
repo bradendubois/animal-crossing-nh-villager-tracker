@@ -1,6 +1,11 @@
-
+const about = require("./about")
 const Store = require("electron-store");
 const store = new Store();
+
+store.onDidChange("favorite", (newVal, oldVal) => {
+    console.log("Here")
+    about.updateAboutSection();
+});
 
 const villagerData = require("./villager-data/villager-data").villagerData;
 

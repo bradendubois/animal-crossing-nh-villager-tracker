@@ -1,11 +1,16 @@
 const settings = require('electron-settings')
 
+const personality = require("../assets/personality")
 const favorites = require("../assets/favorites")
 const coffee = require("../assets/coffee-preference")
 const song = require("../assets/favorite-song");
 
 document.getElementById("favorite-song").addEventListener("click", () => {
   song.loadFavoriteSongTable();
+});
+
+document.getElementById("personality").addEventListener("click", () => {
+  personality.loadPersonalityTable();
 });
 
 document.getElementById("favorites").addEventListener("click", () => {
@@ -25,15 +30,14 @@ document.body.addEventListener('click', (event) => {
 
     if (event.target.id === "toggle-favorite")
       return;
-    
-
-    if (event.target.id.includes("villager")) {
+    else if (event.target.id === "reset-favorites")
+      return;
+    else if (event.target.id.includes("villager")) {
       console.log("Clicked a villager")
-      
-
-
     } 
-      handleSectionTrigger(event)
+
+
+    handleSectionTrigger(event)
    
   } 
   
@@ -87,3 +91,6 @@ function hideAllSectionsAndDeselectButtons () {
     button.classList.remove('is-selected')
   })
 }
+
+document.getElementById("about-section").classList.add("shown");
+document.getElementById("about").classList.add("shown");
