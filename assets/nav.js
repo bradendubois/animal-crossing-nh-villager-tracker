@@ -4,6 +4,11 @@ const species = require("./species")
 const favorites = require("../assets/favorites")
 const coffee = require("../assets/coffee-preference")
 const song = require("../assets/favorite-song");
+const personality = require("../assets/personality")
+
+document.getElementById("personality").addEventListener("click", () => {
+  personality.loadPersonalityTable();
+})
 
 document.getElementById("favorite-song").addEventListener("click", () => {
   song.loadFavoriteSongTable();
