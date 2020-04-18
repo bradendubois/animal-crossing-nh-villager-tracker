@@ -1,6 +1,6 @@
 const settings = require('electron-settings')
 
-const personality = require("../assets/personality")
+const species = require("./species")
 const favorites = require("../assets/favorites")
 const coffee = require("../assets/coffee-preference")
 const song = require("../assets/favorite-song");
@@ -9,8 +9,8 @@ document.getElementById("favorite-song").addEventListener("click", () => {
   song.loadFavoriteSongTable();
 });
 
-document.getElementById("personality").addEventListener("click", () => {
-  personality.loadPersonalityTable();
+document.getElementById("species").addEventListener("click", () => {
+  species.loadSpeciesTable();
 });
 
 document.getElementById("favorites").addEventListener("click", () => {

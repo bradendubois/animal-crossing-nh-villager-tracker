@@ -10,18 +10,18 @@ if (villagerData === undefined) {
 
 module.exports = { 
     
-    loadPersonalityTable: () => {
+    loadSpeciesTable: () => {
 
         // Table containing the tbody
-        let personalities = document.getElementById("personality-groups");
-        if (personalities.children.length > 0) {
+        let speciesGroups = document.getElementById("species-groups");
+        if (speciesGroups.children.length > 0) {
             return;
         }
 
         // TODO - Toggle a "favorites-only" filter option
         let villagers = villagerData;
 
-        let speciesList = [];       // List of all the species
+        let speciesList = [];   // List of all the species
         let categorized = {};   // species: [Villagers]
 
         // Check each villager
@@ -52,12 +52,24 @@ module.exports = {
 
             // New group
             let group = document.createElement("div");
-            group.classList.add("personality-group");
+            group.classList.add("species-group");
 
-            // Add the title of the species
+            // Div for the main group information
+            let groupHeader = document.createElement("div");
+            groupHeader.classList.add("group-header");
+
+            // The title of the species
             let title = document.createElement("h3");
             title.innerText = spec;
-            group.appendChild(title);
+
+            // The number of villagers of this species
+            let total = document.createElement("h4");
+            total.innerText = categorized[spec].length;
+
+            // Add the title and number of species
+            groupHeader.appendChild(title);
+            groupHeader.appendChild(total);
+            group.appendChild(groupHeader);
 
             // Aesthetic
             group.appendChild(document.createElement("hr"));
@@ -74,7 +86,7 @@ module.exports = {
                 for (let col = 0; col < 4; col++) {
                     
                     // Handle the case where the last row is not full
-                    let villagerIdx = (row * 4) + col;
+                    let villagerIdx = row + col;
                     if (villagerIdx >= categorized[spec].length) {
                         break;
                     }
@@ -90,7 +102,7 @@ module.exports = {
 
             group.appendChild(table);
 
-            personalities.appendChild(group);
+            speciesGroups.appendChild(group);
         }
     }
 }
