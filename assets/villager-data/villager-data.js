@@ -20,7 +20,7 @@ exports.villagerData = {
             "The regular amount of milk",
             "2 spoonfuls of sugar"
         ],
-        "favorite song": "Steep Hill",
+        "favorite-song": "Steep Hill",
         "appearances": [
             "AF",
             "AF+",
@@ -54,7 +54,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "DJ K.K.",
+        "favorite-song": "DJ K.K.",
         "appearances": [
             "AFe+",
             "WW",
@@ -89,7 +89,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. House",
+        "favorite-song": "K.K. House",
         "appearances": [
             "NL",
             "HHD",
@@ -121,7 +121,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "Steep Hill",
+        "favorite-song": "Steep Hill",
         "appearances": [
             "CF",
             "NL",
@@ -154,7 +154,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "Forest Life",
+        "favorite-song": "Forest Life",
         "appearances": [
             "AF",
             "AF+",
@@ -192,7 +192,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Cute",
-        "favorite song": "Surfin' K.K.",
+        "favorite-song": "Surfin' K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -229,7 +229,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Chorale",
+        "favorite-song": "K.K. Chorale",
         "appearances": [
             "AF",
             "AF+",
@@ -268,7 +268,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Condor",
+        "favorite-song": "K.K. Condor",
         "appearances": [
             "AF",
             "AF+",
@@ -304,7 +304,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Cute",
-        "favorite song": "Aloha K.K.",
+        "favorite-song": "Aloha K.K.",
         "appearances": [
             "WW",
             "CF",
@@ -339,7 +339,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Ragtime",
+        "favorite-song": "K.K. Ragtime",
         "appearances": [
             "AF",
             "AF+",
@@ -376,7 +376,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Historical",
-        "favorite song": "Marine Song 2001",
+        "favorite-song": "Marine Song 2001",
         "appearances": [
             "AF+",
             "AC",
@@ -411,7 +411,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "Se\u00f1or K.K.",
+        "favorite-song": "Se\u00f1or K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -450,7 +450,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Flashy",
-        "favorite song": "Neapolitan",
+        "favorite-song": "Neapolitan",
         "appearances": [
             "AF",
             "AF+",
@@ -486,7 +486,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "King K.K.",
+        "favorite-song": "King K.K.",
         "appearances": [
             "NL",
             "NH"
@@ -517,7 +517,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Sonata",
+        "favorite-song": "K.K. Sonata",
         "appearances": [
             "AF+",
             "AC",
@@ -551,7 +551,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Faire",
+        "favorite-song": "K.K. Faire",
         "appearances": [
             "AF",
             "AF+",
@@ -589,7 +589,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Rock",
+        "favorite-song": "K.K. Rock",
         "appearances": [
             "AF",
             "AF+",
@@ -628,7 +628,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Cute",
-        "favorite song": "I Love You",
+        "favorite-song": "I Love You",
         "appearances": [
             "NL",
             "HHD",
@@ -660,7 +660,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "I Love You",
+        "favorite-song": "I Love You",
         "appearances": [
             "AF",
             "AF+",
@@ -691,7 +691,7 @@ exports.villagerData = {
         "goal": "Pop star",
         "coffee": "Unknown",
         "style": "Unknown",
-        "favorite song": "K.K. Island",
+        "favorite-song": "K.K. Island",
         "appearances": [
             "PC",
             "NH"
@@ -722,7 +722,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Gumbo",
+        "favorite-song": "K.K. Gumbo",
         "appearances": [
             "AF",
             "AF+",
@@ -760,7 +760,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Country",
+        "favorite-song": "K.K. Country",
         "appearances": [
             "AF",
             "AF+",
@@ -795,7 +795,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Condor",
+        "favorite-song": "K.K. Condor",
         "appearances": [
             "AFe+",
             "CF",
@@ -829,7 +829,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Dixie",
+        "favorite-song": "K.K. Dixie",
         "appearances": [
             "AF",
             "AF+",
@@ -864,7 +864,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Swing",
+        "favorite-song": "K.K. Swing",
         "appearances": [
             "AF",
             "AF+",
@@ -900,7 +900,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "DJ K.K.",
+        "favorite-song": "DJ K.K.",
         "appearances": [
             "NL",
             "HHD",
@@ -933,7 +933,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Soul",
+        "favorite-song": "K.K. Soul",
         "appearances": [
             "AF",
             "AF+",
@@ -967,7 +967,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Historical",
-        "favorite song": "My Place",
+        "favorite-song": "My Place",
         "appearances": "NL"
     },
     "Beau": {
@@ -994,7 +994,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "Mountain Song",
+        "favorite-song": "Mountain Song",
         "appearances": [
             "NL",
             "HHD",
@@ -1024,7 +1024,7 @@ exports.villagerData = {
             "A little bit of milk",
             "1 spoonful of sugar"
         ],
-        "favorite song": "K.K. Soul",
+        "favorite-song": "K.K. Soul",
         "appearances": [
             "AF",
             "AF+",
@@ -1058,7 +1058,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Sonata",
+        "favorite-song": "K.K. Sonata",
         "appearances": [
             "NL",
             "NH"
@@ -1089,7 +1089,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Aria",
+        "favorite-song": "K.K. Aria",
         "appearances": [
             "AFe+",
             "CF",
@@ -1120,7 +1120,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Metal",
+        "favorite-song": "K.K. Metal",
         "appearances": [
             "AF",
             "AF+",
@@ -1156,7 +1156,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Historical",
-        "favorite song": "I Love You",
+        "favorite-song": "I Love You",
         "appearances": [
             "AF",
             "AF+",
@@ -1190,7 +1190,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Historical",
-        "favorite song": "Wandering",
+        "favorite-song": "Wandering",
         "appearances": [
             "NL",
             "NH"
@@ -1221,7 +1221,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "Space K.K.",
+        "favorite-song": "Space K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -1255,7 +1255,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Swing",
+        "favorite-song": "K.K. Swing",
         "appearances": [
             "CF",
             "NL",
@@ -1286,7 +1286,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. House",
+        "favorite-song": "K.K. House",
         "appearances": [
             "NL",
             "HHD",
@@ -1318,7 +1318,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Flashy",
-        "favorite song": "The K. Funk",
+        "favorite-song": "The K. Funk",
         "appearances": [
             "AF",
             "AF+",
@@ -1352,7 +1352,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Metal",
+        "favorite-song": "K.K. Metal",
         "appearances": [
             "AF",
             "AF+",
@@ -1390,7 +1390,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "King K.K.",
+        "favorite-song": "King K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -1426,7 +1426,7 @@ exports.villagerData = {
             "No milk",
             "No sugar"
         ],
-        "favorite song": "K.K. Sonata",
+        "favorite-song": "K.K. Sonata",
         "appearances": [
             "AF",
             "AF+",
@@ -1461,7 +1461,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Mambo",
+        "favorite-song": "K.K. Mambo",
         "appearances": [
             "AF",
             "AF+",
@@ -1495,7 +1495,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Disco",
+        "favorite-song": "K.K. Disco",
         "appearances": [
             "AF",
             "AF+",
@@ -1528,7 +1528,7 @@ exports.villagerData = {
             "No sugar."
         ],
         "style": "Official",
-        "favorite song": "K.K. Island",
+        "favorite-song": "K.K. Island",
         "appearances": [
             "AF",
             "AF+",
@@ -1564,7 +1564,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Jongara",
+        "favorite-song": "K.K. Jongara",
         "appearances": [
             "NL",
             "HHD",
@@ -1595,7 +1595,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Ska",
+        "favorite-song": "K.K. Ska",
         "appearances": [
             "AF",
             "AF+",
@@ -1633,7 +1633,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Flashy",
-        "favorite song": "[[K.K. Ragtime Neopolitan (NH)]]",
+        "favorite-song": "[[K.K. Ragtime Neopolitan (NH)]]",
         "appearances": [
             "AF",
             "AF+",
@@ -1671,7 +1671,7 @@ exports.villagerData = {
             "2 spoonfuls of sugar"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Disco",
+        "favorite-song": "K.K. Disco",
         "appearances": [
             "NL",
             "HHD",
@@ -1702,7 +1702,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Historical",
-        "favorite song": "Forest Life",
+        "favorite-song": "Forest Life",
         "appearances": [
             "AF",
             "AF+",
@@ -1739,7 +1739,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Historical",
-        "favorite song": "Aloha K.K.",
+        "favorite-song": "Aloha K.K.",
         "appearances": [
             "AF+",
             "AC",
@@ -1774,7 +1774,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Western",
+        "favorite-song": "K.K. Western",
         "appearances": [
             "WW",
             "CF",
@@ -1805,7 +1805,7 @@ exports.villagerData = {
             "Lots of milk",
             "3 spoonfuls of sugar"
         ],
-        "favorite song": "K.K. Rally",
+        "favorite-song": "K.K. Rally",
         "appearances": [
             "AF",
             "AF+",
@@ -1839,7 +1839,7 @@ exports.villagerData = {
             "Lots of milk",
             "3 spoonfuls of sugar"
         ],
-        "favorite song": "K.K. House",
+        "favorite-song": "K.K. House",
         "appearances": [
             "AF",
             "AF+",
@@ -1870,7 +1870,7 @@ exports.villagerData = {
             "Lots of milk",
             "3 spoonfuls of sugar"
         ],
-        "favorite song": "K.K. Groove",
+        "favorite-song": "K.K. Groove",
         "appearances": [
             "AFe+",
             "NL"
@@ -1900,7 +1900,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "Two Days Ago",
+        "favorite-song": "Two Days Ago",
         "appearances": [
             "AF",
             "AF+",
@@ -1937,7 +1937,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Ragtime",
+        "favorite-song": "K.K. Ragtime",
         "appearances": [
             "AFe+",
             "CF",
@@ -1971,7 +1971,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Blues",
+        "favorite-song": "K.K. Blues",
         "appearances": [
             "NL",
             "HHD",
@@ -2003,7 +2003,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Flamenco",
+        "favorite-song": "K.K. Flamenco",
         "appearances": [
             "NL",
             "HHD"
@@ -2034,7 +2034,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Stroll",
+        "favorite-song": "K.K. Stroll",
         "appearances": [
             "AF",
             "AF+",
@@ -2067,7 +2067,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "My Place",
+        "favorite-song": "My Place",
         "appearances": [
             "AF",
             "AF+",
@@ -2106,7 +2106,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Ska",
+        "favorite-song": "K.K. Ska",
         "appearances": [
             "AF",
             "AF+",
@@ -2145,7 +2145,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Aria",
+        "favorite-song": "K.K. Aria",
         "appearances": [
             "AF",
             "AF+",
@@ -2184,7 +2184,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Fusion",
+        "favorite-song": "K.K. Fusion",
         "appearances": [
             "AF",
             "AF+",
@@ -2221,7 +2221,7 @@ exports.villagerData = {
             "Lots of milk",
             "3 spoonfuls of sugar"
         ],
-        "favorite song": "K.K. Rally",
+        "favorite-song": "K.K. Rally",
         "appearances": [
             "AF",
             "AF+",
@@ -2255,7 +2255,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Love Song",
+        "favorite-song": "K.K. Love Song",
         "appearances": [
             "NL",
             "NH"
@@ -2285,7 +2285,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Rock",
+        "favorite-song": "K.K. Rock",
         "appearances": [
             "AF",
             "AF+",
@@ -2321,7 +2321,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. House",
+        "favorite-song": "K.K. House",
         "appearances": [
             "NL",
             "NH"
@@ -2349,7 +2349,7 @@ exports.villagerData = {
             "3 spoonfuls of sugar"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Ragtime",
+        "favorite-song": "K.K. Ragtime",
         "appearances": [
             "AF",
             "AF+",
@@ -2382,7 +2382,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Technopop",
+        "favorite-song": "K.K. Technopop",
         "appearances": [
             "CF",
             "NL",
@@ -2415,7 +2415,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Cute",
-        "favorite song": "DJ K.K.",
+        "favorite-song": "DJ K.K.",
         "appearances": [
             "WW",
             "CF",
@@ -2446,7 +2446,7 @@ exports.villagerData = {
             "none at all",
             "none at all"
         ],
-        "favorite song": "K.K. Lullaby",
+        "favorite-song": "K.K. Lullaby",
         "appearances": [
             "AF",
             "AF+",
@@ -2479,7 +2479,7 @@ exports.villagerData = {
             "The regular amount of milk",
             "2 spoonfuls of sugar"
         ],
-        "favorite song": "K.K. Country",
+        "favorite-song": "K.K. Country",
         "appearances": [
             "AF",
             "AF+",
@@ -2513,7 +2513,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Aria",
+        "favorite-song": "K.K. Aria",
         "appearances": [
             "NL",
             "HHD",
@@ -2546,7 +2546,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Lament",
+        "favorite-song": "K.K. Lament",
         "appearances": [
             "AF",
             "AF+",
@@ -2582,7 +2582,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Soul",
+        "favorite-song": "K.K. Soul",
         "appearances": [
             "NL",
             "HHD",
@@ -2615,7 +2615,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "Mr. K.K.",
+        "favorite-song": "Mr. K.K.",
         "appearances": [
             "AFe+",
             "NL",
@@ -2648,7 +2648,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "[[K.K. SynthK.K. Disco (NH)]]",
+        "favorite-song": "[[K.K. SynthK.K. Disco (NH)]]",
         "appearances": [
             "AF+",
             "AC",
@@ -2683,7 +2683,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Fusion",
+        "favorite-song": "K.K. Fusion",
         "appearances": [
             "NL",
             "HHD",
@@ -2714,7 +2714,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Basic",
-        "favorite song": "Imperial K.K.",
+        "favorite-song": "Imperial K.K.",
         "appearances": [
             "CF",
             "NL"
@@ -2744,7 +2744,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Chorale",
+        "favorite-song": "K.K. Chorale",
         "appearances": [
             "AF",
             "AF+",
@@ -2781,7 +2781,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "DJ K.K.",
+        "favorite-song": "DJ K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -2819,7 +2819,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Moody",
+        "favorite-song": "K.K. Moody",
         "appearances": [
             "NL",
             "HHD",
@@ -2850,7 +2850,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Steppe",
+        "favorite-song": "K.K. Steppe",
         "appearances": [
             "AF",
             "AF+",
@@ -2887,7 +2887,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Waltz",
+        "favorite-song": "K.K. Waltz",
         "appearances": [
             "AFe+",
             "CF",
@@ -2920,7 +2920,7 @@ exports.villagerData = {
             "None at all",
             "None at all"
         ],
-        "favorite song": "Pondering",
+        "favorite-song": "Pondering",
         "appearances": [
             "AF",
             "AF+",
@@ -2953,7 +2953,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Synth",
+        "favorite-song": "K.K. Synth",
         "appearances": [
             "NL",
             "HHD",
@@ -2985,7 +2985,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Safari",
+        "favorite-song": "K.K. Safari",
         "appearances": [
             "NL",
             "NH"
@@ -3012,7 +3012,7 @@ exports.villagerData = {
             "A little bit of milk",
             "1 spoonful of sugar"
         ],
-        "favorite song": "[[K.K. Bossa (Animal Crossing)K.K. Synth (New Leaf)]]",
+        "favorite-song": "[[K.K. Bossa (Animal Crossing)K.K. Synth (New Leaf)]]",
         "appearances": [
             "AF",
             "AF+",
@@ -3046,7 +3046,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Dixie",
+        "favorite-song": "K.K. Dixie",
         "appearances": [
             "CF",
             "NL",
@@ -3077,7 +3077,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "Marine Song 2001",
+        "favorite-song": "Marine Song 2001",
         "appearances": [
             "NL",
             "NH"
@@ -3107,7 +3107,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Official",
-        "favorite song": "Pondering",
+        "favorite-song": "Pondering",
         "appearances": [
             "AF",
             "AF+",
@@ -3144,7 +3144,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Dirge",
+        "favorite-song": "K.K. Dirge",
         "appearances": [
             "AF",
             "AF+",
@@ -3182,7 +3182,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Modern",
-        "favorite song": "Spring Blossoms",
+        "favorite-song": "Spring Blossoms",
         "appearances": [
             "NL",
             "HHD",
@@ -3213,7 +3213,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Ornate",
-        "favorite song": "Only Me",
+        "favorite-song": "Only Me",
         "appearances": [
             "NL",
             "HHD",
@@ -3245,7 +3245,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Cute",
-        "favorite song": "DJ K.K.",
+        "favorite-song": "DJ K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -3280,7 +3280,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "Imperial K.K.",
+        "favorite-song": "Imperial K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -3315,7 +3315,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Modern",
-        "favorite song": "Steep Hill",
+        "favorite-song": "Steep Hill",
         "appearances": [
             "NL",
             "HHD",
@@ -3346,7 +3346,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Jongara",
+        "favorite-song": "K.K. Jongara",
         "appearances": [
             "NL",
             "NH"
@@ -3378,7 +3378,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Technopop",
+        "favorite-song": "K.K. Technopop",
         "appearances": [
             "AF",
             "AF+",
@@ -3417,7 +3417,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Samba",
+        "favorite-song": "K.K. Samba",
         "appearances": [
             "AFe+",
             "NL",
@@ -3448,7 +3448,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Reggae",
+        "favorite-song": "K.K. Reggae",
         "appearances": [
             "AF",
             "AF+",
@@ -3485,7 +3485,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Lament",
+        "favorite-song": "K.K. Lament",
         "appearances": [
             "AF",
             "AF+",
@@ -3516,7 +3516,7 @@ exports.villagerData = {
         "goal": "Unknown",
         "coffee": "Unknown",
         "style": "Unknown",
-        "favorite song": "K.K. Metal",
+        "favorite-song": "K.K. Metal",
         "appearances": [
             "PC",
             "NH"
@@ -3547,7 +3547,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Faire",
+        "favorite-song": "K.K. Faire",
         "appearances": [
             "AF",
             "AF+",
@@ -3583,7 +3583,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Soul",
+        "favorite-song": "K.K. Soul",
         "appearances": [
             "AF",
             "AF+",
@@ -3620,7 +3620,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Modern",
-        "favorite song": "Mr. K.K.",
+        "favorite-song": "Mr. K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -3656,7 +3656,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Cruisin'",
+        "favorite-song": "K.K. Cruisin'",
         "appearances": [
             "NL",
             "HHD",
@@ -3688,7 +3688,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. March",
+        "favorite-song": "K.K. March",
         "appearances": [
             "AFe+",
             "CF",
@@ -3720,7 +3720,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Marathon",
+        "favorite-song": "K.K. Marathon",
         "appearances": [
             "NL",
             "NH"
@@ -3750,7 +3750,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Official",
-        "favorite song": "The K. Funk",
+        "favorite-song": "The K. Funk",
         "appearances": [
             "AF",
             "AF+",
@@ -3786,7 +3786,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "Stale Cupcakes",
+        "favorite-song": "Stale Cupcakes",
         "appearances": [
             "NL",
             "HHD",
@@ -3819,7 +3819,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Ornate",
-        "favorite song": "K.K.  Bazaar",
+        "favorite-song": "K.K.  Bazaar",
         "appearances": [
             "NL",
             "HHD",
@@ -3851,7 +3851,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Gumbo",
+        "favorite-song": "K.K. Gumbo",
         "appearances": [
             "AF",
             "AF+",
@@ -3895,7 +3895,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Official",
-        "favorite song": "Pondering",
+        "favorite-song": "Pondering",
         "appearances": [
             "AF",
             "AF+",
@@ -3924,7 +3924,7 @@ exports.villagerData = {
         "goal": "Unknown",
         "coffee": "Unknown",
         "style": "Unknown",
-        "favorite song": "K.K. Country",
+        "favorite-song": "K.K. Country",
         "appearances": [
             "PC",
             "NH"
@@ -3954,7 +3954,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "Only Me",
+        "favorite-song": "Only Me",
         "appearances": [
             "AF",
             "AF+",
@@ -3990,7 +3990,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Technopop",
+        "favorite-song": "K.K. Technopop",
         "appearances": [
             "AF",
             "AF+",
@@ -4028,7 +4028,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "Imperial K.K.",
+        "favorite-song": "Imperial K.K.",
         "appearances": [
             "NL",
             "HHD",
@@ -4060,7 +4060,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Blues",
+        "favorite-song": "K.K. Blues",
         "appearances": [
             "WW",
             "CF",
@@ -4094,7 +4094,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Country",
+        "favorite-song": "K.K. Country",
         "appearances": [
             "AF",
             "AF+",
@@ -4131,7 +4131,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Ballad",
+        "favorite-song": "K.K. Ballad",
         "appearances": [
             "AF",
             "AF+",
@@ -4166,7 +4166,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Technopop",
+        "favorite-song": "K.K. Technopop",
         "appearances": [
             "AF",
             "AF+",
@@ -4204,7 +4204,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Official",
-        "favorite song": "Neapolitan",
+        "favorite-song": "Neapolitan",
         "appearances": [
             "WW",
             "CF",
@@ -4236,7 +4236,7 @@ exports.villagerData = {
             "The regular amount of milk",
             "2 spoonfuls of sugar"
         ],
-        "favorite song": "Cafe K.K.",
+        "favorite-song": "Cafe K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -4270,7 +4270,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Waltz",
+        "favorite-song": "K.K. Waltz",
         "appearances": [
             "AF",
             "AF+",
@@ -4307,7 +4307,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Jazz",
+        "favorite-song": "K.K. Jazz",
         "appearances": [
             "AF",
             "AF+",
@@ -4344,7 +4344,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Casbah",
+        "favorite-song": "K.K. Casbah",
         "appearances": [
             "WW",
             "CF",
@@ -4376,7 +4376,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "Neapolitan",
+        "favorite-song": "Neapolitan",
         "appearances": [
             "NL",
             "NH"
@@ -4406,7 +4406,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Waltz",
+        "favorite-song": "K.K. Waltz",
         "appearances": [
             "AF",
             "AF+",
@@ -4442,7 +4442,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Rock'n'roll",
-        "favorite song": "K.K. Cruisin'",
+        "favorite-song": "K.K. Cruisin'",
         "appearances": [
             "NL",
             "HHD",
@@ -4474,7 +4474,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Calypso",
+        "favorite-song": "K.K. Calypso",
         "appearances": [
             "AF",
             "AF+",
@@ -4511,7 +4511,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Stroll",
+        "favorite-song": "K.K. Stroll",
         "appearances": [
             "NL",
             "HHD",
@@ -4543,7 +4543,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Lullaby",
+        "favorite-song": "K.K. Lullaby",
         "appearances": [
             "AFe+",
             "CF",
@@ -4576,7 +4576,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar."
         ],
         "style": "Basic",
-        "favorite song": "Two Days Ago",
+        "favorite-song": "Two Days Ago",
         "appearances": [
             "AF",
             "AF+",
@@ -4614,7 +4614,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Rally",
+        "favorite-song": "K.K. Rally",
         "appearances": [
             "NL",
             "PC",
@@ -4645,7 +4645,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "Space K.K.",
+        "favorite-song": "Space K.K.",
         "appearances": [
             "NL",
             "NH"
@@ -4675,7 +4675,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Flamenco",
+        "favorite-song": "K.K. Flamenco",
         "appearances": [
             "NL",
             "NH"
@@ -4705,7 +4705,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Iconic",
-        "favorite song": "Hypno K.K.",
+        "favorite-song": "Hypno K.K.",
         "appearances": [
             "NH",
             "NL",
@@ -4738,7 +4738,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "I Love You",
+        "favorite-song": "I Love You",
         "appearances": [
             "AFe+",
             "CF",
@@ -4773,7 +4773,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Casbah",
+        "favorite-song": "K.K. Casbah",
         "appearances": [
             "AFe+",
             "NL"
@@ -4803,7 +4803,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Song",
+        "favorite-song": "K.K. Song",
         "appearances": [
             "AF",
             "AF+",
@@ -4838,7 +4838,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "Rockin' K.K.",
+        "favorite-song": "Rockin' K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -4880,7 +4880,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Tango",
+        "favorite-song": "K.K. Tango",
         "appearances": [
             "AF",
             "AF+",
@@ -4916,7 +4916,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Rockabilly",
+        "favorite-song": "K.K. Rockabilly",
         "appearances": [
             "NL",
             "HHD",
@@ -4947,7 +4947,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "My Place",
+        "favorite-song": "My Place",
         "appearances": [
             "AF",
             "AF+",
@@ -4984,7 +4984,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Rock",
+        "favorite-song": "K.K. Rock",
         "appearances": [
             "NL",
             "HHD",
@@ -5016,7 +5016,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Love Song",
+        "favorite-song": "K.K. Love Song",
         "appearances": [
             "AF",
             "AF+",
@@ -5053,7 +5053,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Cute",
-        "favorite song": "Two Days Ago"
+        "favorite-song": "Two Days Ago"
     },
     "Gaston": {
         "name_en": "Gaston",
@@ -5079,7 +5079,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Dirge",
+        "favorite-song": "K.K. Dirge",
         "appearances": [
             "AF",
             "AF+",
@@ -5116,7 +5116,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Cute",
-        "favorite song": "Bubblegum K.K.",
+        "favorite-song": "Bubblegum K.K.",
         "appearances": [
             "NL",
             "HHD",
@@ -5148,7 +5148,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "King K.K.",
+        "favorite-song": "King K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -5185,7 +5185,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Ornate",
-        "favorite song": "Only Me",
+        "favorite-song": "Only Me",
         "appearances": [
             "CF",
             "NL",
@@ -5216,7 +5216,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Folk",
+        "favorite-song": "K.K. Folk",
         "appearances": [
             "AF",
             "AF+",
@@ -5253,7 +5253,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Milonga",
+        "favorite-song": "K.K. Milonga",
         "appearances": [
             "CF",
             "NL"
@@ -5285,7 +5285,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Bossa",
+        "favorite-song": "K.K. Bossa",
         "appearances": [
             "AF",
             "AF+",
@@ -5321,7 +5321,7 @@ exports.villagerData = {
             "Lots of milk",
             "Three spoonfuls of sugar"
         ],
-        "favorite song": "K.K. D & B",
+        "favorite-song": "K.K. D & B",
         "appearances": [
             "AF",
             "AF+",
@@ -5354,7 +5354,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Country",
+        "favorite-song": "K.K. Country",
         "appearances": [
             "AF",
             "AF+",
@@ -5392,7 +5392,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Historical",
-        "favorite song": "Bubblegum K.K.",
+        "favorite-song": "Bubblegum K.K.",
         "appearances": "New Leaf New Horizons"
     },
     "Greta": {
@@ -5419,7 +5419,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Jongara",
+        "favorite-song": "K.K. Jongara",
         "appearances": [
             "NL",
             "HHD",
@@ -5451,7 +5451,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Dirge",
+        "favorite-song": "K.K. Dirge",
         "appearances": [
             "AF",
             "AF+",
@@ -5487,7 +5487,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Metal",
+        "favorite-song": "K.K. Metal",
         "appearances": [
             "AF",
             "AF+",
@@ -5524,7 +5524,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Rockabilly",
+        "favorite-song": "K.K. Rockabilly",
         "appearances": [
             "AF",
             "AF+",
@@ -5559,7 +5559,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "Cafe K.K.",
+        "favorite-song": "Cafe K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -5595,7 +5595,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Reggae",
+        "favorite-song": "K.K. Reggae",
         "appearances": [
             "NL",
             "HHD",
@@ -5627,7 +5627,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Rally",
+        "favorite-song": "K.K. Rally",
         "appearances": [
             "NL",
             "NH"
@@ -5657,7 +5657,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Official",
-        "favorite song": "K.K. D & B",
+        "favorite-song": "K.K. D & B",
         "appearances": [
             "NL",
             "PC New Horizons"
@@ -5691,7 +5691,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Calypso",
+        "favorite-song": "K.K. Calypso",
         "appearances": [
             "AFe+",
             "CF",
@@ -5722,7 +5722,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Disco",
+        "favorite-song": "K.K. Disco",
         "appearances": [
             "NL",
             "HHD",
@@ -5753,7 +5753,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Soul",
+        "favorite-song": "K.K. Soul",
         "appearances": [
             "NL",
             "HHD",
@@ -5785,7 +5785,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Moody",
+        "favorite-song": "K.K. Moody",
         "appearances": [
             "NL",
             "PC",
@@ -5815,7 +5815,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Sporty",
-        "favorite song": "I Love You",
+        "favorite-song": "I Love You",
         "appearances": [
             "AFe+",
             "NL",
@@ -5847,7 +5847,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "Lucky K.K.",
+        "favorite-song": "Lucky K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -5881,7 +5881,7 @@ exports.villagerData = {
             "A little bit of milk",
             "1 spoonful of sugar"
         ],
-        "favorite song": "Aloha K.K. (AC)K.K. Lament (NL)]]",
+        "favorite-song": "Aloha K.K. (AC)K.K. Lament (NL)]]",
         "appearances": [
             "AF",
             "AF+",
@@ -5913,7 +5913,7 @@ exports.villagerData = {
             "a little bit of milk",
             "1 spoonful of sugar"
         ],
-        "favorite song": "I Love You",
+        "favorite-song": "I Love You",
         "appearances": [
             "AF",
             "AF+",
@@ -5951,7 +5951,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Mambo",
+        "favorite-song": "K.K. Mambo",
         "appearances": [
             "AF",
             "AF+",
@@ -5988,7 +5988,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. March",
+        "favorite-song": "K.K. March",
         "appearances": [
             "CF",
             "NL",
@@ -6018,7 +6018,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Rock n' roll",
-        "favorite song": "K.K. Rock",
+        "favorite-song": "K.K. Rock",
         "appearances": [
             "AFe+",
             "NL"
@@ -6045,7 +6045,7 @@ exports.villagerData = {
             "A little bit of milk",
             "1 spoonful of sugar"
         ],
-        "favorite song": "K.K. Song",
+        "favorite-song": "K.K. Song",
         "appearances": [
             "AFe+",
             "NL",
@@ -6073,7 +6073,7 @@ exports.villagerData = {
             "A little bit of milk",
             "1 spoonful of sugar"
         ],
-        "favorite song": "K.K. Song",
+        "favorite-song": "K.K. Song",
         "appearances": [
             "AFe+",
             "NL",
@@ -6104,7 +6104,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. House",
+        "favorite-song": "K.K. House",
         "appearances": [
             "NL",
             "HHD",
@@ -6135,7 +6135,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Country",
+        "favorite-song": "K.K. Country",
         "appearances": [
             "AF",
             "AF+",
@@ -6170,7 +6170,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Waltz",
+        "favorite-song": "K.K. Waltz",
         "appearances": [
             "AF",
             "AF+",
@@ -6210,7 +6210,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Mambo",
+        "favorite-song": "K.K. Mambo",
         "appearances": [
             "AF",
             "AF+",
@@ -6245,7 +6245,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Samba",
+        "favorite-song": "K.K. Samba",
         "appearances": [
             "WW",
             "CF",
@@ -6279,7 +6279,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Calypso",
+        "favorite-song": "K.K. Calypso",
         "appearances": [
             "AF",
             "AF+",
@@ -6306,7 +6306,7 @@ exports.villagerData = {
         "goal": "Unknown",
         "coffee": "Unknown",
         "style": "Unknown",
-        "favorite song": "K.K. Lullaby",
+        "favorite-song": "K.K. Lullaby",
         "appearances": [
             "PC",
             "NH"
@@ -6335,7 +6335,7 @@ exports.villagerData = {
             "Lots of milk",
             "3 spoonfuls of sugar"
         ],
-        "favorite song": "K.K. Sonata",
+        "favorite-song": "K.K. Sonata",
         "appearances": [
             "AFe+",
             "NL",
@@ -6367,7 +6367,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Ornate",
-        "favorite song": "Stale Cupcakes",
+        "favorite-song": "Stale Cupcakes",
         "appearances": [
             "NL",
             "HHD",
@@ -6397,7 +6397,7 @@ exports.villagerData = {
             "No milk",
             "No sugar"
         ],
-        "favorite song": "K.K. Aria",
+        "favorite-song": "K.K. Aria",
         "appearances": [
             "AF+",
             "AC",
@@ -6431,7 +6431,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Folk",
+        "favorite-song": "K.K. Folk",
         "appearances": [
             "AF",
             "AF+",
@@ -6468,7 +6468,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "Surfin' K.K.",
+        "favorite-song": "Surfin' K.K.",
         "appearances": [
             "NL",
             "NH"
@@ -6498,7 +6498,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Moody",
+        "favorite-song": "K.K. Moody",
         "appearances": [
             "NL",
             "NH"
@@ -6528,7 +6528,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "Comrade K.K.",
+        "favorite-song": "Comrade K.K.",
         "appearances": "NL New Horizons"
     },
     "Ketchup": {
@@ -6554,7 +6554,7 @@ exports.villagerData = {
             "a little bit of milk",
             "1 spoonful of sugar"
         ],
-        "favorite song": "Neapolitan",
+        "favorite-song": "Neapolitan",
         "appearances": [
             "AFe+",
             "NL",
@@ -6586,7 +6586,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Island",
+        "favorite-song": "K.K. Island",
         "appearances": [
             "NL",
             "HHD. NH"
@@ -6616,7 +6616,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "Go K.K. Rider!",
+        "favorite-song": "Go K.K. Rider!",
         "appearances": [
             "AF",
             "AF+",
@@ -6654,7 +6654,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "Comrade K.K.",
+        "favorite-song": "Comrade K.K.",
         "appearances": [
             "AFe+",
             "NL Pocket Camp",
@@ -6685,7 +6685,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Country",
+        "favorite-song": "K.K. Country",
         "appearances": [
             "AF",
             "AF+",
@@ -6724,7 +6724,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Chorale",
+        "favorite-song": "K.K. Chorale",
         "appearances": [
             "AF",
             "AF+",
@@ -6760,7 +6760,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Official",
-        "favorite song": "K.K. \u00c9tude",
+        "favorite-song": "K.K. \u00c9tude",
         "appearances": [
             "AF",
             "AF+",
@@ -6795,7 +6795,7 @@ exports.villagerData = {
             "1 spoonful of sugar"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Milonga",
+        "favorite-song": "K.K. Milonga",
         "appearances": [
             "AF",
             "AF+",
@@ -6831,7 +6831,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Aria",
+        "favorite-song": "K.K. Aria",
         "appearances": [
             "NL",
             "NH"
@@ -6863,7 +6863,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Country",
+        "favorite-song": "K.K. Country",
         "appearances": [
             "AF",
             "AF+",
@@ -6899,7 +6899,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Adventure",
+        "favorite-song": "K.K. Adventure",
         "appearances": [
             "NL",
             "HHD",
@@ -6931,7 +6931,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Safari",
+        "favorite-song": "K.K. Safari",
         "appearances": [
             "AFe+",
             "NL",
@@ -6959,7 +6959,7 @@ exports.villagerData = {
             "Lots of milk",
             "3 spoonfuls of sugar"
         ],
-        "favorite song": "Mr. K.K.",
+        "favorite-song": "Mr. K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -7007,7 +7007,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Folk",
+        "favorite-song": "K.K. Folk",
         "appearances": [
             "AF",
             "AF+",
@@ -7043,7 +7043,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Moody",
+        "favorite-song": "K.K. Moody",
         "appearances": [
             "NL",
             "NH"
@@ -7073,7 +7073,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Safari",
+        "favorite-song": "K.K. Safari",
         "appearances": [
             "AF",
             "AF+",
@@ -7111,7 +7111,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Stroll",
+        "favorite-song": "K.K. Stroll",
         "appearances": [
             "AFe+",
             "CF",
@@ -7143,7 +7143,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Milonga",
+        "favorite-song": "K.K. Milonga",
         "appearances": [
             "NL",
             "HHD",
@@ -7209,7 +7209,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Western",
+        "favorite-song": "K.K. Western",
         "appearances": "NL"
     },
     "Lucky": {
@@ -7236,7 +7236,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Dirge",
+        "favorite-song": "K.K. Dirge",
         "appearances": [
             "AF",
             "AF+",
@@ -7274,7 +7274,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Cute",
-        "favorite song": "Comrade K.K.",
+        "favorite-song": "Comrade K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -7312,7 +7312,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Island",
+        "favorite-song": "K.K. Island",
         "appearances": [
             "NL",
             "NH"
@@ -7342,7 +7342,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Sporty",
-        "favorite song": "My Place",
+        "favorite-song": "My Place",
         "appearances": [
             "CF",
             "NL",
@@ -7374,7 +7374,7 @@ exports.villagerData = {
             "lots of milk",
             "3 spoonfuls of sugar"
         ],
-        "favorite song": "Forest Life",
+        "favorite-song": "Forest Life",
         "appearances": [
             "AF",
             "AF+",
@@ -7410,7 +7410,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Modern",
-        "favorite song": "Cafe K.K.",
+        "favorite-song": "Cafe K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -7444,7 +7444,7 @@ exports.villagerData = {
             "The regular amount of milk",
             "2 spoonfuls of sugar"
         ],
-        "favorite song": "Forest Life",
+        "favorite-song": "Forest Life",
         "appearances": [
             "AFe+",
             "NL",
@@ -7475,7 +7475,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Bossa",
+        "favorite-song": "K.K. Bossa",
         "appearances": [
             "AF",
             "AF+",
@@ -7512,7 +7512,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "I Love You",
+        "favorite-song": "I Love You",
         "appearances": [
             "AF",
             "AF+",
@@ -7550,7 +7550,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Bossa",
+        "favorite-song": "K.K. Bossa",
         "appearances": [
             "AF",
             "AF+",
@@ -7588,7 +7588,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "Comrade K.K.",
+        "favorite-song": "Comrade K.K.",
         "appearances": [
             "CF",
             "NL"
@@ -7618,7 +7618,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Aria",
+        "favorite-song": "K.K. Aria",
         "appearances": [
             "NL",
             "NH"
@@ -7650,7 +7650,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "Soulful K.K.",
+        "favorite-song": "Soulful K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -7686,7 +7686,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "Space K.K.",
+        "favorite-song": "Space K.K.",
         "appearances": [
             "NL",
             "PC",
@@ -7717,7 +7717,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Ragtime",
+        "favorite-song": "K.K. Ragtime",
         "appearances": [
             "AF",
             "AF+",
@@ -7747,7 +7747,7 @@ exports.villagerData = {
         "goal": "Unknown",
         "coffee": "Unknown",
         "style": "Unknown",
-        "favorite song": "Unknown",
+        "favorite-song": "Unknown",
         "appearances": [
             "PC",
             "NH"
@@ -7777,7 +7777,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Ragtime",
+        "favorite-song": "K.K. Ragtime",
         "appearances": [
             "WW",
             "CF",
@@ -7809,7 +7809,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Stroll",
+        "favorite-song": "K.K. Stroll",
         "appearances": [
             "NL",
             "HHD",
@@ -7840,7 +7840,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Cute",
-        "favorite song": "DJ K.K.",
+        "favorite-song": "DJ K.K.",
         "appearances": [
             "AFe+",
             "CF",
@@ -7872,7 +7872,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Lullaby",
+        "favorite-song": "K.K. Lullaby",
         "appearances": [
             "AF",
             "AF+",
@@ -7905,7 +7905,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Soul",
+        "favorite-song": "K.K. Soul",
         "appearances": [
             "AF",
             "AF+",
@@ -7941,7 +7941,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Tango",
+        "favorite-song": "K.K. Tango",
         "appearances": [
             "NL",
             "HHD",
@@ -7974,7 +7974,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Sonata",
+        "favorite-song": "K.K. Sonata",
         "appearances": [
             "AFe+",
             "CF",
@@ -8010,7 +8010,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Rustic",
-        "favorite song": "K.K. Swing",
+        "favorite-song": "K.K. Swing",
         "appearances": [
             "AF",
             "AF+",
@@ -8049,7 +8049,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Ragtime",
+        "favorite-song": "K.K. Ragtime",
         "appearances": [
             "AF",
             "AF+",
@@ -8085,7 +8085,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Ballad",
+        "favorite-song": "K.K. Ballad",
         "appearances": [
             "NL",
             "HHD",
@@ -8116,7 +8116,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Swing",
+        "favorite-song": "K.K. Swing",
         "appearances": [
             "AF",
             "AF+",
@@ -8151,7 +8151,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "Pondering",
+        "favorite-song": "Pondering",
         "appearances": [
             "WW",
             "CF",
@@ -8183,7 +8183,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Flashy",
-        "favorite song": "Agent K.K.",
+        "favorite-song": "Agent K.K.",
         "appearances": [
             "CF",
             "NL",
@@ -8215,7 +8215,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Iconic",
-        "favorite song": "Marine Song 2001",
+        "favorite-song": "Marine Song 2001",
         "appearances": [
             "CF",
             "NL",
@@ -8246,7 +8246,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Sonata",
+        "favorite-song": "K.K. Sonata",
         "appearances": [
             "NL",
             "HHD",
@@ -8277,7 +8277,7 @@ exports.villagerData = {
             "A little bit of milk",
             "1 spoonful of sugar"
         ],
-        "favorite song": "[[K.K. D & B ACPondering NL]]",
+        "favorite-song": "[[K.K. D & B ACPondering NL]]",
         "appearances": [
             "AF",
             "AF+",
@@ -8310,7 +8310,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Basic",
-        "favorite song": "K.K. \u00c9tude",
+        "favorite-song": "K.K. \u00c9tude",
         "appearances": [
             "AF",
             "AF+",
@@ -8346,7 +8346,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Dixie",
+        "favorite-song": "K.K. Dixie",
         "appearances": [
             "WW",
             "CF",
@@ -8380,7 +8380,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Milonga",
+        "favorite-song": "K.K. Milonga",
         "appearances": [
             "NL",
             "HHD",
@@ -8411,7 +8411,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Lullaby",
+        "favorite-song": "K.K. Lullaby",
         "appearances": [
             "AF",
             "AF+",
@@ -8446,7 +8446,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Technopop",
+        "favorite-song": "K.K. Technopop",
         "appearances": [
             "AF",
             "AF+",
@@ -8479,7 +8479,7 @@ exports.villagerData = {
             "Lots of milk",
             "Three spoonfuls of sugar"
         ],
-        "favorite song": "Mountain Song",
+        "favorite-song": "Mountain Song",
         "appearances": [
             "AFe+",
             "NL",
@@ -8511,7 +8511,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. D & B",
+        "favorite-song": "K.K. D & B",
         "appearances": [
             "AF",
             "AF+",
@@ -8549,7 +8549,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Island",
+        "favorite-song": "K.K. Island",
         "appearances": [
             "AF+",
             "AC",
@@ -8584,7 +8584,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Official",
-        "favorite song": "K.K. Milonga",
+        "favorite-song": "K.K. Milonga",
         "appearances": [
             "New Leaf",
             "Happy Home Designer",
@@ -8611,7 +8611,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Basic",
-        "favorite song": "Caf\u00e9 K.K.",
+        "favorite-song": "Caf\u00e9 K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -8643,7 +8643,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Modern",
-        "favorite song": "Two Days Ago",
+        "favorite-song": "Two Days Ago",
         "appearances": [
             "AF",
             "AF+",
@@ -8679,7 +8679,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "Forest Life",
+        "favorite-song": "Forest Life",
         "appearances": [
             "AF",
             "AF+",
@@ -8717,7 +8717,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "Mr. K.K.",
+        "favorite-song": "Mr. K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -8751,7 +8751,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Fusion",
+        "favorite-song": "K.K. Fusion",
         "appearances": [
             "NL",
             "HHD",
@@ -8784,7 +8784,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Casbah",
+        "favorite-song": "K.K. Casbah",
         "appearances": [
             "AF",
             "AF+",
@@ -8821,7 +8821,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "Hypno K.K.",
+        "favorite-song": "Hypno K.K.",
         "appearances": [
             "NL",
             "NH"
@@ -8888,7 +8888,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Tango",
+        "favorite-song": "K.K. Tango",
         "appearances": [
             "NL",
             "NH"
@@ -8918,7 +8918,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Steppe",
+        "favorite-song": "K.K. Steppe",
         "appearances": [
             "AF",
             "AF+",
@@ -8954,7 +8954,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Calypso",
+        "favorite-song": "K.K. Calypso",
         "appearances": [
             "AF",
             "AF+",
@@ -8992,7 +8992,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Dixie",
+        "favorite-song": "K.K. Dixie",
         "appearances": [
             "AFe+",
             "NL"
@@ -9022,7 +9022,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Song",
+        "favorite-song": "K.K. Song",
         "appearances": [
             "AF",
             "AF+",
@@ -9057,7 +9057,7 @@ exports.villagerData = {
             "Two sugars"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Salsa",
+        "favorite-song": "K.K. Salsa",
         "appearances": [
             "AF",
             "AF+",
@@ -9095,7 +9095,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Official",
-        "favorite song": "Caf\u00e9 K.K.",
+        "favorite-song": "Caf\u00e9 K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -9131,7 +9131,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "Forest Life",
+        "favorite-song": "Forest Life",
         "appearances": [
             "NL",
             "HHD",
@@ -9161,7 +9161,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Rally",
+        "favorite-song": "K.K. Rally",
         "appearances": [
             "AF",
             "AF+",
@@ -9199,7 +9199,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Bossa",
+        "favorite-song": "K.K. Bossa",
         "appearances": [
             "AFe+",
             "CF",
@@ -9232,7 +9232,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "Imperial K.K.",
+        "favorite-song": "Imperial K.K.",
         "appearances": [
             "CF",
             "NL",
@@ -9265,7 +9265,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Cute",
-        "favorite song": "Bubblegum K.K.",
+        "favorite-song": "Bubblegum K.K.",
         "appearances": [
             "NL",
             "HHD",
@@ -9297,7 +9297,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "Steep Hill",
+        "favorite-song": "Steep Hill",
         "appearances": [
             "NL",
             "HHD",
@@ -9328,7 +9328,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Flamenco",
+        "favorite-song": "K.K. Flamenco",
         "appearances": [
             "NL",
             "HHD",
@@ -9360,7 +9360,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. \u00c9tude",
+        "favorite-song": "K.K. \u00c9tude",
         "appearances": [
             "AF",
             "AF+",
@@ -9399,7 +9399,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Parade",
+        "favorite-song": "K.K. Parade",
         "appearances": [
             "NL",
             "HHD",
@@ -9431,7 +9431,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Cute",
-        "favorite song": "Imperial K.K.",
+        "favorite-song": "Imperial K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -9468,7 +9468,7 @@ exports.villagerData = {
             "Lots of milk",
             "3 spoonfuls of sugar"
         ],
-        "favorite song": "K.K. Synth",
+        "favorite-song": "K.K. Synth",
         "appearances": [
             "AF",
             "AF+",
@@ -9505,7 +9505,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Mambo",
+        "favorite-song": "K.K. Mambo",
         "appearances": [
             "AF",
             "AF+",
@@ -9540,7 +9540,7 @@ exports.villagerData = {
             "A little bit of milk",
             "1 spoonful of sugar"
         ],
-        "favorite song": "K.K. Island",
+        "favorite-song": "K.K. Island",
         "appearances": [
             "AF+",
             "AC",
@@ -9576,7 +9576,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Jazz",
+        "favorite-song": "K.K. Jazz",
         "appearances": [
             "AF",
             "AF+",
@@ -9612,7 +9612,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Condor",
+        "favorite-song": "K.K. Condor",
         "appearances": [
             "AF",
             "AF+",
@@ -9648,7 +9648,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Lullaby",
+        "favorite-song": "K.K. Lullaby",
         "appearances": [
             "CF",
             "NL",
@@ -9683,7 +9683,7 @@ exports.villagerData = {
             "Two spoonfuls sugar"
         ],
         "style": "Modern",
-        "favorite song": "Caf\u00e9 K.K.",
+        "favorite-song": "Caf\u00e9 K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -9719,7 +9719,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Historical",
-        "favorite song": "To the Edge",
+        "favorite-song": "To the Edge",
         "appearances": [
             "AF",
             "AF+",
@@ -9756,7 +9756,7 @@ exports.villagerData = {
             "One sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Casbah",
+        "favorite-song": "K.K. Casbah",
         "appearances": [
             "AF",
             "AF+",
@@ -9796,7 +9796,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Ballad",
+        "favorite-song": "K.K. Ballad",
         "appearances": [
             "AF",
             "AF+",
@@ -9833,7 +9833,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Historical",
-        "favorite song": "Rockin' K.K.",
+        "favorite-song": "Rockin' K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -9871,7 +9871,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Love Song",
+        "favorite-song": "K.K. Love Song",
         "appearances": [
             "AF",
             "AF+",
@@ -9911,7 +9911,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Swing",
+        "favorite-song": "K.K. Swing",
         "appearances": [
             "AF",
             "AF+",
@@ -9948,7 +9948,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Gumbo",
+        "favorite-song": "K.K. Gumbo",
         "appearances": [
             "AF",
             "AF+",
@@ -9984,7 +9984,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Groove",
+        "favorite-song": "K.K. Groove",
         "appearances": "NL"
     },
     "Raddle": {
@@ -10007,7 +10007,7 @@ exports.villagerData = {
             "Lots of milk",
             "3 spoonfuls of sugar"
         ],
-        "favorite song": "Mr. K.K.",
+        "favorite-song": "Mr. K.K.",
         "appearances": [
             "AFe+",
             "NL",
@@ -10039,7 +10039,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Faire",
+        "favorite-song": "K.K. Faire",
         "appearances": [
             "AF",
             "AF+",
@@ -10070,7 +10070,7 @@ exports.villagerData = {
         "goal": "Fashion Designer",
         "coffee": "Unknown",
         "style": "Civic",
-        "favorite song": "K.K. Cruisin'",
+        "favorite-song": "K.K. Cruisin'",
         "appearances": [
             "PC",
             "NH"
@@ -10100,7 +10100,7 @@ exports.villagerData = {
             "2 spoonfuls of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "Surfin' K.K.",
+        "favorite-song": "Surfin' K.K.",
         "appearances": [
             "NL",
             "HHD",
@@ -10126,7 +10126,7 @@ exports.villagerData = {
         "goal": "Unknown",
         "coffee": "Unknown",
         "style": "Unknown",
-        "favorite song": "K.K. Synth",
+        "favorite-song": "K.K. Synth",
         "appearances": [
             "PC",
             "NH"
@@ -10154,7 +10154,7 @@ exports.villagerData = {
             "1 spoonful of sugar"
         ],
         "style": "Basic",
-        "favorite song": "Wandering",
+        "favorite-song": "Wandering",
         "appearances": [
             "AF",
             "AF+",
@@ -10190,7 +10190,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Ballad",
+        "favorite-song": "K.K. Ballad",
         "appearances": [
             "WW",
             "CF",
@@ -10224,7 +10224,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "Go K.K. Rider!",
+        "favorite-song": "Go K.K. Rider!",
         "appearances": [
             "AF",
             "AF+",
@@ -10262,7 +10262,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Western",
+        "favorite-song": "K.K. Western",
         "appearances": [
             "AF",
             "AF+",
@@ -10297,7 +10297,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Lament",
+        "favorite-song": "K.K. Lament",
         "appearances": [
             "AF",
             "AF+",
@@ -10333,7 +10333,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Parade",
+        "favorite-song": "K.K. Parade",
         "appearances": [
             "AF",
             "AF+",
@@ -10371,7 +10371,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Bossa",
+        "favorite-song": "K.K. Bossa",
         "appearances": [
             "AF",
             "AF+",
@@ -10409,7 +10409,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Lament",
+        "favorite-song": "K.K. Lament",
         "appearances": [
             "AF",
             "AF+",
@@ -10447,7 +10447,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Adventure",
+        "favorite-song": "K.K. Adventure",
         "appearances": [
             "NL",
             "NH"
@@ -10477,7 +10477,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. March",
+        "favorite-song": "K.K. March",
         "appearances": [
             "AF",
             "AF+",
@@ -10513,7 +10513,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Historical",
-        "favorite song": "Stale Cupcakes",
+        "favorite-song": "Stale Cupcakes",
         "appearances": [
             "WW",
             "CF",
@@ -10547,7 +10547,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Rockabilly",
+        "favorite-song": "K.K. Rockabilly",
         "appearances": [
             "NL",
             "NH"
@@ -10577,7 +10577,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "Spring Blossoms",
+        "favorite-song": "Spring Blossoms",
         "appearances": [
             "AF",
             "AF+",
@@ -10613,7 +10613,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Adventure",
+        "favorite-song": "K.K. Adventure",
         "appearances": [
             "NL",
             "NH"
@@ -10642,7 +10642,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Faire",
+        "favorite-song": "K.K. Faire",
         "appearances": [
             "NL",
             "NH"
@@ -10672,7 +10672,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Dirge",
+        "favorite-song": "K.K. Dirge",
         "appearances": [
             "AF",
             "AF+",
@@ -10710,7 +10710,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Cute",
-        "favorite song": "Bubblegum K.K.",
+        "favorite-song": "Bubblegum K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -10756,7 +10756,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Love Song",
+        "favorite-song": "K.K. Love Song",
         "appearances": [
             "AF",
             "AF+",
@@ -10793,7 +10793,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Ska",
+        "favorite-song": "K.K. Ska",
         "appearances": [
             "WW",
             "CF",
@@ -10826,7 +10826,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "The K. Funk",
+        "favorite-song": "The K. Funk",
         "appearances": [
             "NL",
             "NH"
@@ -10858,7 +10858,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. Fusion",
+        "favorite-song": "K.K. Fusion",
         "appearances": [
             "AF",
             "AF+",
@@ -10894,7 +10894,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Modern",
-        "favorite song": "Go K.K. Rider!",
+        "favorite-song": "Go K.K. Rider!",
         "appearances": [
             "AF",
             "AF+",
@@ -10929,7 +10929,7 @@ exports.villagerData = {
             "No milk",
             "No sugar"
         ],
-        "favorite song": "K.K. Soul",
+        "favorite-song": "K.K. Soul",
         "appearances": [
             "AF",
             "AF+",
@@ -10964,7 +10964,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Modern",
-        "favorite song": "Forest Life",
+        "favorite-song": "Forest Life",
         "appearances": [
             "AF",
             "AF+",
@@ -11002,7 +11002,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "Marine Song 2001",
+        "favorite-song": "Marine Song 2001",
         "appearances": [
             "AF",
             "AF+",
@@ -11036,7 +11036,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Oasis",
+        "favorite-song": "K.K. Oasis",
         "appearances": [
             "NL",
             "PC",
@@ -11067,7 +11067,7 @@ exports.villagerData = {
             "one spoonful of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Folk",
+        "favorite-song": "K.K. Folk",
         "appearances": [
             "NL",
             "NH"
@@ -11096,7 +11096,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Reggae",
+        "favorite-song": "K.K. Reggae",
         "appearances": [
             "NL",
             "NH"
@@ -11119,7 +11119,7 @@ exports.villagerData = {
         "goal": "Unknown",
         "coffee": "Unknown",
         "style": "Unknown",
-        "favorite song": "Hypno K.K.",
+        "favorite-song": "Hypno K.K.",
         "appearances": [
             "PC",
             "NH"
@@ -11149,7 +11149,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Sporty",
-        "favorite song": "Forest Life",
+        "favorite-song": "Forest Life",
         "appearances": [
             "WW",
             "CF",
@@ -11181,7 +11181,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Cute",
-        "favorite song": "Forest Life",
+        "favorite-song": "Forest Life",
         "appearances": [
             "NL",
             "HHD",
@@ -11213,7 +11213,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Safari",
+        "favorite-song": "K.K. Safari",
         "appearances": [
             "NL",
             "NH"
@@ -11243,7 +11243,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Lullaby",
+        "favorite-song": "K.K. Lullaby",
         "appearances": [
             "AF",
             "AF+",
@@ -11279,7 +11279,7 @@ exports.villagerData = {
             "1 spoonful of sugar"
         ],
         "style": "Historical",
-        "favorite song": "Imperial K.K.",
+        "favorite-song": "Imperial K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -11313,7 +11313,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Oasis",
+        "favorite-song": "K.K. Oasis",
         "appearances": [
             "NL",
             "NH"
@@ -11343,7 +11343,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Historical",
-        "favorite song": "Steep Hill",
+        "favorite-song": "Steep Hill",
         "appearances": [
             "NL",
             "NH"
@@ -11405,7 +11405,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Mambo",
+        "favorite-song": "K.K. Mambo",
         "appearances": [
             "AF",
             "AF+",
@@ -11441,7 +11441,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "K.K. Mambo",
+        "favorite-song": "K.K. Mambo",
         "appearances": [
             "AF",
             "AF+",
@@ -11477,7 +11477,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Cute",
-        "favorite song": "Cafe K.K.",
+        "favorite-song": "Cafe K.K.",
         "appearances": [
             "NL",
             "HHD",
@@ -11507,7 +11507,7 @@ exports.villagerData = {
             "The regular amount of milk",
             "2 spoonfuls of sugar"
         ],
-        "favorite song": "K.K. Metal",
+        "favorite-song": "K.K. Metal",
         "appearances": [
             "AF",
             "AF+",
@@ -11541,7 +11541,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Rock 'n' Roll",
-        "favorite song": "Surfin' K.K.",
+        "favorite-song": "Surfin' K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -11577,7 +11577,7 @@ exports.villagerData = {
             "Lots of milk",
             "3 spoonfuls of sugar"
         ],
-        "favorite song": "Only Me",
+        "favorite-song": "Only Me",
         "appearances": [
             "AF",
             "AF+",
@@ -11611,7 +11611,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Historical",
-        "favorite song": "Lucky K.K.",
+        "favorite-song": "Lucky K.K.",
         "appearances": [
             "CF",
             "NL",
@@ -11642,7 +11642,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "Go K.K. Rider!",
+        "favorite-song": "Go K.K. Rider!",
         "appearances": [
             "AF",
             "AF+",
@@ -11677,7 +11677,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Lullaby",
+        "favorite-song": "K.K. Lullaby",
         "appearances": [
             "WW",
             "CF",
@@ -11708,7 +11708,7 @@ exports.villagerData = {
             "a little bit of milk",
             "1 spoonful of sugar"
         ],
-        "favorite song": "K.K. Rockabilly",
+        "favorite-song": "K.K. Rockabilly",
         "appearances": [
             "AF",
             "AF+",
@@ -11742,7 +11742,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Country",
+        "favorite-song": "K.K. Country",
         "appearances": [
             "AF",
             "AF+",
@@ -11776,7 +11776,7 @@ exports.villagerData = {
             "Lots of milk",
             "3 spoonfuls of sugar"
         ],
-        "favorite song": "Spring Blossoms",
+        "favorite-song": "Spring Blossoms",
         "appearances": [
             "AFe+",
             "NL",
@@ -11810,7 +11810,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Ornate",
-        "favorite song": "Rockin' K.K.",
+        "favorite-song": "Rockin' K.K.",
         "appearances": [
             "AFe+",
             "NL",
@@ -11845,7 +11845,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "To the Edge",
+        "favorite-song": "To the Edge",
         "appearances": [
             "AF",
             "AF+",
@@ -11878,7 +11878,7 @@ exports.villagerData = {
             "A little bit of milk",
             "1 spoonful of sugar"
         ],
-        "favorite song": "Wandering",
+        "favorite-song": "Wandering",
         "appearances": [
             "AF",
             "AF+",
@@ -11910,7 +11910,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "Imperial K.K.",
+        "favorite-song": "Imperial K.K.",
         "appearances": [
             "WW",
             "CF",
@@ -11943,7 +11943,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Disco",
+        "favorite-song": "K.K. Disco",
         "appearances": [
             "NL",
             "HHD",
@@ -11974,7 +11974,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Island",
+        "favorite-song": "K.K. Island",
         "appearances": [
             "AF",
             "AF+",
@@ -12011,7 +12011,7 @@ exports.villagerData = {
             "No Sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Lament",
+        "favorite-song": "K.K. Lament",
         "appearances": [
             "AF",
             "AF+",
@@ -12053,7 +12053,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Steppe",
+        "favorite-song": "K.K. Steppe",
         "appearances": [
             "AF",
             "AF+",
@@ -12086,7 +12086,7 @@ exports.villagerData = {
             "The regular amount of milk",
             "2 spoonfuls of sugar"
         ],
-        "favorite song": "K.K. Disco",
+        "favorite-song": "K.K. Disco",
         "appearances": [
             "AFe+",
             "NL",
@@ -12118,7 +12118,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Basic",
-        "favorite song": "Mr. K.K.",
+        "favorite-song": "Mr. K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -12156,7 +12156,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Metal",
+        "favorite-song": "K.K. Metal",
         "appearances": [
             "NL",
             "HHD",
@@ -12188,7 +12188,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Marathon",
+        "favorite-song": "K.K. Marathon",
         "appearances": [
             "NL",
             "HHD",
@@ -12219,7 +12219,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Rock",
+        "favorite-song": "K.K. Rock",
         "appearances": [
             "AF",
             "AF+",
@@ -12256,7 +12256,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "K.K. Cruisin'",
+        "favorite-song": "K.K. Cruisin'",
         "appearances": [
             "NL",
             "NH"
@@ -12286,7 +12286,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Flashy",
-        "favorite song": "Soulful K.K.",
+        "favorite-song": "Soulful K.K.",
         "appearances": [
             "WW",
             "CF",
@@ -12317,7 +12317,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Rock 'n' roll",
-        "favorite song": "K.K. Rally",
+        "favorite-song": "K.K. Rally",
         "appearances": [
             "AF",
             "AF+",
@@ -12354,7 +12354,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Cute",
-        "favorite song": "Two Days Ago",
+        "favorite-song": "Two Days Ago",
         "appearances": [
             "AF",
             "AF+",
@@ -12392,7 +12392,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Safari",
+        "favorite-song": "K.K. Safari",
         "appearances": [
             "NL",
             "HHD",
@@ -12423,7 +12423,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Cute",
-        "favorite song": "K.K. Steppe",
+        "favorite-song": "K.K. Steppe",
         "appearances": [
             "AF",
             "AF+",
@@ -12459,7 +12459,7 @@ exports.villagerData = {
             "None at all"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Calypso",
+        "favorite-song": "K.K. Calypso",
         "appearances": [
             "AF",
             "AF+",
@@ -12496,7 +12496,7 @@ exports.villagerData = {
             "No milk",
             "No sugar"
         ],
-        "favorite song": "K.K. Salsa",
+        "favorite-song": "K.K. Salsa",
         "appearances": [
             "AF",
             "AF+",
@@ -12527,7 +12527,7 @@ exports.villagerData = {
             "No milk",
             "No sugar"
         ],
-        "favorite song": "K.K. Country",
+        "favorite-song": "K.K. Country",
         "appearances": [
             "AF",
             "AF+",
@@ -12561,7 +12561,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Official",
-        "favorite song": "K.K. \u00c9tude",
+        "favorite-song": "K.K. \u00c9tude",
         "appearances": [
             "AF",
             "AF+",
@@ -12594,7 +12594,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Steppe",
+        "favorite-song": "K.K. Steppe",
         "appearances": [
             "AF",
             "AF+",
@@ -12632,7 +12632,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Historical",
-        "favorite song": "Lucky K.K.",
+        "favorite-song": "Lucky K.K.",
         "appearances": [
             "NL",
             "HHD",
@@ -12665,7 +12665,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Sporty",
-        "favorite song": "K.K. Country",
+        "favorite-song": "K.K. Country",
         "appearances": [
             "AF",
             "AF+",
@@ -12706,7 +12706,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Historical",
-        "favorite song": "K.K. Faire",
+        "favorite-song": "K.K. Faire",
         "appearances": [
             "AFe+",
             "CF",
@@ -12736,7 +12736,7 @@ exports.villagerData = {
             "3 spoonfuls of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "K.K. Cruisin'",
+        "favorite-song": "K.K. Cruisin'",
         "appearances": [
             "AFe+",
             "NL",
@@ -12768,7 +12768,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "Agent K.K.",
+        "favorite-song": "Agent K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -12800,7 +12800,7 @@ exports.villagerData = {
             "No milk",
             "No sugar"
         ],
-        "favorite song": "K.K. Jongara",
+        "favorite-song": "K.K. Jongara",
         "appearances": [
             "AFe+",
             "NL",
@@ -12831,7 +12831,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Historical",
-        "favorite song": "Two Days Ago",
+        "favorite-song": "Two Days Ago",
         "appearances": [
             "AF",
             "AF+",
@@ -12865,7 +12865,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Iconic",
-        "favorite song": "Agent K.K.",
+        "favorite-song": "Agent K.K.",
         "appearances": [
             "NL",
             "NH"
@@ -12896,7 +12896,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Historical",
-        "favorite song": "To the Edge",
+        "favorite-song": "To the Edge",
         "appearances": [
             "AF",
             "AF+",
@@ -12930,7 +12930,7 @@ exports.villagerData = {
             "Lots of milk",
             "3 spoonfuls of sugar"
         ],
-        "favorite song": "K.K. Fusion",
+        "favorite-song": "K.K. Fusion",
         "appearances": [
             "AF",
             "AF+",
@@ -12963,7 +12963,7 @@ exports.villagerData = {
             "Two spoonfuls of sugar"
         ],
         "style": "Flashy",
-        "favorite song": "K.K. Bossa",
+        "favorite-song": "K.K. Bossa",
         "appearances": [
             "CF",
             "NL",
@@ -12996,7 +12996,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Modern",
-        "favorite song": "My Place",
+        "favorite-song": "My Place",
         "appearances": [
             "AF",
             "AF+",
@@ -13031,7 +13031,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Ornate",
-        "favorite song": "Lucky K.K.",
+        "favorite-song": "Lucky K.K.",
         "appearances": [
             "WW",
             "CF",
@@ -13066,7 +13066,7 @@ exports.villagerData = {
             "No sugar"
         ],
         "style": "Cute",
-        "favorite song": "K.K. \u00c9tude",
+        "favorite-song": "K.K. \u00c9tude",
         "appearances": [
             "AFe+",
             "CF",
@@ -13098,7 +13098,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. Song",
+        "favorite-song": "K.K. Song",
         "appearances": [
             "AF",
             "AF+",
@@ -13136,7 +13136,7 @@ exports.villagerData = {
             "Three spoonfuls of sugar"
         ],
         "style": "Modern",
-        "favorite song": "Soulful K.K.",
+        "favorite-song": "Soulful K.K.",
         "appearances": [
             "AF",
             "AF+",
@@ -13172,7 +13172,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Modern",
-        "favorite song": "K.K. D&B",
+        "favorite-song": "K.K. D&B",
         "appearances": [
             "NL",
             "HHD",
@@ -13204,7 +13204,7 @@ exports.villagerData = {
             "One spoonful of sugar"
         ],
         "style": "Official",
-        "favorite song": "Spring Blossoms",
+        "favorite-song": "Spring Blossoms",
         "appearances": [
             "NL",
             "HHD",

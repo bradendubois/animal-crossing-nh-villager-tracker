@@ -5,17 +5,18 @@ const favorites = require("../assets/favorites")
 const coffee = require("../assets/coffee-preference")
 const song = require("../assets/favorite-song");
 const personality = require("../assets/personality")
+const tableGenerate = require("../assets/table-generation")
 
 document.getElementById("personality").addEventListener("click", () => {
-  personality.loadPersonalityTable();
+  tableGenerate.generateTable("personality");
 })
 
 document.getElementById("favorite-song").addEventListener("click", () => {
-  song.loadFavoriteSongTable();
+  tableGenerate.generateTable("favorite-song");
 });
 
 document.getElementById("species").addEventListener("click", () => {
-  species.loadSpeciesTable();
+  tableGenerate.generateTable("species");
 });
 
 document.getElementById("favorites").addEventListener("click", () => {
