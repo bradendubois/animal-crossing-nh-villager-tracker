@@ -1,7 +1,5 @@
-const nav = require("./nav")
 const {shell} = require("electron");
 
-const villagerData = require("./villager-data").access();
 const storageAccess = require("./storage");
 const storage = storageAccess.access();
 
@@ -10,41 +8,31 @@ document.getElementById("open-save-data").addEventListener('click', () => {
     shell.showItemInFolder(storage.path)
 })
 
+// Show save data path
 document.getElementById("save-data-location").innerText = storage.path;
-
-
 
 const favorited = document.getElementById("number-favorited");
 
 function updateAboutSection() {
-    favorited.innerHTML = countFavorites();        
-}
 
-function countFavorites() {
+    // Count how many villagers are favorited
     let total = 0;
     let favorites = storage.get("favorite");
     for (let villager in favorites) {
         if (favorites[villager])
             total++;
-    } return total;
-}
-
-function resetFavorites() {
-    for (let villager in storage.get("favorite")) {
-        storage.set("favorite."+villager, false);
     }
 
-    updateAboutSection();
-    
+    // Update the text showing the count of favorites
+    favorited.innerHTML = total;        
 }
 
-updateAboutSection()
-
 document.getElementById("reset-favorites").addEventListener("click", () => {
-    resetFavorites();
-    nav.updateFavorites();
+    storage.set("favorite", {});
 })
 
+// Initialize the page on load
+updateAboutSection();
 
 module.exports = {
     

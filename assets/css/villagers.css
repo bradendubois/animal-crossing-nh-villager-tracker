@@ -1,3 +1,7 @@
+#villager-section hr {
+  margin-bottom: 0;
+}
+
 #villager-section #villager-header {
   display: -webkit-box;
   display: -ms-flexbox;

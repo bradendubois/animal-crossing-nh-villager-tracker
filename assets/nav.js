@@ -16,79 +16,70 @@ Array.prototype.forEach.call(uniformTables, (table) => {
   })
 });
 
-
 document.getElementById("favorites").addEventListener("click", () => {
   favorites.loadFavoritesTable();
 });
-
 
 document.getElementById("coffee-preference").addEventListener("click", () => {
   coffee.loadCoffeePreferencesTable();
 });
 
-
+// Detect any clicks
 document.body.addEventListener('click', (event) => {
   
-  if (event.target.id)
-    console.log("Event fired from", event.target.id)
-
+  // Process for buttons
   if (event.target.tagName == "BUTTON") {
 
-    if (event.target.id === "toggle-favorite")
-      return;
-    else if (event.target.id === "reset-favorites")
-      return;
-    else if (event.target.id.includes("villager")) {
-      console.log("Clicked a villager")
-    } 
-
-    console.log(event.target.classList)
+    // Change section on nav-button click
     if (event.target.classList.contains("nav-button")) {
-      console.log("NAV")
-      sectionChange(event)
+      sectionChange(event);
     }
-    
-  } 
-})
+  }
+});
 
-
+// Switch the displayed section
 function sectionChange(event) {
 
-  // Deselect everything
-  hideAllSectionsAndDeselectButtons()
+  // Display the current section
+  let sectionID = `${event.target.id}-section`
 
-    // Highlight clicked button and show view
-    updateButtonColor(event.target)
+  // Villagers all have the same ID
+  if (event.target.id.includes("villager")) {
+    sectionID = "villager-section";
+  }
 
-    // Display the current section
-    let sectionId = `${event.target.id}-section`
+  console.log("Showing", sectionID);
 
-    if (event.target.id.includes("villager")) {
-      console.log("VillagerClick")
-      sectionId = "villager-section";
-    }
-
-    console.log(sectionId)
-    document.getElementById(sectionId).classList.add('shown')
+  // Save the currently opened window
+  storage.set("selectedContent", {
+    "button": event.target.id,
+    "section": sectionID
+  });
 }
 
-function navButtonTrigger (event) {
+function updateShownContent() {
+  // Remove "shown" from everything
+  let elements = document.querySelectorAll(".shown");
+  Array.prototype.forEach.call(elements, (element) => {
+    element.classList.remove("shown");
+  })
 
-  // Save currently active button in localStorage
-  //const buttonId = event.target.getAttribute('id')
-  //settings.set('activeSectionButtonId', buttonId)
+  // New "shown" IDs
+  let buttonID = storage.get("selectedContent").button;
+  let sectionID = storage.get("selectedContent").section;
+
+  // Add "shown" class
+  document.getElementById(buttonID).classList.add("shown");
+  document.getElementById(sectionID).classList.add("shown");
 }
 
-function showVillager(event) {
-  console.log("I would show a villager here")
-}
+// Update the "Shown" classes any time a new section is clicked
+storage.onDidChange("selectedContent", () => {
+  updateShownContent();
+});
 
-function updateButtonColor(button) {
-  button.classList.add("shown")
-}
-
+// Show the gold bar on any "favorite" villager
 function updateFavorites() {
-
 
     const buttons = document.getElementsByClassName("nav-button");
     for (let button of buttons) {
@@ -106,24 +97,28 @@ function updateFavorites() {
     }
 }
 
-updateFavorites()
+// Update the "favorites" highlighted on any change
+storage.onDidChange("favorite", () => {
+  updateFavorites();
+})
 
-module.exports = {
+function initialize() {
+  // Highlight appropriate "favorites"
+  updateFavorites()
 
-    updateFavorites: () => updateFavorites()
+  // Assume a default shown section
+  if (storage.get("selectedContent") === undefined) {
+    storage.set("selectedContent", {
+      "button": "about",
+      "section": "about-section"
+    });
+  }
+
+  // Apply the "shown" class where appropriate
+  updateShownContent();
+
+  // On load, kickstart the shown page to load by simulating a click!
+  document.getElementById(storage.get("selectedContent").button).click();
 }
 
-function hideAllSectionsAndDeselectButtons () {
-  const sections = document.querySelectorAll('.shown')
-  Array.prototype.forEach.call(sections, (section) => {
-    section.classList.remove('shown')
-  })
-
-  const buttons = document.querySelectorAll('.nav-button')
-  Array.prototype.forEach.call(buttons, (button) => {
-    button.classList.remove('selected')
-  })
-}
-
-document.getElementById("about-section").classList.add("shown");
-document.getElementById("about").classList.add("shown");
+initialize();

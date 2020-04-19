@@ -1,6 +1,4 @@
-const nav = require("./nav")
 const villagerData = require("./villager-data").access();
-const about = require("./about");
 
 const storage = require("./storage").access();
 
@@ -23,9 +21,6 @@ for (let villager in villagerData) {
     // Insert into the nav section
     villagerNavSection.appendChild(button);
 }
-
-// Update the nav to show favorited villagers
-nav.updateFavorites()
 
 // Populates the villager information page
 function populateVillagerInformation(villager) {
@@ -56,8 +51,6 @@ function populateVillagerInformation(villager) {
             sections.favoriteButton.classList.add("is_favorite");
         }
 
-        nav.updateFavorites();
-        about.updateAboutSection();
         console.log(villager, "is a favorite:", storage.get("favorite." + villager));   
     };
 
