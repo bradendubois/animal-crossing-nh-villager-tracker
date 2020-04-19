@@ -1,13 +1,7 @@
 const Store = require("electron-store");
 const store = new Store();
 
-
-const villagerData = require("./villager-data/villager-data").villagerData;
-
-// Ensure it was imported correctly
-if (villagerData === undefined) {
-    console.log("Failed to load villager data.");
-}
+const villagerData = require("./villager-data").access();
 
 module.exports = { 
     

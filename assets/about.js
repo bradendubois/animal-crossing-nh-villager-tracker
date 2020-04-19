@@ -1,31 +1,18 @@
-
-const villagerData = require("./villager-data/villager-data").villagerData;
 const nav = require("./nav")
 const {shell} = require("electron");
 
-const Store = require("electron-store")
-const store = new Store();
+const villagerData = require("./villager-data").access();
+const storageAccess = require("./storage");
+const storage = storageAccess.access();
 
-// Initialize saved data
-if (store.get("favorite") === undefined) {
-    store.set("favorite", {});
-}
-
-// Initialize saved data
-if (store.get("favorite") === undefined) {
-    store.set("favorite", {});
-}
-if (store.get("shownButtonColor") === undefined) {
-    store.set("shownButtonColor", "#309ec0");
-    store.set("shownButtonColor", "green");
-    
-}
-
+// Feature to open save data in a file browser
 document.getElementById("open-save-data").addEventListener('click', () => {
-    shell.showItemInFolder(store.path)
+    shell.showItemInFolder(storage.path)
 })
 
-document.getElementById("save-data-location").innerText = store.path;
+document.getElementById("save-data-location").innerText = storage.path;
+
+
 
 const favorited = document.getElementById("number-favorited");
 
@@ -35,7 +22,7 @@ function updateAboutSection() {
 
 function countFavorites() {
     let total = 0;
-    let favorites = store.get("favorite");
+    let favorites = storage.get("favorite");
     for (let villager in favorites) {
         if (favorites[villager])
             total++;
@@ -43,7 +30,10 @@ function countFavorites() {
 }
 
 function resetFavorites() {
-    store.set("favorite", {});
+    for (let villager in storage.get("favorite")) {
+        storage.set("favorite."+villager, false);
+    }
+
     updateAboutSection();
     
 }
@@ -60,7 +50,7 @@ module.exports = {
     
     updateAboutSection: () => updateAboutSection(),
     clear: () => {
-        store.clear();
+        storage.clear();
     }
 }
 

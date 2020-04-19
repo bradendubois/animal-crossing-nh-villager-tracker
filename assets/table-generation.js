@@ -1,4 +1,4 @@
-const villagerData = require("./villager-data/villager-data").villagerData;
+const villagerData = require("./villager-data").access();
 
 module.exports = { 
     

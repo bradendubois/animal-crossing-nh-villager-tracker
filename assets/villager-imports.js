@@ -1,10 +1,8 @@
-const Store = require("electron-store");
 const nav = require("./nav")
-const villagerData = require("./villager-data/villager-data").villagerData;
+const villagerData = require("./villager-data").access();
 const about = require("./about");
 
-// Access settings
-const store = new Store();
+const storage = require("./storage").access();
 
 // The nav section that will list a button for each villager
 const villagerNavSection = document.getElementById("villagers")
@@ -50,9 +48,9 @@ function populateVillagerInformation(villager) {
 
         sections.favoriteButton.classList.remove("is_favorite");
 
-        let current = store.get("favorite." + villager, false);
+        let current = storage.get("favorite." + villager, false);
         let newStatus = !current;
-        store.set("favorite." + villager, newStatus);
+        storage.set("favorite." + villager, newStatus);
 
         if (newStatus) {
             sections.favoriteButton.classList.add("is_favorite");
@@ -60,10 +58,10 @@ function populateVillagerInformation(villager) {
 
         nav.updateFavorites();
         about.updateAboutSection();
-        console.log(villager, "is a favorite:", store.get("favorite." + villager));   
+        console.log(villager, "is a favorite:", storage.get("favorite." + villager));   
     };
 
-    if (store.get("favorite." + villager, false)) {
+    if (storage.get("favorite." + villager, false)) {
         sections.favoriteButton.classList.add("is_favorite");
     }
 

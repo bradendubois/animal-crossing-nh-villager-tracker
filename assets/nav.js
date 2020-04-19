@@ -1,8 +1,7 @@
 const favorites = require("../assets/favorites")
 const coffee = require("../assets/coffee-preference")
 const generator = require("../assets/table-generation")
-const Store = require("electron-store")
-const store = new Store();
+const storage = require("../assets/storage").access();
 
 // These tables all follow the same layout
 //  They can be generated uniformly with the table generator
@@ -100,7 +99,7 @@ function updateFavorites() {
 
         let villagerName = button.id.substr("villager-".length);
 
-        if (store.get("favorite."+ villagerName)) {
+        if (storage.get("favorite."+ villagerName)) {
           button.classList.add("is_favorite");
         }
       }
