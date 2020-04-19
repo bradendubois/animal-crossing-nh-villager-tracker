@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "electron": "^5.0.1",
+    "electron-builder": "^22.5.1",
     "electron-log": "^2.2.14",
     "electron-settings": "^3.0.7",
     "electron-shortcut-normalizer": "^1.0.0",
