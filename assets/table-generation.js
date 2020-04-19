@@ -7,9 +7,11 @@ module.exports = {
         // Div that will contain the table
         let attributeGroup = document.getElementById(attribute + "-groups");
         if (attributeGroup.children.length > 0) {
+            console.log(attribute, "table already loaded.")
             return;
         }
 
+        console.log("Generating table for", attribute)
         // TODO - Toggle a "favorites-only" filter option
         let villagers = villagerData;
 
@@ -35,7 +37,7 @@ module.exports = {
         // Make a list/section for each attribute
         for (let attr of Object.keys(categorized)) {
 
-            console.log(attr)
+            // console.log(attr)
 
             // New group
             let group = document.createElement("div");

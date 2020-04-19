@@ -40,6 +40,11 @@ document.body.addEventListener('click', (event) => {
 // Switch the displayed section
 function sectionChange(event) {
 
+  // Clicked on the already-shown section
+  if (storage.get("selectedContent").button == event.target.id) {
+    return;
+  }
+
   // Display the current section
   let sectionID = `${event.target.id}-section`
 

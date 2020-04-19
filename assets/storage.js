@@ -15,5 +15,5 @@ initializeSaveData();
 
 module.exports = {
     access: () => { return storage; },
-    initializeSaveData: () => { initializeSaveData(); }
+    initializeSaveData: () => { initializeSaveData() }
 }

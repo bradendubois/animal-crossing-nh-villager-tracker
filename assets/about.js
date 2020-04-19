@@ -31,6 +31,11 @@ document.getElementById("reset-favorites").addEventListener("click", () => {
     storage.set("favorite", {});
 })
 
+// Update text whenever any data changes
+storage.onDidAnyChange(() => {
+    updateAboutSection();
+})
+
 // Initialize the page on load
 updateAboutSection();
 

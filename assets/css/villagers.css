@@ -64,6 +64,7 @@
 
 #villager-section #main-villager-content #villager-content div {
   margin-top: 20px;
+  width: auto;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "gender personality species" "birthday birthday style" "phrase clothes request" "song goal skill" "coffee coffee coffee" "appearances appearances appearances";
@@ -83,6 +84,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 350px;
 }
 
 #villager-section #main-villager-content #villager-content div div h4, #villager-section #main-villager-content #villager-content div div p {
@@ -92,11 +94,11 @@
 }
 
 #villager-section #main-villager-content #villager-content div div h4 {
-  margin: auto 0 auto 0;
+  margin: 0 0 auto 0;
 }
 
 #villager-section #main-villager-content #villager-content div div p {
-  margin: auto auto auto 5px;
+  margin: 0 auto auto 5px;
 }
 
 #villager-section #main-villager-content #villager-content div #gender {

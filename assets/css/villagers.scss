@@ -62,6 +62,7 @@
             div {
 
                 margin-top: 20px;
+                width: auto;
 
                 display: grid;
                 grid-template-areas: 
@@ -95,14 +96,15 @@
                     
                     margin-top: unset;
                     display: flex;
+                    max-width: 350px;
 
                     h4, p {
                         width: max-content;
                     }
 
-                    h4 { margin: auto 0 auto 0; }
+                    h4 { margin: 0 0 auto 0; }
 
-                    p { margin: auto auto auto 5px; }
+                    p { margin: 0 auto auto 5px; }
                 }
 
                 #gender { grid-area: gender }
