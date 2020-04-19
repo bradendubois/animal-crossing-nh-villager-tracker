@@ -1,7 +1,7 @@
 
 const villagerData = require("./villager-data/villager-data").villagerData;
 const nav = require("./nav")
-
+const {shell} = require("electron");
 
 const Store = require("electron-store")
 const store = new Store();
@@ -20,6 +20,12 @@ if (store.get("shownButtonColor") === undefined) {
     store.set("shownButtonColor", "green");
     
 }
+
+document.getElementById("open-save-data").addEventListener('click', () => {
+    shell.showItemInFolder(store.path)
+})
+
+document.getElementById("save-data-location").innerText = store.path;
 
 const favorited = document.getElementById("number-favorited");
 

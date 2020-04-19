@@ -46,8 +46,9 @@ document.body.addEventListener('click', (event) => {
     console.log(event.target.classList)
     if (event.target.classList.contains("nav-button")) {
       console.log("NAV")
+      sectionChange(event)
     }
-    sectionChange(event)
+    
   } 
 })
 
