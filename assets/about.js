@@ -1,5 +1,7 @@
 
 const villagerData = require("./villager-data/villager-data").villagerData;
+const nav = require("./nav")
+
 
 const Store = require("electron-store")
 const store = new Store();
@@ -37,12 +39,14 @@ function countFavorites() {
 function resetFavorites() {
     store.set("favorite", {});
     updateAboutSection();
+    
 }
 
 updateAboutSection()
 
 document.getElementById("reset-favorites").addEventListener("click", () => {
     resetFavorites();
+    nav.updateFavorites();
 })
 
 

@@ -19,9 +19,12 @@ function initialize () {
   
     function createWindow () {
       const windowOptions = {
-        width: 1080,
-        minWidth: 680,
+        width: 1280,
         height: 840,
+        
+        "minWidth": 800,
+        "minHeight": 600,
+
         title: app.getName(),
         webPreferences: {
           nodeIntegration: true
@@ -34,8 +37,10 @@ function initialize () {
   
       mainWindow = new BrowserWindow(windowOptions)
       mainWindow.loadURL(path.join('file://', __dirname, '/content/index.html'))
-      mainWindow.webContents.openDevTools()
-    
+      
+      if (debug) {
+        mainWindow.webContents.openDevTools()
+      }
   
       mainWindow.on('closed', () => {
         mainWindow = null

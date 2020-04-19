@@ -74,6 +74,18 @@
             &:active {
                 background-color: darken(#309ec0, 15%);
             }
+
+            &.is_favorite {
+                background-color: darken(gold, 15%);   
+    
+                &:hover {
+                    background-color: darken(gold, 20%);
+                }
+    
+                &:active {
+                    background-color: darken(gold, 30%);
+                }
+            }
         }
     }
 

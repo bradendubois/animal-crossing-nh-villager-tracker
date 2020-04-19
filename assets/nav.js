@@ -1,32 +1,27 @@
-const settings = require('electron-settings')
-
 const favorites = require("../assets/favorites")
 const coffee = require("../assets/coffee-preference")
-
-const tableGenerate = require("../assets/table-generation")
+const generator = require("../assets/table-generation")
 const Store = require("electron-store")
 const store = new Store();
 
-document.getElementById("style").addEventListener("click", () => {
-  tableGenerate.generateTable("style");
-})
+// These tables all follow the same layout
+//  They can be generated uniformly with the table generator
+const uniformTables = [
+  "style", "personality", "favorite-song", "species"
+];
 
-
-document.getElementById("personality").addEventListener("click", () => {
-  tableGenerate.generateTable("personality");
-})
-
-document.getElementById("favorite-song").addEventListener("click", () => {
-  tableGenerate.generateTable("favorite-song");
+// Generate the table when clicked
+Array.prototype.forEach.call(uniformTables, (table) => {
+  document.getElementById(table).addEventListener("click", () => {
+    generator.generateTable(table);
+  })
 });
 
-document.getElementById("species").addEventListener("click", () => {
-  tableGenerate.generateTable("species");
-});
 
 document.getElementById("favorites").addEventListener("click", () => {
   favorites.loadFavoritesTable();
 });
+
 
 document.getElementById("coffee-preference").addEventListener("click", () => {
   coffee.loadCoffeePreferencesTable();
@@ -54,15 +49,6 @@ document.body.addEventListener('click', (event) => {
     }
     sectionChange(event)
   } 
-  
-  /*
-  else if (event.target.dataset.modal) {
-    handleModalTrigger(event)
-  } else if (event.target.classList.contains('modal-hide')) {
-    hideAllModals()
-  }
-  */
-  // console.log(document.querySelectorAll(".shown"))
 })
 
 

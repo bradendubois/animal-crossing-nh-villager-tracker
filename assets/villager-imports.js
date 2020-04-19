@@ -1,19 +1,10 @@
-const about = require("./about")
 const Store = require("electron-store");
-const store = new Store();
 const nav = require("./nav")
-
-store.onDidChange("favorite", (newVal, oldVal) => {
-    console.log("Here")
-    about.updateAboutSection();
-});
-
 const villagerData = require("./villager-data/villager-data").villagerData;
+const about = require("./about");
 
-// Ensure it was imported correctly
-if (villagerData === undefined) {
-    console.log("Failed to load villager data.");
-}
+// Access settings
+const store = new Store();
 
 // The nav section that will list a button for each villager
 const villagerNavSection = document.getElementById("villagers")
@@ -68,6 +59,7 @@ function populateVillagerInformation(villager) {
         }
 
         nav.updateFavorites();
+        about.updateAboutSection();
         console.log(villager, "is a favorite:", store.get("favorite." + villager));   
     };
 

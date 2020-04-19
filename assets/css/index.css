@@ -35,11 +35,16 @@ section, #villager-button-section {
   position: absolute;
   width: 100%;
   overflow-y: auto;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 100%;
 }
 
 .shown {
   visibility: visible;
+}
+
+em {
+  font-style: normal;
+  font-weight: 600;
 }
 /*# sourceMappingURL=index.css.map */

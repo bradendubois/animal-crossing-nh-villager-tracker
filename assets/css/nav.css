@@ -81,6 +81,18 @@
   background-color: #216c83;
 }
 
+#nav .nav-category .shown.is_favorite {
+  background-color: #b39700;
+}
+
+#nav .nav-category .shown.is_favorite:hover {
+  background-color: #998100;
+}
+
+#nav .nav-category .shown.is_favorite:active {
+  background-color: #665600;
+}
+
 #nav #villagers {
   overflow-y: scroll;
 }

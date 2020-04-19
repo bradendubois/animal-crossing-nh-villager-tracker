@@ -12,6 +12,12 @@ module.exports = {
     
     loadCoffeePreferencesTable: () => {
 
+        // Old tbody to replace
+        let oldBody = document.getElementById("coffee-preference-table-body");
+        if (oldBody.children.length > 0) {
+            return;
+        }
+
         // TODO - Toggle a "favorites-only" filter option
         let villagers = villagerData;
 
@@ -63,8 +69,6 @@ module.exports = {
             emptyBody.appendChild(newRow);
         }
 
-        // Old tbody to replace
-        let oldBody = document.getElementById("coffee-preference-table-body");
 
         table.replaceChild(emptyBody, oldBody);
 
