@@ -66,7 +66,7 @@ function populateVillagerInformation(villager) {
     sections.style.innerText = info.style || "Unknown";
     sections.initialPhrase.innerText = info["initial phrase"] || "Unknown";
     sections.initialClothes.innerText = info["initial clothes"] || "Unknown";
-    sections.favoriteSong.innerText = info["favorite song"] || "Unknown";
+    sections.favoriteSong.innerText = info["favorite-song"] || "Unknown";
     sections.homeRequest.innerText = info["home request"] || "Unknown";
     sections.goal.innerText = info.goal || "Unknown";
     sections.skill.innerText = info.skill || "Unknown";
