@@ -4,3 +4,29 @@ table {
     border-spacing: 20px 10px;;
     text-align: left;
 }
+
+.generated-group {
+
+    .group-header {
+
+        display: flex;
+        flex-direction: row;
+
+        h2, h3 {
+            margin: auto 0;
+        }
+
+        h4 {
+            margin-left: 5px;
+            font-weight: 400;
+
+            &:before {
+                content: "(";
+            }
+
+            &:after {
+                content: ")";
+            }
+        }
+    }
+}

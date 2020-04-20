@@ -42,6 +42,7 @@ module.exports = {
             // New group
             let group = document.createElement("div");
             group.classList.add(attribute + "-group");
+            group.classList.add("generated-group");
 
             // Div for the main group information
             let groupHeader = document.createElement("div");

@@ -5,4 +5,31 @@ table {
   border-spacing: 20px 10px;
   text-align: left;
 }
+
+.generated-group .group-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.generated-group .group-header h2, .generated-group .group-header h3 {
+  margin: auto 0;
+}
+
+.generated-group .group-header h4 {
+  margin-left: 5px;
+  font-weight: 400;
+}
+
+.generated-group .group-header h4:before {
+  content: "(";
+}
+
+.generated-group .group-header h4:after {
+  content: ")";
+}
 /*# sourceMappingURL=tables.css.map */
