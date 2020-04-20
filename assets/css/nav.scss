@@ -42,6 +42,20 @@
             outline: none;
             border: none;
 
+            display: flex;
+
+            p {
+                margin: auto auto auto 5px;
+
+                &:before {
+                    content: "(";
+                }
+
+                &:after {
+                    content: ")";
+                }
+            }
+
             text-align: left;
             padding: 5px 0 5px 25px;
 
@@ -117,8 +131,7 @@
 
 
         button {
-            text-align: center;
-            padding: 10px 0;
+            padding: 15px auto;
             font-weight: 500;
         }
 

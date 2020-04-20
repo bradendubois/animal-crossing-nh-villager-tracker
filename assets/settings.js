@@ -11,7 +11,7 @@ document.getElementById("open-save-data").addEventListener('click', () => {
 // Show save data path
 document.getElementById("save-data-location").innerText = storage.path;
 
-const favorited = document.getElementById("number-favorited");
+const favorited = document.querySelectorAll(".number-favorited");
 
 function updateAboutSection() {
 
@@ -24,7 +24,9 @@ function updateAboutSection() {
     }
 
     // Update the text showing the count of favorites
-    favorited.innerHTML = total;        
+    Array.prototype.forEach.call(favorited, (section => {
+        section.innerText = total;
+    }))        
 }
 
 document.getElementById("reset-favorites").addEventListener("click", () => {

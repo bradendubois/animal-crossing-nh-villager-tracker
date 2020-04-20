@@ -50,8 +50,23 @@
   background-color: unset;
   outline: none;
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: left;
   padding: 5px 0 5px 25px;
+}
+
+#nav .nav-category button p {
+  margin: auto auto auto 5px;
+}
+
+#nav .nav-category button p:before {
+  content: "(";
+}
+
+#nav .nav-category button p:after {
+  content: ")";
 }
 
 #nav .nav-category button:hover {
@@ -118,8 +133,7 @@
 }
 
 #nav #footer button {
-  text-align: center;
-  padding: 10px 0;
+  padding: 15px auto;
   font-weight: 500;
 }
 

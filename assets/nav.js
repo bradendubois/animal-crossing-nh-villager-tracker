@@ -53,7 +53,7 @@ function sectionChange(event) {
     sectionID = "villager-section";
   }
 
-  console.log("Showing", sectionID);
+  console.log("Showing", event.target.id, sectionID);
 
   // Save the currently opened window
   storage.set("selectedContent", {
