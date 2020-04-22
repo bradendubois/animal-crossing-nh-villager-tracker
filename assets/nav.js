@@ -35,6 +35,11 @@ document.body.addEventListener('click', (event) => {
       sectionChange(event);
     }
   }
+
+  // Hotfix for the "favorites" nav button
+  if (event.target.classList.contains("number-favorited")) {
+    document.getElementById("favorites").click();
+  }
 });
 
 // Switch the displayed section

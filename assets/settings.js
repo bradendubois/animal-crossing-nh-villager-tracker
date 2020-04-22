@@ -25,6 +25,7 @@ function updateAboutSection() {
             total++;
     }
 
+    
     // Update the text showing the count of favorites
     Array.prototype.forEach.call(favorited, (section => {
         section.innerText = total;

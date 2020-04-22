@@ -60,9 +60,7 @@
   width: max-content;
 }
 
-#settings-section .setting div {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+#settings-section .setting {
+  max-width: 90%;
 }
 /*# sourceMappingURL=footer.css.map */
