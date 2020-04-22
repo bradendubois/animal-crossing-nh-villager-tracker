@@ -1,37 +1,35 @@
-const villagerData = require("./villager-data").access();
 
 module.exports = { 
     
     generateTable: (attribute) => {
 
-        // Div that will contain the table
-        let attributeGroup = document.getElementById(attribute + "-groups");
-        if (attributeGroup.children.length > 0) {
-            console.log(attribute, "table already loaded.")
-            return;
-        }
+        // Get villager data, ensuring that we filter to only the favorites if toggled
+        let villagerData = require("./villager-data").access(true);
 
+        // Div that will contain the table
+        let container = document.getElementById(attribute + "-groups");
+        while (container.firstChild)
+            container.removeChild(container.firstChild);
+        
         console.log("Generating table for", attribute)
-        // TODO - Toggle a "favorites-only" filter option
-        let villagers = villagerData;
 
         let categorized = {};   // attribute: [Villagers]
 
         // Check each villager
-        for (let villager in villagers) {
+        for (let villager in villagerData) {
 
             // Skip villager if they don't have this attribute
-            if (villagers[villager][attribute] === undefined) {
+            if (villagerData[villager][attribute] === undefined) {
                 continue;
             }
 
             // Attribute not seen yet
-            if (!Object.keys(categorized).includes(villagers[villager][attribute])) {
-                categorized[villagers[villager][attribute]] = [];
+            if (!Object.keys(categorized).includes(villagerData[villager][attribute])) {
+                categorized[villagerData[villager][attribute]] = [];
             }
 
             // Store the villager
-            categorized[villagers[villager][attribute]].push(villager);
+            categorized[villagerData[villager][attribute]].push(villager);
         }
 
         // Make a list/section for each attribute
@@ -92,7 +90,7 @@ module.exports = {
 
             group.appendChild(table);
 
-            attributeGroup.appendChild(group);
+            container.appendChild(group);
         }
     }
 }

@@ -67,6 +67,8 @@ npm start
 - [ ] Adding search options to various pages to make finding particular villagers easier
 - [ ] Adding sort features on the *Coffee Preferences* page to group by various *Bean*/*Milk*/*Sugar* preferences.
 - [ ] Adding **Attribute** pages for *Appearances* and *Star Sign*.
+- [ ] Toggling whether the preferred name is the English or Japanese.
+- [x] Enabling a filter so that *Attribute* pages only show favorite-ed villagers
 
 This Roadmap does not necessarily indicate the order things will be prioritized, and is always open to suggestions.
 

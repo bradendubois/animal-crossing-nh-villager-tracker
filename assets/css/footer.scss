@@ -12,7 +12,6 @@
     
     border: 2px solid black;
     border-radius: 5px;
-    margin-right: 20px;
     
     &:hover {
         background-color: #85c4eeb2;
@@ -22,10 +21,28 @@
         background-color: #67addbb2;
     }
 
+    &:active, &:focus {
+        outline: none;
+    }
 }
 
 #about-section {
 
+    header {
+
+        margin-top: 20px;
+        display: inline-flex;
+
+        img {
+            max-height: 100px;
+            margin-right: 20px;
+        }
+
+        h1 {
+            margin: auto 0;
+            font-size: 24pt;
+        }
+    }
 
     
 }
@@ -57,7 +74,10 @@
         width: max-content;
     }
 
-    div.setting {
-        display: inline-flex;
+    .setting {
+        
+        div {
+            display: inline-flex;
+        }
     }
 }

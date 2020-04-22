@@ -9,6 +9,10 @@ function initializeSaveData() {
     if (storage.get("favorite") === undefined) {
         storage.set("favorite", {});
     }
+
+    if (storage.get("filter-by-favorite") === undefined) {
+        storage.set("filter-by-favorite", false);
+    }
 }
 
 initializeSaveData();

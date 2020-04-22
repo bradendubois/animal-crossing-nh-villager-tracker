@@ -1,21 +1,13 @@
-const Store = require("electron-store");
-const store = new Store();
-
-const villagerData = require("./villager-data").access();
 
 module.exports = { 
     
     loadCoffeePreferencesTable: () => {
 
-        // Old tbody to potentially replace
-        let oldBody = document.getElementById("coffee-preference-table-body");
-        if (oldBody.children.length > 0) {
-            console.log("Coffee table already loaded.")
-            return;
-        }
+        // Get villager data, ensuring that we filter to only the favorites if toggled
+        let villagerData = require("./villager-data").access(true);
 
-        // TODO - Toggle a "favorites-only" filter option
-        let villagers = villagerData;
+        // Old tbody to replace
+        let oldBody = document.getElementById("coffee-preference-table-body");
 
         // Table containing the tbody
         let table = document.getElementById("coffee-preference-table");
@@ -25,7 +17,7 @@ module.exports = {
         emptyBody.id = "coffee-preference-table-body";
 
         // Add each villager
-        for (let villager in villagers) {
+        for (let villager in villagerData) {
 
             // New row
             let newRow = document.createElement("tr");
