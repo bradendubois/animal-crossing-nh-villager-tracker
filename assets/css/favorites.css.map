@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAEI,kBAFc,CAEd,GAAG,CAAC;EACA,UAAU,EAAE,IAAI;CACnB",
     "sources": [
         "favorites.scss"
     ],

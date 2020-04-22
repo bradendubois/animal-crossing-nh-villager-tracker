@@ -6,6 +6,10 @@ table {
   text-align: left;
 }
 
+table thead th {
+  font-weight: 600;
+}
+
 .generated-group .group-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,5 +35,13 @@ table {
 
 .generated-group .group-header h4:after {
   content: ")";
+}
+
+#coffee-preference-table tr td {
+  font-weight: 400;
+}
+
+#coffee-preference-table tr td:first-of-type {
+  font-weight: 500;
 }
 /*# sourceMappingURL=tables.css.map */

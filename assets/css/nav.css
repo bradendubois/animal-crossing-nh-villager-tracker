@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400&display=swap");
 @import url(/home/braden/Projects/animal-crossing-nh-villager-tracker/assets/css/variables.css);
-#nav {
+nav {
   background-color: #ebebeb;
   width: 200px;
   top: 0;
@@ -15,7 +15,16 @@
           flex-direction: column;
 }
 
-#nav header, #nav div {
+nav header h1 {
+  text-align: center;
+  font-size: 16pt;
+  padding-bottom: 15px;
+  margin-right: 15px;
+  margin-bottom: 0;
+  border-bottom: 1px solid black;
+}
+
+nav header, nav div {
   min-height: -webkit-max-content;
   min-height: -moz-max-content;
   min-height: max-content;
@@ -34,16 +43,16 @@
   position: relative;
 }
 
-#nav .nav-header {
+nav .nav-header {
   margin-left: 10px;
 }
 
-#nav .nav-category h5 {
+nav .nav-category h5 {
   margin: 15px auto 5px 15px;
   font-size: 14pt;
 }
 
-#nav .nav-category button {
+nav .nav-category button {
   font-family: "Manrope", sans-serif;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -57,67 +66,67 @@
   padding: 5px 0 5px 25px;
 }
 
-#nav .nav-category button p {
+nav .nav-category button p {
   margin: auto auto auto 5px;
 }
 
-#nav .nav-category button p:before {
+nav .nav-category button p:before {
   content: "(";
 }
 
-#nav .nav-category button p:after {
+nav .nav-category button p:after {
   content: ")";
 }
 
-#nav .nav-category button:hover {
+nav .nav-category button:hover {
   background-color: #d4d4d4;
 }
 
-#nav .nav-category button:active {
+nav .nav-category button:active {
   background-color: #adadad;
 }
 
-#nav .nav-category .is_favorite {
+nav .nav-category .is_favorite {
   background-color: gold;
 }
 
-#nav .nav-category .is_favorite:hover {
+nav .nav-category .is_favorite:hover {
   background-color: #ccac00;
 }
 
-#nav .nav-category .is_favorite:active {
+nav .nav-category .is_favorite:active {
   background-color: #b39700;
 }
 
-#nav .nav-category .shown {
+nav .nav-category .shown {
   background-color: #309ec0;
 }
 
-#nav .nav-category .shown:hover {
+nav .nav-category .shown:hover {
   background-color: #267c97;
 }
 
-#nav .nav-category .shown:active {
+nav .nav-category .shown:active {
   background-color: #216c83;
 }
 
-#nav .nav-category .shown.is_favorite {
+nav .nav-category .shown.is_favorite {
   background-color: #b39700;
 }
 
-#nav .nav-category .shown.is_favorite:hover {
+nav .nav-category .shown.is_favorite:hover {
   background-color: #998100;
 }
 
-#nav .nav-category .shown.is_favorite:active {
+nav .nav-category .shown.is_favorite:active {
   background-color: #665600;
 }
 
-#nav .villager-container {
+nav .villager-container {
   min-height: 0;
 }
 
-#nav .villager-container #villagers {
+nav .villager-container #villagers {
   min-height: 0;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -127,25 +136,37 @@
           box-shadow: inset 0px 15px 8px -10px #c9c9c9, inset 0px -15px 8px -10px #c9c9c9;
 }
 
-#nav #footer {
+nav #footer {
   background-color: #cecece;
   border-top: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-#nav #footer button {
+nav #footer button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 1;
+      flex-basis: 1;
   padding: 15px auto;
   font-weight: 500;
 }
 
-#nav #footer .shown {
-  background-color: #3cc283;
+nav #footer .shown {
+  background-color: #3cbec2;
 }
 
-#nav #footer .shown:hover {
-  background-color: #36ac75;
+nav #footer .shown:hover {
+  background-color: #32a4a8;
 }
 
-#nav #footer .shown:active {
-  background-color: #2c855b;
+nav #footer .shown:active {
+  background-color: #2eabaf;
 }
 /*# sourceMappingURL=nav.css.map */

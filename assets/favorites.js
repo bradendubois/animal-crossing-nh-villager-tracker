@@ -34,15 +34,48 @@ module.exports = {
 
             let newRow = document.createElement("tr");
 
-            for (let param of ["name_en", "birthday", "star_sign", "appearances"]) {
-                
-                // TODO - May change the data shown
-                let newTD = document.createElement("td");
-                
+            // Figure
+            let figure = document.createElement("img");
+            figure.src = encodeURI("../assets/villager-data/images/" + villager + ".jpg");
+            newRow.appendChild(figure);
+
+            // Name
+            let name = document.createElement("td");
+            name.innerText = villagerData[villager]["name_en"] || "Unknown";
+            newRow.appendChild(name);
+
+            // Birthday / Star Sign
+            if (Array.isArray(villagerData[villager]["birthday"])) {
+
+                let birthday = document.createElement("td");
+                birthday.innerText = villagerData[villager]["birthday"][0];
+                newRow.appendChild(birthday);
+
+                let sign = document.createElement("td");
+                sign.innerText = villagerData[villager]["birthday"][1];
+                newRow.appendChild(sign);
             
+            } else {
+                // Unknown Rows
+                let unk = document.createElement("td");
+                name.innerText = "Unknown";
+                newRow.appendChild(unk);
+                newRow.appendChild(unk);
+            }
+
+            // Some easy to read params
+            for (let param of ["species", "personality", "initial phrase"]) {
+                
+                let newTD = document.createElement("td");
                 newTD.innerText = villagerData[villager][param] || "Unknown";
                 newRow.appendChild(newTD);
             }
+
+            // Appearances
+            // TODO - Improve
+            let appearances = document.createElement("td");
+            appearances.innerText = villagerData[villager]["appearances"] || "Unknown";
+            newRow.appendChild(appearances);
 
             // Add the row to the body
             emptyBody.appendChild(newRow);

@@ -3,6 +3,12 @@ table {
     width: max-content;
     border-spacing: 20px 10px;;
     text-align: left;
+
+    thead {
+        th {
+            font-weight: 600;
+        }
+    }
 }
 
 .generated-group {
@@ -26,6 +32,19 @@ table {
 
             &:after {
                 content: ")";
+            }
+        }
+    }
+}
+
+#coffee-preference-table {
+
+    tr {
+        td {
+            font-weight: 400;
+
+            &:first-of-type {
+                font-weight: 500;
             }
         }
     }

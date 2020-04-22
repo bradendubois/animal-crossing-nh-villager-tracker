@@ -7,7 +7,7 @@ module.exports = {
     
     loadCoffeePreferencesTable: () => {
 
-        // Old tbody to replace
+        // Old tbody to potentially replace
         let oldBody = document.getElementById("coffee-preference-table-body");
         if (oldBody.children.length > 0) {
             console.log("Coffee table already loaded.")

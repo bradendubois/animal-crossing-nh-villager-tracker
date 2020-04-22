@@ -62,7 +62,7 @@ npm start
 
 - [ ] *Upcoming Birthday* support
 - [ ] Improving general styling
-- [ ] Improving the *Favorites* page to show more information
+- [x] Improving the *Favorites* page to show more information
 - [ ] Improving the [web scraper I made](https://github.com/bradendubois/animal-crossing-wiki-villager-scraper) to handle a few edge cases of villager information.
 - [ ] Adding search options to various pages to make finding particular villagers easier
 - [ ] Adding sort features on the *Coffee Preferences* page to group by various *Bean*/*Milk*/*Sugar* preferences.
