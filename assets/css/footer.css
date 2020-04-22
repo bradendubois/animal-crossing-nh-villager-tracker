@@ -1,0 +1,48 @@
+@import url(/home/braden/Projects/animal-crossing-nh-villager-tracker/assets/css/variables.css);
+.footer-button {
+  text-transform: uppercase;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  background-color: unset;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.footer-button:hover {
+  background-color: #85c4eeb2;
+}
+
+.footer-button:active {
+  background-color: #67addbb2;
+}
+
+.shown button {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#settings-section h3 {
+  margin-top: 50px;
+}
+
+#settings-section #save-data-location {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #3376f3;
+  border-radius: 3px;
+  color: #666;
+  font-family: "Source Code Pro", monospace;
+  font-size: 12pt;
+  padding: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#settings-section div.setting {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+/*# sourceMappingURL=footer.css.map */
