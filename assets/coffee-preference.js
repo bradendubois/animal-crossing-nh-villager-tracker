@@ -1,3 +1,4 @@
+const Storage = require("./storage");
 
 module.exports = { 
     
@@ -29,7 +30,7 @@ module.exports = {
             let sugar = document.createElement("td");
             
             // Name
-            name.innerText = villager;
+            name.innerText = villagerData[villager][Storage.nameFormat()];
             name.classList.add("name")
             newRow.appendChild(name);
 

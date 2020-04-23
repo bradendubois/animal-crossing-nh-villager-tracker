@@ -23,5 +23,13 @@ initializeSaveData();
 
 module.exports = {
     access: () => { return storage; },
-    initializeSaveData: () => { initializeSaveData() }
+    initializeSaveData: () => { initializeSaveData() },
+    
+    nameFormat: () => {
+        let lang = storage.get("preferred-name-language");
+        if (lang === "english")
+            return "name_en";
+        else
+            return "name_jp";
+    }
 }

@@ -2,6 +2,7 @@
 const villagerData = require("./villager-data/data").villagerData;
 
 // Access the storage to determine whether to filter by favorite
+const Storage = require("./storage");
 const storage = require("./storage").access();
 
 if (villagerData === undefined) {
@@ -29,5 +30,13 @@ module.exports = {
         }
         
         return filtered; 
+    },
+
+    primaryName: (villager) => villagerData[villager][Storage.nameFormat()] || "Unknown",
+    secondaryName: (villager) => {
+        if (Storage.nameFormat() === "name_en")
+            return villagerData[villager]["name_jp"];
+        else
+            return villagerData[villager]["name_en"];
     }
 };

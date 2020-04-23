@@ -1,6 +1,7 @@
-const Store = require("electron-store");
-const store = new Store();
+const Storage = require("./storage")
+const storage = require("./storage").access();
 
+const villagerDataModule = require("./villager-data");
 const villagerData = require("./villager-data").access();
 
 module.exports = { 
@@ -8,7 +9,7 @@ module.exports = {
     loadFavoritesTable: () => {
 
         // Favorites is a dictionary
-        let favorites = store.get("favorite", []);
+        let favorites = storage.get("favorite", []);
         
         // Get each villager name (the key)
         let villagers = [];
@@ -41,7 +42,7 @@ module.exports = {
 
             // Name
             let name = document.createElement("td");
-            name.innerText = villagerData[villager]["name_en"] || "Unknown";
+            name.innerText = villagerDataModule.primaryName(villager);
             newRow.appendChild(name);
 
             // Birthday / Star Sign

@@ -1,3 +1,4 @@
+const VillagerData = require("./villager-data");
 const villagerData = require("./villager-data").access();
 
 const storage = require("./storage").access();
@@ -10,7 +11,7 @@ for (let villager in villagerData) {
 
     let button = document.createElement("button");
     button.id = "villager-" + villager;
-    button.textContent = villager;
+    button.textContent = VillagerData.primaryName(villager);
     button.classList.add("nav-button");
     button.classList.add("villager-button");
 
@@ -29,8 +30,8 @@ function populateVillagerInformation(villager) {
     let sections = getVillagerSections();
     
     // Names
-    sections.primaryName.innerText = info.name_en || info.name_jp || "A mysterious, unnamed villager.";
-    sections.secondaryName.innerText = "(" + info.name_jp + ")" || info.name_en || "A mysterious, unnamed villager.";
+    sections.primaryName.innerText = VillagerData.primaryName(villager);
+    sections.secondaryName.innerText = "(" + VillagerData.secondaryName(villager) + ")";
 
     // Caption
     sections.caption.innerText = info.caption || "Unknown";

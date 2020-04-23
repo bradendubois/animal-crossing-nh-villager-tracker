@@ -1,3 +1,4 @@
+const Storage = require("./storage");
 
 module.exports = { 
     
@@ -29,7 +30,7 @@ module.exports = {
             }
 
             // Store the villager
-            categorized[villagerData[villager][attribute]].push(villager);
+            categorized[villagerData[villager][attribute]].push(villagerData[villager][Storage.nameFormat()]);
         }
 
         // Make a list/section for each attribute
