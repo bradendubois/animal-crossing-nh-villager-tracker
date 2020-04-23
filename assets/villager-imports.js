@@ -64,7 +64,6 @@ function populateVillagerInformation(villager) {
     sections.species.innerText = info.species || "Unknown";
 
     if (Array.isArray(info.birthday) && info.birthday.length > 1) {
-        console.log(info.birthday)
         sections.birthday.innerText = info.birthday[0];
         sections.starSign.innerText = info.birthday[1];
     } else {

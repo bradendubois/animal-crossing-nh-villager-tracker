@@ -1,4 +1,4 @@
-@import url(/home/braden/projects/animal-crossing-nh-villager-tracker/assets/css/variables.css);
+@import url(/home/braden/Projects/animal-crossing-nh-villager-tracker/assets/css/variables.css);
 .footer-button {
   text-transform: uppercase;
   font-family: "Manrope", sans-serif;
@@ -42,8 +42,9 @@
   transition: 0.3s;
 }
 
-#settings-section h3 {
-  margin-top: 50px;
+#settings-section h4 {
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 #settings-section #save-data-location {
@@ -61,6 +62,21 @@
 }
 
 #settings-section .setting {
+  margin-bottom: 30px;
   max-width: 90%;
+}
+
+#settings-section .setting form {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#settings-section .setting form p {
+  margin: 0 10px 0 0;
+}
+
+#settings-section .setting form label {
+  font-weight: 500;
 }
 /*# sourceMappingURL=footer.css.map */

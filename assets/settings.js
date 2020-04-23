@@ -15,6 +15,8 @@ const favorited = document.querySelectorAll(".number-favorited");
 
 const areFiltering = document.getElementById("toggle-favorite-filter");
 
+const languageButtons = document.querySelectorAll(".language-change-button");
+
 function updateAboutSection() {
 
     // Count how many villagers are favorited
@@ -33,6 +35,15 @@ function updateAboutSection() {
 
     // Update the text declaring whether or not to filter by favorite
     areFiltering.innerText = (storage.get("filter-by-favorite") ? "are" : "are not");
+
+    // Update the form that lists the preferred language
+    Array.prototype.forEach.call(languageButtons, (button => {
+        button.checked = false;
+        if (storage.get("preferred-name-language") === button.value) {
+            button.checked = true;
+        }
+    }));
+
 }
 
 document.getElementById("reset-favorites").addEventListener("click", () => {
@@ -43,6 +54,14 @@ areFiltering.addEventListener("click", () => {
     storage.set("filter-by-favorite", !storage.get("filter-by-favorite"));
 });
 
+// HOTFIX - Having issues getting a clean array to just read the button's value
+languageButtons[0].addEventListener("click", () => { 
+    storage.set("preferred-name-language", "english") 
+});
+
+languageButtons[1].addEventListener("click", () => { 
+    storage.set("preferred-name-language", "japanese") 
+});
 
 // Update text whenever any data changes
 storage.onDidAnyChange(() => {

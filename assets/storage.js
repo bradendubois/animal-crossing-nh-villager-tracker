@@ -13,6 +13,10 @@ function initializeSaveData() {
     if (storage.get("filter-by-favorite") === undefined) {
         storage.set("filter-by-favorite", false);
     }
+
+    if (storage.get("preferred-name-language") === undefined) {
+        storage.set("preferred-name-language", "english");
+    }
 }
 
 initializeSaveData();

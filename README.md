@@ -69,6 +69,7 @@ npm start
 - [ ] Adding **Attribute** pages for *Appearances* and *Star Sign*.
 - [ ] Toggling whether the preferred name is the English or Japanese.
 - [x] Enabling a filter so that *Attribute* pages only show favorite-ed villagers
+- [ ] A *Custom Search* page allowing villagers to be searched/filtered by any number and combination of attributes, such as *Personality*, *Species*, etc.
 
 This Roadmap does not necessarily indicate the order things will be prioritized, and is always open to suggestions.
 

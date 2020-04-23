@@ -56,8 +56,9 @@
 
 #settings-section {
 
-    h3 {
-        margin-top: 50px;
+    h4 {
+        margin-top: 20px;
+        margin-bottom: 0px;
     }
 
     
@@ -76,6 +77,21 @@
 
     .setting {
     
+        margin-bottom: 30px;
+
+        form {
+
+            p {
+                margin: 0 10px 0 0;
+            }
+
+            label {
+                font-weight: 500;
+            }
+
+            display: inline-flex;
+        }
+
         max-width: 90%;
     }
 }
