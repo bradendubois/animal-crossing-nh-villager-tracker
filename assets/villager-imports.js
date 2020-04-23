@@ -62,7 +62,16 @@ function populateVillagerInformation(villager) {
     sections.gender.innerText = info.gender || "Unknown";
     sections.personality.innerText = info.personality || "Unknown";
     sections.species.innerText = info.species || "Unknown";
-    sections.birthday.innerText = info.birthday || "Unknown";
+
+    if (Array.isArray(info.birthday) && info.birthday.length > 1) {
+        console.log(info.birthday)
+        sections.birthday.innerText = info.birthday[0];
+        sections.starSign.innerText = info.birthday[1];
+    } else {
+        sections.birthday.innerText = info.birthday;
+        sections.starSign.innerText = "Unknown";
+    }
+
     sections.style.innerText = info.style || "Unknown";
     sections.initialPhrase.innerText = info["initial phrase"] || "Unknown";
     sections.initialClothes.innerText = info["initial clothes"] || "Unknown";
@@ -91,7 +100,10 @@ function getVillagerSections() {
         gender: document.getElementById("villager-gender"),
         personality: document.getElementById("villager-personality"),
         species: document.getElementById("villager-species"),
+        
         birthday: document.getElementById("villager-birthday"),
+        starSign: document.getElementById("villager-star-sign"),
+
         style: document.getElementById("villager-style"),
         initialPhrase: document.getElementById("villager-initial-phrase"),
         initialClothes: document.getElementById("villager-initial-clothes"),

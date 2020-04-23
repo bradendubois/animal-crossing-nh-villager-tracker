@@ -67,14 +67,14 @@
   width: auto;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "gender personality species" "birthday birthday style" "phrase clothes request" "song goal skill" "coffee coffee coffee" "appearances appearances appearances";
+      grid-template-areas: "gender personality species" "birthday starSign style" "phrase clothes request" "song goal skill" "coffee coffee coffee" "appearances appearances appearances";
   grid-row-gap: 20px;
   grid-column-gap: 20px;
 }
 
 @media screen and (max-width: 800px) {
   #villager-section #main-villager-content #villager-content div {
-        grid-template-areas: "gender personality" "birthday birthday" "species style" "phrase clothes" "request song" "goal skill" "coffee coffee" "appearances appearances";
+        grid-template-areas: "gender personality" "birthday starSign" "species style" "phrase clothes" "request song" "goal skill" "coffee coffee" "appearances appearances";
     grid-row-gap: 10px;
   }
 }
@@ -122,8 +122,13 @@
 #villager-section #main-villager-content #villager-content div #birthday {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: birthday;
+}
+
+#villager-section #main-villager-content #villager-content div #star-sign {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: starSign;
 }
 
 #villager-section #main-villager-content #villager-content div #style {

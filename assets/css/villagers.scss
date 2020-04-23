@@ -67,7 +67,7 @@
                 display: grid;
                 grid-template-areas: 
                     "gender personality species"
-                    "birthday birthday style"
+                    "birthday starSign style"
                     "phrase clothes request"
                     "song goal skill"
                     "coffee coffee coffee"
@@ -78,7 +78,7 @@
                 @media screen and (max-width: 800px) {
                     grid-template-areas:
                     "gender personality"
-                    "birthday birthday"
+                    "birthday starSign"
                     "species style"
                     "phrase clothes"
                     "request song"
@@ -111,6 +111,7 @@
                 #personality { grid-area: personality }
                 #species { grid-area: species }
                 #birthday { grid-area: birthday }
+                #star-sign { grid-area: starSign }
                 #style { grid-area: style }
                 #phrase { grid-area: phrase }
                 #clothes { grid-area: clothes }

@@ -74,7 +74,7 @@ module.exports = {
             // Appearances
             // TODO - Improve
             let appearances = document.createElement("td");
-            appearances.innerText = villagerData[villager]["appearances"] || "Unknown";
+            appearances.innerText = villagerData[villager]["appearances"].join(", ") || "Unknown";
             newRow.appendChild(appearances);
 
             // Add the row to the body
