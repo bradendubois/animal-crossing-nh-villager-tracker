@@ -32,11 +32,16 @@ module.exports = {
         return filtered; 
     },
 
-    primaryName: (villager) => villagerData[villager][Storage.nameFormat()] || "Unknown",
+    primaryName: (villager) => {
+        if (Storage.nameFormat() === "name_en")
+            return villagerData[villager]["name_en"] || "English N/A ";
+        else
+            return villagerData[villager]["name_jp"] || "Japanese N/A";
+    },
     secondaryName: (villager) => {
         if (Storage.nameFormat() === "name_en")
-            return villagerData[villager]["name_jp"];
+            return villagerData[villager]["name_jp"] || "Japanese N/A ";
         else
-            return villagerData[villager]["name_en"];
+            return villagerData[villager]["name_en"] || "English N/A";
     }
 };
