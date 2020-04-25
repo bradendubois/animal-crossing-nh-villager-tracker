@@ -2,11 +2,12 @@ const favorites = require("../assets/favorites")
 const coffee = require("../assets/coffee-preference")
 const generator = require("../assets/table-generation")
 const storage = require("../assets/storage").access();
+const upcoming = require("../assets/upcoming-birthdays");
 
 // These tables all follow the same layout
 //  They can be generated uniformly with the table generator
 const uniformTables = [
-  "style", "personality", "favorite-song", "species"
+  "style", "personality", "favorite-song", "species", "appearances"
 ];
 
 // Generate the table when clicked
@@ -23,6 +24,10 @@ document.getElementById("favorites").addEventListener("click", () => {
 document.getElementById("coffee-preference").addEventListener("click", () => {
   coffee.loadCoffeePreferencesTable();
 });
+
+document.getElementById("upcoming-birthdays").addEventListener("click", () => {
+  upcoming.generateUpcoming();
+})
 
 // Detect any clicks
 document.body.addEventListener('click', (event) => {

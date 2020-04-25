@@ -23,14 +23,25 @@ module.exports = {
             if (villagerData[villager][attribute] === undefined) {
                 continue;
             }
+            
+            if (Array.isArray(villagerData[villager][attribute])) {
+                
+                for (let value of villagerData[villager][attribute]) {
+                    // Attribute not seen yet
+                    if (!Object.keys(categorized).includes(value)) {
+                        categorized[value] = [];
+                    }
 
-            // Attribute not seen yet
-            if (!Object.keys(categorized).includes(villagerData[villager][attribute])) {
-                categorized[villagerData[villager][attribute]] = [];
+                    categorized[value].push(villagerData[villager][Storage.nameFormat()]);
+                }
+            } else {
+                if (!Object.keys(categorized).includes(villagerData[villager][attribute])) {
+                    categorized[villagerData[villager][attribute]] = [];
+                }
+
+                // Store the villager
+                categorized[villagerData[villager][attribute]].push(villagerData[villager][Storage.nameFormat()]);
             }
-
-            // Store the villager
-            categorized[villagerData[villager][attribute]].push(villagerData[villager][Storage.nameFormat()]);
         }
 
         // Make a list/section for each attribute

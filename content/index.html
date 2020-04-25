@@ -18,6 +18,7 @@
   <link rel="import" href="./sections/main-tabs/upcoming-birthdays.html">
 
   <!-- Attributes -->
+  <link rel="import" href="./sections/attributes/appearances.html">
   <link rel="import" href="./sections/attributes/coffee-preference.html">
   <link rel="import" href="./sections/attributes/favorite-song.html">
   <link rel="import" href="./sections/attributes/species.html">
@@ -51,6 +52,7 @@
     <div id="attributes" class="nav-category">
       <h5>By Attribute</h5>
 
+      <button id="appearances" class="nav-button">Appearances</button>
       <button id="coffee-preference" class="nav-button">Coffee Preference</button>
       <button id="favorite-song" class="nav-button">Favorite Song</button>
       <button id="personality" class="nav-button">Personality</button>
@@ -76,8 +78,9 @@
     
     require("../assets/storage")
     require("../assets/villager-imports")
-    require('../assets/imports')
+    require("../assets/imports")
     require("../assets/favorites")
+    require("../assets/upcoming-birthdays")
     require("../assets/coffee-preference")
     require("../assets/settings")
     require('../assets/nav')
