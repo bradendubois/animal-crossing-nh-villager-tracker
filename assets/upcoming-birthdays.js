@@ -1,4 +1,5 @@
 const VillagerData = require("./villager-data");
+const Storage = require("./storage");
 
 const MonthOrder = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -15,9 +16,12 @@ module.exports = {
         // Sort villagers by their birthday
         let villagers = [];
         for (let villager in unsortedVillagers)
-            villagers.push(unsortedVillagers[villager]);
+            villagers.push(villager);
         
-        villagers.sort((villager1, villager2) => {
+        villagers.sort((villager1Key, villager2Key) => {
+            
+            let villager1 = unsortedVillagers[villager1Key];
+            let villager2 = unsortedVillagers[villager2Key];
             
             if (!(villager1["birthday"] && villager2["birthday"]))
                 return -1;
@@ -30,9 +34,9 @@ module.exports = {
                 return -1;
 
             // Split the birthdays into [Month, Date]
-            console.log(villager1["birthday"])
+            // console.log(villager1["birthday"])
             let birthday1 = villager1["birthday"][0].split(" ");
-            console.log(villager2["birthday"])
+            // console.log(villager2["birthday"])
             let birthday2 = villager2["birthday"][0].split(" ");
         
             let month1 = MonthOrder.indexOf(birthday1[0]);
@@ -50,6 +54,83 @@ module.exports = {
                 return parseInt(birthday1[1]) - parseInt(birthday2[1]);
         })
 
+        // TODO - Not actually sorted properly
         console.log(villagers)
+
+        // Construct a card from every villager
+        for (let villagerKey of villagers) {
+
+            let villager = unsortedVillagers[villagerKey];
+
+            // A div to hold everything
+            let villagerCardDiv = document.createElement("div");
+            villagerCardDiv.classList.add("villagerCard");
+
+            // Image of the vilager
+            let villagerImage = document.createElement("img");
+            villagerImage.src = encodeURI("../assets/villager-data/images/" + villagerKey + ".jpg");
+            villagerImage.alt = "Image of " + villager[Storage.nameFormat()];
+            villagerCardDiv.appendChild(villagerImage);
+            
+            // Name of the villager
+            let villagerName = document.createElement("h1");
+            villagerName.innerText = villager[Storage.nameFormat()];
+            villagerCardDiv.appendChild(villagerName);
+            upcomingContainer.appendChild(villagerCardDiv);
+
+            let birthdayInfo = unsortedVillagers[villagerKey]["birthday"];
+
+            // Defined birthday attribute but empty
+            if (!birthdayInfo || birthdayInfo.length === 0)
+                continue;
+
+            // Birthday of the villager
+            let birthdayTitle = document.createElement("h3");
+            birthdayTitle.innerText = "Birthday";
+            let birthdayText = document.createElement("p");
+
+            // Star sign of the villager
+            let starSignTitle = document.createElement("h3");
+            starSignTitle.innerText = "Star Sign";
+            let starSignText = document.createElement("p");
+
+            // Declare the birthday and star sign but then MAYBE define them
+            let birthday;
+            let starSign;
+
+            // Array - Two Elements
+            if (Array.isArray(birthdayInfo) && birthdayInfo.length == 2) {
+                birthday = birthdayInfo[0];
+                starSign = birthdayInfo[1];
+            // Only partial info available;
+            } else {
+                let item;
+                if (Array.isArray(birthdayInfo)) 
+                    item = birthdayInfo[0];
+                else 
+                    item = birthdayInfo;
+                
+                // Birthday
+                if (item.includes(" ")) 
+                    birthday = item;
+                // Star Sign
+                else
+                    starSign = item;
+            }
+
+            // Add the birthday (if defined)
+            if (birthday !== undefined) {
+                birthdayText.innerText = birthday;
+                villagerCardDiv.appendChild(birthdayTitle)
+                villagerCardDiv.appendChild(birthdayText);
+            }
+            
+            // Add the star sign (if defined)
+            if (starSign !== undefined) {
+                starSignText.innerText = starSign;
+                villagerCardDiv.appendChild(starSignTitle)
+                villagerCardDiv.appendChild(starSignText);
+            }
+        }
     }
 }
