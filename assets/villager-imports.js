@@ -89,6 +89,7 @@ function populateVillagerInformation(villager) {
 
     // Image of the villager
     sections.image.src = encodeURI("../assets/villager-data/images/" + villager + ".jpg");
+    sections.image.title = VillagerData.primaryName(villager);
 }
 
 // Helper function get each parameter in the villager page

@@ -80,6 +80,7 @@ module.exports = {
             // Image of the vilager
             let villagerImage = document.createElement("img");
             villagerImage.src = encodeURI("../assets/villager-data/images/" + villagerKey + ".jpg");
+            villagerImage.title = VillagerData.primaryName(villagerKey);
             villagerImage.alt = "Image of " + villager[Storage.nameFormat()];
             villagerCardDiv.appendChild(villagerImage);
             

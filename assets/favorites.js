@@ -38,6 +38,7 @@ module.exports = {
             // Figure
             let figure = document.createElement("img");
             figure.src = encodeURI("../assets/villager-data/images/" + villager + ".jpg");
+            figure.title = villagerDataModule.primaryName(villager);
             newRow.appendChild(figure);
 
             // Name
