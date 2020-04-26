@@ -17,6 +17,9 @@ const areFiltering = document.getElementById("toggle-favorite-filter");
 
 const languageButtons = document.querySelectorAll(".language-change-button");
 
+const resetUpcomingLimit = document.getElementById("reset-upcoming-limit");
+const changeUpcomingLimit = document.getElementById("change-upcoming-limit");
+
 function updateAboutSection() {
 
     // Count how many villagers are favorited
@@ -44,6 +47,9 @@ function updateAboutSection() {
         }
     }));
 
+    // Update the upcoming-birthday limit
+    changeUpcomingLimit.value = storage.get("upcomingBirthdayLimit");
+
 }
 
 document.getElementById("reset-favorites").addEventListener("click", () => {
@@ -58,9 +64,17 @@ areFiltering.addEventListener("click", () => {
 languageButtons[0].addEventListener("click", () => { 
     storage.set("preferred-name-language", "english") 
 });
-
 languageButtons[1].addEventListener("click", () => { 
     storage.set("preferred-name-language", "japanese") 
+});
+
+
+resetUpcomingLimit.addEventListener("click", () => {
+    storage.set("upcomingBirthdayLimit", -1);
+}); 
+
+changeUpcomingLimit.addEventListener("input", () => {
+    storage.set("upcomingBirthdayLimit", changeUpcomingLimit.value);
 });
 
 // Update text whenever any data changes

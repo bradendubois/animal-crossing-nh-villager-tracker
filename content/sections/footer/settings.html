@@ -79,6 +79,24 @@
                 </p>
             </div>
 
+            <div class="setting">
+                <h4>Maximum Upcoming Villagers</h4>
+
+                <hr />
+
+                <p>
+                    In the <em>Upcoming</em> tab, villagers are listed by their name, birthday, and star sign, along with a photo of the villager; they are sorted by birthday (or star sign as a fallback), with the soonest birthdays coming first. This value will act as an upper-bound on the number of villagers that will be listed. By default, this value is <em>-1</em>, which will result in there being <em>no upper-bound</em>, and all villagers will be shown.
+
+                    <form>
+                        <button class="footer-button" id="reset-upcoming-limit">Reset</button>
+
+                        <label>Set the upper-bound: 
+                            <input id="change-upcoming-limit" type="number" />
+                        </label>
+                    </form>
+                </p>
+            </div>
+
         </div>
     </section>
 

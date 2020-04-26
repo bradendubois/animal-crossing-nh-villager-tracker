@@ -1,5 +1,6 @@
 const VillagerData = require("./villager-data");
 const Storage = require("./storage");
+const storage = Storage.access();
 
 const MonthOrder = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -12,6 +13,10 @@ module.exports = {
         
         // Container for the villagers
         let upcomingContainer = document.getElementById("upcoming-container");
+
+        // Empty it out
+        while (upcomingContainer.firstChild)
+        upcomingContainer.removeChild(upcomingContainer.firstChild);
 
         // Sort villagers by their birthday
         let villagers = [];
@@ -56,6 +61,12 @@ module.exports = {
 
         // TODO - Not actually sorted properly
         console.log(villagers)
+
+        let upperbound = storage.get("upcomingBirthdayLimit");
+        if (upperbound < 0)
+            upperbound = villagers.length;
+        
+        villagers = villagers.slice(0, upperbound);
 
         // Construct a card from every villager
         for (let villagerKey of villagers) {
