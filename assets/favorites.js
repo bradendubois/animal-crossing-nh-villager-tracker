@@ -39,6 +39,9 @@ module.exports = {
             let figure = document.createElement("img");
             figure.src = encodeURI("../assets/villager-data/images/" + villager + ".jpg");
             figure.title = villagerDataModule.primaryName(villager);
+            figure.onclick = () => {
+                document.getElementById("villager-" + villager).click();
+            }
             newRow.appendChild(figure);
 
             // Name

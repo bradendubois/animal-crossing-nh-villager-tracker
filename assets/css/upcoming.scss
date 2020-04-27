@@ -1,0 +1,46 @@
+#upcoming-container {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .villagerCard {
+
+        outline: 1px solid black;
+        width: 275px;
+        height: 400px;
+
+        margin: 5px;
+        padding: 5px;
+
+        h1 {
+            margin: 10px auto;
+            width: max-content;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-height: 250px;
+            max-width: 275px;
+            cursor: pointer;
+        }
+
+        .attribute {
+            display: flex;
+            flex-direction: row;
+
+            h3, p {
+                margin: auto 0;
+            }
+
+            h3 {
+                margin-right: 3px;
+
+                &:after {
+                    content: ":";
+                }
+            }
+        }
+    }
+}

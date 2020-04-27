@@ -1,0 +1,57 @@
+#upcoming-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#upcoming-container .villagerCard {
+  outline: 1px solid black;
+  width: 275px;
+  height: 400px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#upcoming-container .villagerCard h1 {
+  margin: 10px auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#upcoming-container .villagerCard img {
+  display: block;
+  margin: 0 auto;
+  max-height: 250px;
+  max-width: 275px;
+  cursor: pointer;
+}
+
+#upcoming-container .villagerCard .attribute {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#upcoming-container .villagerCard .attribute h3, #upcoming-container .villagerCard .attribute p {
+  margin: auto 0;
+}
+
+#upcoming-container .villagerCard .attribute h3 {
+  margin-right: 3px;
+}
+
+#upcoming-container .villagerCard .attribute h3:after {
+  content: ":";
+}
+/*# sourceMappingURL=upcoming.css.map */

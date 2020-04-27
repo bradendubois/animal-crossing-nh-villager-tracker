@@ -82,6 +82,9 @@ module.exports = {
             villagerImage.src = encodeURI("../assets/villager-data/images/" + villagerKey + ".jpg");
             villagerImage.title = VillagerData.primaryName(villagerKey);
             villagerImage.alt = "Image of " + villager[Storage.nameFormat()];
+            villagerImage.onclick = () => {
+                document.getElementById("villager-" + villagerKey).click();
+            }
             villagerCardDiv.appendChild(villagerImage);
             
             // Name of the villager
@@ -132,16 +135,22 @@ module.exports = {
 
             // Add the birthday (if defined)
             if (birthday !== undefined) {
+                let attribute = document.createElement("div");
+                attribute.classList.add("attribute");
                 birthdayText.innerText = birthday;
-                villagerCardDiv.appendChild(birthdayTitle)
-                villagerCardDiv.appendChild(birthdayText);
+                attribute.appendChild(birthdayTitle)
+                attribute.appendChild(birthdayText);
+                villagerCardDiv.appendChild(attribute);
             }
             
             // Add the star sign (if defined)
             if (starSign !== undefined) {
+                let attribute = document.createElement("div");
+                attribute.classList.add("attribute");
                 starSignText.innerText = starSign;
-                villagerCardDiv.appendChild(starSignTitle)
-                villagerCardDiv.appendChild(starSignText);
+                attribute.appendChild(starSignTitle)
+                attribute.appendChild(starSignText);
+                villagerCardDiv.appendChild(attribute);
             }
         }
     }
