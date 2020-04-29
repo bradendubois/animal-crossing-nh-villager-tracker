@@ -100,6 +100,7 @@ module.exports = {
                     villagerTd.addEventListener("click", () => {
                         document.getElementById("villager-"+villager).click();
                     });
+                    villagerTd.classList.add("clickable");
                     newRow.appendChild(villagerTd);
                 }
 
