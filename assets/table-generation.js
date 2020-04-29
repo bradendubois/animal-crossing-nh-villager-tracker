@@ -32,7 +32,7 @@ module.exports = {
                         categorized[value] = [];
                     }
 
-                    categorized[value].push(villagerData[villager][Storage.nameFormat()]);
+                    categorized[value].push(villager);
                 }
             } else {
                 if (!Object.keys(categorized).includes(villagerData[villager][attribute])) {
@@ -40,7 +40,7 @@ module.exports = {
                 }
 
                 // Store the villager
-                categorized[villagerData[villager][attribute]].push(villagerData[villager][Storage.nameFormat()]);
+                categorized[villagerData[villager][attribute]].push(villager);
             }
         }
 
@@ -91,9 +91,15 @@ module.exports = {
                         break;
                     }
 
+                    // Key for the villager
+                    let villager = categorized[attr][villagerIdx];
+
                     let villagerTd = document.createElement("td");
                     
-                    villagerTd.innerText = categorized[attr][villagerIdx];
+                    villagerTd.innerText = villagerData[villager][Storage.nameFormat()];
+                    villagerTd.addEventListener("click", () => {
+                        document.getElementById("villager-"+villager).click();
+                    });
                     newRow.appendChild(villagerTd);
                 }
 

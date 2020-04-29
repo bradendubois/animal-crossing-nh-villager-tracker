@@ -85,11 +85,16 @@ module.exports = {
             villagerImage.onclick = () => {
                 document.getElementById("villager-" + villagerKey).click();
             }
+            villagerImage.classList.add("clickable");
             villagerCardDiv.appendChild(villagerImage);
             
             // Name of the villager
             let villagerName = document.createElement("h1");
             villagerName.innerText = villager[Storage.nameFormat()];
+            villagerName.addEventListener("click", () => { 
+                document.getElementById("villager-"+villagerKey).click();
+            });
+            villagerName.classList.add("clickable");
             villagerCardDiv.appendChild(villagerName);
             upcomingContainer.appendChild(villagerCardDiv);
 

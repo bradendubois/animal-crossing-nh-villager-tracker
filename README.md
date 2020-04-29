@@ -71,7 +71,7 @@ npm start
 - [x] Enabling a filter so that *Attribute* pages only show favorite-ed villagers
 - [ ] A *Custom Search* page allowing villagers to be searched/filtered by any number and combination of attributes, such as *Personality*, *Species*, etc.
 - [ ] Improve handling of villagers with multiple values for an attribute. (i.e., if a villager had a value *a* in some games, and it changes to *b* for later games, they will create a new entry on most tables for the unique value of *a*&*b*, when they *should* be listed under each respective entry, with a note specifying for which game(s) they held that value).
-- [ ] Any villager's name is clickable and will take the user to that villager's specific page
+- [ ] Any villager's name *or image* is clickable and will take the user to that villager's specific page
 
 This Roadmap does not necessarily indicate the order things will be prioritized, and is always open to suggestions.
 

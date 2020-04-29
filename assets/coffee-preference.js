@@ -31,7 +31,11 @@ module.exports = {
             
             // Name
             name.innerText = villagerData[villager][Storage.nameFormat()];
-            name.classList.add("name")
+            name.classList.add("name");
+            name.addEventListener("click", () => {
+                document.getElementById("villager-"+villager).click();
+            })
+            name.classList.add("clickable");
             newRow.appendChild(name);
 
             // Grab coffee preferences if it exists

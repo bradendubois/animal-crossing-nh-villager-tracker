@@ -39,14 +39,19 @@ module.exports = {
             let figure = document.createElement("img");
             figure.src = encodeURI("../assets/villager-data/images/" + villager + ".jpg");
             figure.title = villagerDataModule.primaryName(villager);
-            figure.onclick = () => {
-                document.getElementById("villager-" + villager).click();
+            figure.onclick = () => { 
+                document.getElementById("villager-"+villager).click();
             }
+            figure.classList.add("clickable");
             newRow.appendChild(figure);
 
             // Name
             let name = document.createElement("td");
             name.innerText = villagerDataModule.primaryName(villager);
+            name.addEventListener("click", () => { 
+                document.getElementById("villager-"+villager).click();
+            });
+            name.classList.add("clickable");
             newRow.appendChild(name);
 
             // Birthday / Star Sign
