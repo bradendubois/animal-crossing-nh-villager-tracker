@@ -49,7 +49,6 @@ function updateAboutSection() {
 
     // Update the upcoming-birthday limit
     changeUpcomingLimit.value = storage.get("upcomingBirthdayLimit");
-
 }
 
 document.getElementById("reset-favorites").addEventListener("click", () => {
