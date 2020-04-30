@@ -3,6 +3,7 @@ const coffee = require("../assets/coffee-preference")
 const generator = require("../assets/table-generation")
 const storage = require("../assets/storage").access();
 const upcoming = require("../assets/upcoming-birthdays");
+const villagerNav = require("../assets/villager-nav");
 
 // These tables all follow the same layout
 //  They can be generated uniformly with the table generator
@@ -117,17 +118,21 @@ storage.onDidChange("favorite", () => {
   updateFavorites();
 })
 
+// Reload the villager nav bar if the language preferred changes
+storage.onDidChange("preferred-name-language", () => {
+  villagerNav.loadNavBar();
+  updateFavorites();
+});
+
+// Import the villagers
+
 function initialize() {
+
+  // Load all the villager buttons
+  villagerNav.loadNavBar();
+
   // Highlight appropriate "favorites"
   updateFavorites()
-
-  // Assume a default shown section
-  if (storage.get("selectedContent") === undefined) {
-    storage.set("selectedContent", {
-      "button": "about",
-      "section": "about-section"
-    });
-  }
 
   // Apply the "shown" class where appropriate
   updateShownContent();

@@ -38,10 +38,16 @@ module.exports = {
         else
             return villagerData[villager]["name_jp"] || "Japanese N/A";
     },
+
     secondaryName: (villager) => {
         if (Storage.nameFormat() === "name_en")
             return villagerData[villager]["name_jp"] || "Japanese N/A ";
         else
             return villagerData[villager]["name_en"] || "English N/A";
+    
+    },
+
+    hasPrimaryName: (villager) => {
+        return villagerData[villager][Storage.nameFormat()] !== undefined;
     }
 };

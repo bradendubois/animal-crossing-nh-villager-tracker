@@ -3,25 +3,12 @@ const villagerData = require("./villager-data").access();
 
 const storage = require("./storage").access();
 
+
+
+
 // The nav section that will list a button for each villager
 const villagerNavSection = document.getElementById("villagers")
 
-// One for each villager
-for (let villager in villagerData) {
-
-    let button = document.createElement("button");
-    button.id = "villager-" + villager;
-    button.innerText = VillagerData.primaryName(villager);
-    button.classList.add("nav-button");
-    button.classList.add("villager-button");
-
-    button.addEventListener('click', () => {
-        populateVillagerInformation(villager);
-    });
-
-    // Insert into the nav section
-    villagerNavSection.appendChild(button);
-}
 
 // Populates the villager information page
 function populateVillagerInformation(villager) {
@@ -94,7 +81,7 @@ function populateVillagerInformation(villager) {
 
 // Helper function get each parameter in the villager page
 function getVillagerSections() {
-
+    
     return {
         primaryName: document.getElementById("villager-primary-name"),
         secondaryName: document.getElementById("villager-secondary-name"),
@@ -123,5 +110,60 @@ function getVillagerSections() {
         appearances: document.getElementById("villager-appearances"),
         image: document.getElementById("villager-image"),
         favoriteButton: document.getElementById("toggle-favorite")
+    }
+}
+
+
+module.exports = {
+
+    loadNavBar: () => {
+
+        // A list to hold villager who do have a name in the preferred language
+        let localizedVillagers = [];
+
+        // A list to hold villagers who don't have a name in the preferred language
+        let unlocalizedVillagers = [];
+
+        // One for each villager
+        for (let villager in villagerData) {
+
+            let button = document.createElement("button");
+            button.id = "villager-" + villager;
+            button.classList.add("nav-button");
+            button.classList.add("villager-button");
+
+            button.addEventListener('click', () => {
+                populateVillagerInformation(villager);
+            });
+
+            // Insert name if it is defined in this language,
+            //      otherwise it goes in a list to be placed at the end
+            if (VillagerData.hasPrimaryName(villager)) {
+                button.innerText = VillagerData.primaryName(villager);
+                localizedVillagers.push(button);
+            } else {
+                button.innerText = VillagerData.secondaryName(villager);
+                unlocalizedVillagers.push(button);
+            }
+
+        }
+
+        // Sort both lists of villagers
+        localizedVillagers.sort();
+        unlocalizedVillagers.sort();
+
+        // Container and old list of villager buttons
+        let villagerNavContainer = document.getElementById("villagers-container");
+        let oldVillagerContainer = document.getElementById("villagers");
+        
+        // Create a new div to hide the HTML generation
+        let newVillagerContainer = document.createElement("div");
+        newVillagerContainer.id = "villagers";
+        
+        // Add all the villagers
+        for (let villager of localizedVillagers.concat(unlocalizedVillagers))
+            newVillagerContainer.appendChild(villager);
+                
+        villagerNavContainer.replaceChild(newVillagerContainer, oldVillagerContainer);
     }
 }

@@ -122,11 +122,11 @@ nav .nav-category .shown.is_favorite:active {
   background-color: #665600;
 }
 
-nav .villager-container {
+nav #villagers-container {
   min-height: 0;
 }
 
-nav .villager-container #villagers {
+nav #villagers-container #villagers {
   min-height: 0;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;

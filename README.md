@@ -74,7 +74,7 @@ npm start
 - [x] Any villager's name *or image* is clickable and will take the user to that villager's specific page.
 - [ ] An actual context/app-menu (typically in the top left of the user's running application, or in the top window bar for OSX and some other desktop environments).
 - [ ] Clicking any listing of an attribute, such as in the *Favorites* section or a villager's specific page listing their attributes will open that respective page, wherein all villagers are sorted by that attribute
-- [ ] In the nav menu, list and sort villagers by the preferred language, not just English. Involves re-listing on a language change.
+- [x] In the nav menu, list and sort villagers by the preferred language, not just English. Involves re-listing on a language change.
 
 This Roadmap does not necessarily indicate the order things will be prioritized, and is always open to suggestions.
 
@@ -84,3 +84,9 @@ This Roadmap does not necessarily indicate the order things will be prioritized,
 * [electron-store](https://github.com/sindresorhus/electron-store), a module to easily enable and access persistant userdata. 
 * The [Animal Crossing Fandom Wiki](https://animalcrossing.fandom.com/wiki/Animal_Crossing_Wiki), for hosting all the data on the villagers; this data is scraped by [another project I made](https://github.com/bradendubois/animal-crossing-wiki-villager-scraper).
 * The [Animal Crossing Leaf](https://commons.wikimedia.org/wiki/File:ACLeaf.svg) which I have modified to create the logo for the project. The icon is distributed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en) license.
+
+## Contributions
+
+In numerous spots, villagers are listed by their name, either English or Japanese; I do not speak nor read Japanese, and I do not know whether there are any problems with how they are presented. Similarly, in the navigation bar, villagers are listed by their name, and sorted alphabetically; I do not know if the sorted lists are correct in Japanese.
+
+If you are fluent in Japanese and can shed some light on any issues or sorting inaccuracies with the Japanese versions, please do let me know.

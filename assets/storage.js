@@ -17,6 +17,14 @@ function initializeSaveData() {
     if (storage.get("preferred-name-language") === undefined) {
         storage.set("preferred-name-language", "english");
     }
+
+    // Assume a default shown section
+    if (storage.get("selectedContent") === undefined) {
+        storage.set("selectedContent", {
+        "button": "about",
+        "section": "about-section"
+        });
+    }
 }
 
 initializeSaveData();

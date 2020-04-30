@@ -1,3 +1,6 @@
+// All the villager buttons
+const VillagerNav = require("./villager-nav");
+
 // All imported files in the document
 const links = document.querySelectorAll('link[rel="import"]')
 
@@ -7,3 +10,5 @@ Array.prototype.forEach.call(links, (link) => {
     let clone = document.importNode(template.content, true)
     document.querySelector('.content').appendChild(clone)
 })
+
+VillagerNav.loadNavBar();
