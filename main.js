@@ -4,16 +4,16 @@ require('update-electron-app') ({
 
 const path = require('path')
 const glob = require('glob')
-const {app, BrowserWindow} = require('electron')
+const {BrowserWindow, Menu, app} = require('electron')
+const AppMenu = require("./main-process/app-menu")
 
 const debug = /--debug/.test(process.argv[2])
 
 let mainWindow = null;
   
 function initialize () {
-  makeSingleInstance()
 
-  //loadDemos()
+  makeSingleInstance()
 
   function createWindow () {
     
@@ -47,6 +47,8 @@ function initialize () {
   }
 
   app.on('ready', () => {
+    const menu = Menu.buildFromTemplate(AppMenu.Menu())
+    Menu.setApplicationMenu(menu)
     createWindow()
   })
 

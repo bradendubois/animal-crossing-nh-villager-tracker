@@ -3,9 +3,6 @@ const villagerData = require("./villager-data").access();
 
 const storage = require("./storage").access();
 
-
-
-
 // The nav section that will list a button for each villager
 const villagerNavSection = document.getElementById("villagers")
 
