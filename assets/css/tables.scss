@@ -37,15 +37,24 @@ table {
     }
 }
 
+.mini {
+    max-height: 30px;
+    max-width: 30px;
+}
+
 #coffee-preference-table {
 
+    thead {
+        font-weight: 500;
+    }
+    
     tr {
         td {
             font-weight: 400;
+        }
 
-            &:first-of-type {
-                font-weight: 500;
-            }
+        .name {
+            font-weight: 500;
         }
     }
 }

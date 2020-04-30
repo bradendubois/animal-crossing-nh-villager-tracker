@@ -1,4 +1,6 @@
 const Storage = require("./storage");
+const storage = Storage.access();
+const villagerDataModule = require("./villager-data");
 
 module.exports = { 
     
@@ -94,14 +96,32 @@ module.exports = {
                     // Key for the villager
                     let villager = categorized[attr][villagerIdx];
 
-                    let villagerTd = document.createElement("td");
-                    
-                    villagerTd.innerText = villagerData[villager][Storage.nameFormat()];
-                    villagerTd.addEventListener("click", () => {
+                    // Optional preview of the villager
+                    if (storage.get("show-mini-icons")) {
+
+                        let figure = document.createElement("img");
+                        figure.src = encodeURI("../assets/villager-data/images/" + villager + ".jpg");
+                        figure.title = villagerDataModule.primaryName(villager);
+                        figure.onclick = () => { 
+                            document.getElementById("villager-"+villager).click();
+                        }
+                        figure.classList.add("clickable");
+                        figure.classList.add("mini");
+
+                        // Create a TD for the image and add it
+                        let imageTD = document.createElement("td");
+                        imageTD.appendChild(figure);
+                        newRow.appendChild(imageTD);
+                    }
+
+                    // Name of the villager
+                    let nameTD = document.createElement("td");
+                    nameTD.innerText = villagerData[villager][Storage.nameFormat()];
+                    nameTD.addEventListener("click", () => {
                         document.getElementById("villager-"+villager).click();
                     });
-                    villagerTd.classList.add("clickable");
-                    newRow.appendChild(villagerTd);
+                    nameTD.classList.add("clickable");
+                    newRow.appendChild(nameTD);
                 }
 
                 table.appendChild(newRow);

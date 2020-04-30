@@ -36,7 +36,7 @@ function initializeSaveData() {
 
     // Assume the user does want small icons beside names shwon
     if (storage.get("show-mini-icons") === undefined) {
-        storage.set("show-mini-icons", true);
+        storage.set("show-mini-icons", false);
     }
 }
 

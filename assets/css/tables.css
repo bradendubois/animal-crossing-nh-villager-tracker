@@ -37,11 +37,20 @@ table thead th {
   content: ")";
 }
 
+.mini {
+  max-height: 30px;
+  max-width: 30px;
+}
+
+#coffee-preference-table thead {
+  font-weight: 500;
+}
+
 #coffee-preference-table tr td {
   font-weight: 400;
 }
 
-#coffee-preference-table tr td:first-of-type {
+#coffee-preference-table tr .name {
   font-weight: 500;
 }
 /*# sourceMappingURL=tables.css.map */

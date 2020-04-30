@@ -1,11 +1,32 @@
 const Storage = require("./storage");
+const storage = Storage.access();
+const villagerDataModule = require("./villager-data");
 
 module.exports = { 
     
     loadCoffeePreferencesTable: () => {
 
+        // Setup the thead
+        let thead = document.getElementById("coffee-preference-thead");
+        while (thead.firstChild) {
+            thead.removeChild(thead.firstChild);
+        }
+
+        // If enabled, add a blank column for images
+        if (storage.get("show-mini-icons")) {
+            thead.appendChild(document.createElement("td"));
+        }
+
+        // Add all the regular columns
+        const columns = ["Villager Name", "Beans", "Milk", "Sugar"];
+        columns.forEach(column => {
+            let td = document.createElement("td");
+            td.innerText = column;
+            thead.appendChild(td);
+        });
+
         // Get villager data, ensuring that we filter to only the favorites if toggled
-        let villagerData = require("./villager-data").access(true);
+        let villagerData = villagerDataModule.access(true);
 
         // Old tbody to replace
         let oldBody = document.getElementById("coffee-preference-table-body");
@@ -29,6 +50,24 @@ module.exports = {
             let milk = document.createElement("td");
             let sugar = document.createElement("td");
             
+            // Optional preview of the villager
+            if (storage.get("show-mini-icons")) {
+
+                let figure = document.createElement("img");
+                figure.src = encodeURI("../assets/villager-data/images/" + villager + ".jpg");
+                figure.title = villagerDataModule.primaryName(villager);
+                figure.onclick = () => { 
+                    document.getElementById("villager-"+villager).click();
+                }
+                figure.classList.add("clickable");
+                figure.classList.add("mini");
+
+                // Create a TD for the image and add it
+                let imageTD = document.createElement("td");
+                imageTD.appendChild(figure);
+                newRow.appendChild(imageTD);
+            }
+
             // Name
             name.innerText = villagerData[villager][Storage.nameFormat()];
             name.classList.add("name");
