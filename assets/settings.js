@@ -20,6 +20,9 @@ const languageButtons = document.querySelectorAll(".language-change-button");
 const resetUpcomingLimit = document.getElementById("reset-upcoming-limit");
 const changeUpcomingLimit = document.getElementById("change-upcoming-limit");
 
+const previewButtons = document.querySelectorAll(".icon-preview-button");
+
+
 function updateAboutSection() {
 
     // Count how many villagers are favorited
@@ -46,6 +49,9 @@ function updateAboutSection() {
             button.checked = true;
         }
     }));
+
+    previewButtons[0].checked = storage.get("show-mini-icons");
+    previewButtons[1].checked = !storage.get("show-mini-icons");
 
     // Update the upcoming-birthday limit
     changeUpcomingLimit.value = storage.get("upcomingBirthdayLimit");
@@ -75,6 +81,17 @@ resetUpcomingLimit.addEventListener("click", () => {
 changeUpcomingLimit.addEventListener("input", () => {
     storage.set("upcomingBirthdayLimit", changeUpcomingLimit.value);
 });
+
+
+
+
+previewButtons[0].addEventListener("click", () => { 
+    storage.set("show-mini-icons", true) 
+});
+previewButtons[1].addEventListener("click", () => { 
+    storage.set("show-mini-icons", false) 
+});
+
 
 // Update text whenever any data changes
 storage.onDidAnyChange(() => {

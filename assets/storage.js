@@ -35,8 +35,8 @@ function initializeSaveData() {
     }
 
     // Assume the user does want small icons beside names shwon
-    if (storage.get("showMiniIcons") === undefined) {
-        storage.set("showMiniIcons", true);
+    if (storage.get("show-mini-icons") === undefined) {
+        storage.set("show-mini-icons", true);
     }
 }
 
@@ -50,6 +50,7 @@ module.exports = {
 
     // Get "name_en" / "name_jp" depending on preferred language
     nameFormat: () => {
+
         let lang = storage.get("preferred-name-language");
 
         if (lang === "english")
