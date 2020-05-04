@@ -75,7 +75,8 @@ npm start
 - [x] An actual context/app-menu (typically in the top left of the user's running application, or in the top window bar for OSX and some other desktop environments).
 - [ ] Clicking any listing of an attribute, such as in the *Favorites* section or a villager's specific page listing their attributes will open that respective page, wherein all villagers are sorted by that attribute
 - [x] In the nav menu, list and sort villagers by the preferred language, not just English. Involves re-listing on a language change.
-- [ ] Tables under *By Attributes* have a tiny image of the villager beside their name, and this is toggleable.
+- [x] Tables under *By Attributes* have a tiny image of the villager beside their name, and this is toggleable.
+- [ ] A navigation feature enabling the user to "go back" to previous pages.
 
 This Roadmap does not necessarily indicate the order things will be prioritized, and is always open to suggestions.
 
