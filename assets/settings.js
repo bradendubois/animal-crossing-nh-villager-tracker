@@ -92,7 +92,7 @@ resetUpcomingLimit.addEventListener("click", () => {
 }); 
 
 changeUpcomingLimit.addEventListener("input", () => {
-    storage.set("upcomingBirthdayLimit", changeUpcomingLimit.value);
+    storage.set("upcomingBirthdayLimit", parseInt(changeUpcomingLimit.value));
 });
 
 

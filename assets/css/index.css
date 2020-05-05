@@ -58,7 +58,7 @@ h1 {
   font-size: 22pt;
 }
 
-.clickable {
+.clickable, button {
   cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */
