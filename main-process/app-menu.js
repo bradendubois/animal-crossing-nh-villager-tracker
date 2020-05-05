@@ -1,4 +1,5 @@
 const {BrowserWindow, app, shell, remote} = require('electron')
+const Navigation = require("../assets/navigation-stack");
 
 module.exports = {
 
@@ -7,6 +8,17 @@ module.exports = {
         let AppMenu = [{
             label: 'File',
             submenu: [{
+                label: 'Go Back',
+                accelerator: 'CmdOrCtrl+Z',
+                enabled: true,
+                key: 'goBack',
+                click: () => {
+                  // app.emit('activate')
+                  Navigation.pop();
+                }
+              }, {
+                type: 'separator'
+              }, {
                 label: 'Quit',
                 accelerator: 'Ctrl+Q',
                 click: () => { 
@@ -88,10 +100,24 @@ module.exports = {
                     shell.openExternal('https://github.com/bradendubois/animal-crossing-nh-villager-tracker')
                 }
             }, {
-                label: 'Open an Issue',
+                type: 'separator'
+            }, {
+                label: 'Report a Bug',
+                click: () => {
+                    shell.openExternal('https://github.com/bradendubois/animal-crossing-nh-villager-tracker/issues/new?assignees=bradendubois&labels=&template=bug-report-template.md&title=Bug+Report+%5BSUMMARY+HERE%5D')
+                }
+            }, {
+                label: 'Request a Feature',
+                click: () => {
+                    shell.openExternal('https://github.com/bradendubois/animal-crossing-nh-villager-tracker/issues/new?assignees=bradendubois&labels=&template=feature-request.md&title=Feature+Request+%5BSUMMARY+HERE%5D')
+                }
+            }, {
+                label: 'Submit a General Issue',
                 click: () => {
                     shell.openExternal('https://github.com/bradendubois/animal-crossing-nh-villager-tracker/issues')
                 }
+            }, {
+                type: 'separator'
             }, {
                 label: 'See My Other Projects',
                 click: () => {

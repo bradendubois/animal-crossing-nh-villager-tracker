@@ -11,7 +11,6 @@ function stackCorrection() {
     
     console.log(stack.length, limit)
     if (stack.length > limit) {
-        console.log("Here");
         storage.set("navigation-stack", stack.slice(stack.length - limit));
     }
 
@@ -33,11 +32,12 @@ module.exports = {
 
     pop: () => {
         let stack = storage.get("navigation-stack");  
-        if (stack.length > 0) {
-            let newPage = stack.pop();
+        if (stack.length > 1) {
+            stack.pop();
+            let newPage = stack[stack.length-1];
             storage.set("selectedContent", newPage);
             storage.set("navigation-stack", stack);
+            stackCorrection();
         }
-        stackCorrection();
     }
 }
