@@ -38,6 +38,27 @@ function initializeSaveData() {
     if (storage.get("show-mini-icons") === undefined) {
         storage.set("show-mini-icons", false);
     }
+
+    // Assume no upper-bound limit
+    if (storage.get("upcomingBirthdayLimit") === undefined) {
+        storage.set("upcomingBirthdayLimit", -1);
+    }
+
+    // Assume the stack is not reset on launch
+    if (storage.get("launch-reset-stack") === undefined) {
+        storage.set("launch-reset-stack", false);
+    }
+
+    // Assume a decent stack limit
+    if (storage.get("stack-size-limit") === undefined) {
+        storage.set("stack-size-limit", 1000);
+    }
+
+    // Reset the stack if the setting for this is enabled
+    if (storage.get("launch-reset-stack") || storage.get("navigation-stack") === undefined) {
+        storage.set("navigation-stack", []);
+    }
+
 }
 
 // Initialize anything not set on load

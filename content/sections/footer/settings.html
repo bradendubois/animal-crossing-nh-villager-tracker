@@ -120,6 +120,34 @@
                 </p>
             </div>
 
+            <div class="setting">
+                <h4>Navigation Stack Size</h4>
+
+                <hr />
+
+                <p>The app menu in the top left shows the option to <em>return to the previous page</em>. This utilizes a stack, which can be persistent across sessions. This stack only stores a small segment of text per page, and so does not take much space. This limit is the <em>number of pages stored in this stack</em>; therefore, a higher limit allows the user to "go back" through more pages. By default, this is set to <em>1000</em>. To <em>disable any upper-bound on stack size</em>, use a value of <em>-1</em>.</p>
+
+                <form>
+                    <button class="footer-button" id="reset-stack-limit">Reset</button>
+
+                    <label>Set the stack-limit: 
+                        <input id="change-stack-limit" type="number" />
+                    </label>
+
+                    <p>Reset history on launch: </p>
+                        
+                        <label>Enable: 
+                            <input class="stack-reset-button" type="radio" name="stack-reset" value="enable"/>
+                        </label>
+
+                        <label>Disable: 
+                            <input class="stack-reset-button" type="radio" name="stack-reset" value="disable"/>
+                        </label>
+                </form>
+
+                </p>
+            </div>
+
         </div>
     </section>
 

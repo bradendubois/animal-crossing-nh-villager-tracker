@@ -22,6 +22,10 @@ const changeUpcomingLimit = document.getElementById("change-upcoming-limit");
 
 const previewButtons = document.querySelectorAll(".icon-preview-button");
 
+const resetStackLimit = document.getElementById("reset-stack-limit");
+const stackLimitSize = document.getElementById("change-stack-limit");
+
+const stackButtons = document.querySelectorAll(".stack-reset-button");
 
 function updateAboutSection() {
 
@@ -55,7 +59,16 @@ function updateAboutSection() {
 
     // Update the upcoming-birthday limit
     changeUpcomingLimit.value = storage.get("upcomingBirthdayLimit");
+
+    // Update what the stack limit shows
+    stackLimitSize.value = storage.get("stack-size-limit");
+
+    // Update which stack setting button is checked
+    stackButtons[0].checked = storage.get("launch-reset-stack");
+    stackButtons[1].checked = !storage.get("launch-reset-stack");
+
 }
+
 
 document.getElementById("reset-favorites").addEventListener("click", () => {
     storage.set("favorite", {});
@@ -90,6 +103,22 @@ previewButtons[0].addEventListener("click", () => {
 });
 previewButtons[1].addEventListener("click", () => { 
     storage.set("show-mini-icons", false) 
+});
+
+
+resetStackLimit.addEventListener("click", () => {
+    storage.set("stack-size-limit", 1000);
+});
+
+stackLimitSize.addEventListener("input", () => {
+    storage.set("stack-size-limit", stackLimitSize.value);
+});
+
+stackButtons[0].addEventListener("click", () => { 
+    storage.set("launch-reset-stack", true) 
+});
+stackButtons[1].addEventListener("click", () => { 
+    storage.set("launch-reset-stack", false) 
 });
 
 
