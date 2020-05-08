@@ -4,6 +4,7 @@ const generator = require("../assets/table-generation")
 const storage = require("../assets/storage").access();
 const upcoming = require("../assets/upcoming-birthdays");
 const villagerNav = require("../assets/villager-nav");
+const Navigation = require("../assets/navigation-stack");
 
 // These tables all follow the same layout
 //  They can be generated uniformly with the table generator
@@ -66,11 +67,10 @@ function sectionChange(event) {
 
   console.log("Showing", event.target.id, sectionID);
 
-  // Save the currently opened window
-  storage.set("selectedContent", {
+  Navigation.push({
     "button": event.target.id,
     "section": sectionID
-  });
+  })
 }
 
 function updateShownContent() {

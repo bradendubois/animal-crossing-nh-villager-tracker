@@ -1,5 +1,5 @@
-@import url(/home/braden/projects/animal-crossing-nh-villager-tracker/assets/css/villagers.css);
-@import url(/home/braden/projects/animal-crossing-nh-villager-tracker/assets/css/variables.css);
+@import url(/home/braden/Projects/animal-crossing-nh-villager-tracker/assets/css/villagers.css);
+@import url(/home/braden/Projects/animal-crossing-nh-villager-tracker/assets/css/variables.css);
 body {
   font-family: "Manrope", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -58,7 +58,7 @@ h1 {
   font-size: 22pt;
 }
 
-.clickable {
+.clickable, button {
   cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */
