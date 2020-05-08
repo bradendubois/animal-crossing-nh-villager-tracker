@@ -1,5 +1,5 @@
 const {BrowserWindow, app, shell, remote} = require('electron')
-const Navigation = require("../assets/navigation-stack");
+const Navigation = require("../assets/navigation");
 
 module.exports = {
 

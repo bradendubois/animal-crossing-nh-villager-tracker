@@ -59,6 +59,22 @@ function initializeSaveData() {
         storage.set("navigation-stack", []);
     }
 
+    // A default ordering to show in the "favorites" section
+    let defaultFavoriteAttributes = [
+        "Villager Name",
+        "Birthday",
+        "Star Sign",
+        "Species",
+        "Personality",
+        "Initial Phrase",
+        "Appearances"
+    ].map(entry => { return {
+        display: entry,
+        id: entry.toLowerCase().split(" ").join("-")
+    }});
+    if (storage.get("specified-favorite-attributes") === undefined) {
+        storage.set("specified-favorite-attributes", defaultFavoriteAttributes);
+    }
 }
 
 // Initialize anything not set on load

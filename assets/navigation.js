@@ -36,5 +36,9 @@ module.exports = {
             storage.set("navigation-stack", stack);
             stackCorrection();
         }
+    },
+
+    clickSection: (id)  => {
+        document.getElementById(id).click();
     }
 }

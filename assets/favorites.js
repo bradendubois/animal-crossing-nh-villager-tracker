@@ -1,30 +1,49 @@
 const Storage = require("./storage")
 const storage = require("./storage").access();
-
+const Navigation = require("./navigation")
 const villagerDataModule = require("./villager-data");
-const villagerData = require("./villager-data").access();
+
+// Table containing the tbody
+const table = document.getElementById("favorite-villager-table");
+const thead = document.getElementById("favorite-villager-table-thead");
 
 module.exports = { 
     
     loadFavoritesTable: () => {
 
-        // Favorites is a dictionary
-        let favorites = storage.get("favorite", []);
-        
-        // Get each villager name (the key)
-        let villagers = [];
-        for (let key in favorites) {
+        // Empty the thead
+        while (thead.firstChild)
+            thead.removeChild(thead.firstChild);
 
-            // Only add if the villager is favorited
-            if (favorites[key])
-                villagers.push(key);
+        // Insert an empty th if the user wants image previews
+        if (storage.get("show-mini-icons")) {
+            thead.appendChild(document.createElement("th"))
         }
 
-        // Alphabetical order
-        villagers.sort();
+        let specifiedFavoriteAttributes = storage.get("specified-favorite-attributes");
+        
+        // Iterate through the order specified and add a column for each
+        for (let column of specifiedFavoriteAttributes) {
+            let newTD = document.createElement("th");
+            newTD.innerText = column.display;
 
-        // Table containing the tbody
-        let table = document.getElementById("favorite-villager-table");
+            console.log(column.id, document.getElementById(column.id))
+            if (document.getElementById(column.id)) {
+                newTD.classList.add("clickable");
+                newTD.addEventListener("click", () => {
+                    Navigation.clickSection(column.id);
+                });
+            }
+
+            thead.appendChild(newTD);
+        }
+
+        return;
+        
+        
+        // Get the favorited villagers and sort by alphabetical order
+        let villagerData = require("./villager-data").access(true);
+        villagers.sort();
 
         // Create a new tbody that will contain the villagers
         let emptyBody = document.createElement("tbody")

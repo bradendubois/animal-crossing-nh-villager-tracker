@@ -4,7 +4,8 @@ const generator = require("../assets/table-generation")
 const storage = require("../assets/storage").access();
 const upcoming = require("../assets/upcoming-birthdays");
 const villagerNav = require("../assets/villager-nav");
-const Navigation = require("../assets/navigation-stack");
+const Navigation = require("./navigation");
+
 
 // These tables all follow the same layout
 //  They can be generated uniformly with the table generator
@@ -138,7 +139,7 @@ function initialize() {
   updateShownContent();
 
   // On load, kickstart the shown page to load by simulating a click!
-  document.getElementById(storage.get("selectedContent").button).click();
+  Navigation.clickSection(storage.get("selectedContent").button);
 }
 
 initialize();
