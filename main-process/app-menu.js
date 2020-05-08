@@ -12,9 +12,10 @@ module.exports = {
                 accelerator: 'CmdOrCtrl+Z',
                 enabled: true,
                 key: 'goBack',
-                click: () => {
+                click: (item, focusedWindow) => {
                   // app.emit('activate')
                   Navigation.pop();
+                  focusedWindow.reload()
                 }
               }, {
                 type: 'separator'

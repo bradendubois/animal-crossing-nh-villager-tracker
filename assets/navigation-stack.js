@@ -1,5 +1,4 @@
-const storageAccess = require("./storage");
-const storage = storageAccess.access();
+const storage = require("./storage").access();
 
 function stackCorrection() {
 
@@ -9,7 +8,6 @@ function stackCorrection() {
         return;
     }
     
-    console.log(stack.length, limit)
     if (stack.length > limit) {
         storage.set("navigation-stack", stack.slice(stack.length - limit));
     }
@@ -24,7 +22,6 @@ module.exports = {
     push: (content) => {
         storage.set("selectedContent", content);
         let stack = storage.get("navigation-stack");
-        console.log(stack);
         stack.push(content)
         storage.set("navigation-stack", stack);
         stackCorrection();
