@@ -8,6 +8,22 @@ const Store = require("electron-store");
 //    storage changes in one file not triggering an event in another
 const storage = new Store();
 
+
+// All options to show in the "favorites" section
+let favoriteOptions = [
+    "Villager Name",
+    "Birthday",
+    "Star Sign",
+    "Species",
+    "Personality",
+    "Initial Phrase",
+    "Appearances"
+].map(entry => { return {
+    display: entry,
+    id: entry.toLowerCase().split(" ").join("-")
+}});
+
+
 // Initialize saved data
 function initializeSaveData() {
     
@@ -60,25 +76,14 @@ function initializeSaveData() {
     }
 
     // A default ordering to show in the "favorites" section
-    let defaultFavoriteAttributes = [
-        "Villager Name",
-        "Birthday",
-        "Star Sign",
-        "Species",
-        "Personality",
-        "Initial Phrase",
-        "Appearances"
-    ].map(entry => { return {
-        display: entry,
-        id: entry.toLowerCase().split(" ").join("-")
-    }});
     if (storage.get("specified-favorite-attributes") === undefined) {
-        storage.set("specified-favorite-attributes", defaultFavoriteAttributes);
+        storage.set("specified-favorite-attributes", favoriteOptions);
     }
 }
 
 // Initialize anything not set on load
 initializeSaveData();
+
 
 module.exports = {
 
