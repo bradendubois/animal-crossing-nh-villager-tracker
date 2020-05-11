@@ -1,0 +1,27 @@
+#favorite-villager-attributes-container {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    .favoriteAttribute {
+
+        border: 1px solid black;
+        margin: 5px auto 5px 0;
+        min-width: 100px;
+        
+        display: flex;
+        flex-direction: column;
+
+        p {
+            text-align: center;
+            margin: 10px;
+            font-weight: 600;
+        }
+
+        button {
+            flex-basis: 0.5;
+            flex-grow: 0;
+        }
+    }
+}

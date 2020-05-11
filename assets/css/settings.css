@@ -1,0 +1,39 @@
+#favorite-villager-attributes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#favorite-villager-attributes-container .favoriteAttribute {
+  border: 1px solid black;
+  margin: 5px auto 5px 0;
+  min-width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#favorite-villager-attributes-container .favoriteAttribute p {
+  text-align: center;
+  margin: 10px;
+  font-weight: 600;
+}
+
+#favorite-villager-attributes-container .favoriteAttribute button {
+  -ms-flex-preferred-size: 0.5;
+      flex-basis: 0.5;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+/*# sourceMappingURL=settings.css.map */

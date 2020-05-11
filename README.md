@@ -67,7 +67,7 @@ npm start
 - [ ] Adding search options to various pages to make finding particular villagers easier
 - [ ] Adding sort features on the *Coffee Preferences* page to group by various *Bean*/*Milk*/*Sugar* preferences.
 - [ ] Adding **Attribute** pages for *Appearances* and *Star Sign*.
-- [ ] Toggling whether the preferred name is the English or Japanese.
+- [x] Toggling whether the preferred name is the English or Japanese.
 - [x] Enabling a filter so that *Attribute* pages only show favorite-ed villagers
 - [ ] A *Custom Search* page allowing villagers to be searched/filtered by any number and combination of attributes, such as *Personality*, *Species*, etc.
 - [ ] Improve handling of villagers with multiple values for an attribute. (i.e., if a villager had a value *a* in some games, and it changes to *b* for later games, they will create a new entry on most tables for the unique value of *a*&*b*, when they *should* be listed under each respective entry, with a note specifying for which game(s) they held that value).
@@ -77,8 +77,9 @@ npm start
 - [x] In the nav menu, list and sort villagers by the preferred language, not just English. Involves re-listing on a language change.
 - [x] Tables under *By Attributes* have a tiny image of the villager beside their name, and this is toggleable.
 - [x] A navigation feature enabling the user to "go back" to previous pages.
-
+- [ ] Improved localization support; the game has villagers with named localized to various languages beyond EN/JP.
 This Roadmap does not necessarily indicate the order things will be prioritized, and is always open to suggestions.
+- [x] Have the Favorites page be customizable so that the user can choose the order in which attributes are listed.
 
 ## Acknowledgements
 

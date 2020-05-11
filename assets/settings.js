@@ -1,7 +1,7 @@
 const {shell} = require("electron");
 
-const storageAccess = require("./storage");
-const storage = storageAccess.access();
+const Storage = require("./storage");
+const storage = Storage.access();
 
 // Feature to open save data in a file browser
 document.getElementById("open-save-data").addEventListener('click', () => {
@@ -26,6 +26,12 @@ const resetStackLimit = document.getElementById("reset-stack-limit");
 const stackLimitSize = document.getElementById("change-stack-limit");
 
 const stackButtons = document.querySelectorAll(".stack-reset-button");
+
+const resetFavoriteVillagerAttributesButtons = document.getElementById("reset-favorite-villager-attributes");
+const favoriteVillagerAttributes = document.getElementById("favorite-villager-attributes-container");
+resetFavoriteVillagerAttributesButtons.addEventListener("click", () => {
+    storage.set("specified-favorite-attributes", Storage.favoriteOptionsDefaults());
+});
 
 function updateAboutSection() {
 
@@ -67,8 +73,85 @@ function updateAboutSection() {
     stackButtons[0].checked = storage.get("launch-reset-stack");
     stackButtons[1].checked = !storage.get("launch-reset-stack");
 
+    loadFavoriteAttributeCustomizationTable()
 }
 
+function loadFavoriteAttributeCustomizationTable() {
+
+    // Unload any items in the attribute container
+    while (favoriteVillagerAttributes.firstChild)
+        favoriteVillagerAttributes.removeChild(favoriteVillagerAttributes.firstChild);
+    
+
+    let idx = 0;
+    for (let attribute of storage.get("specified-favorite-attributes")) {
+        
+
+        let attributeDiv = document.createElement("div");
+        attributeDiv.classList.add("favoriteAttribute")
+        let buttonContainer = document.createElement("div");
+        
+        if (idx > 0) {
+            let leftButton = document.createElement("button");
+            leftButton.innerText = "Left";
+            leftButton.classList.add("move-attribute-button");
+            leftButton.value = [-1, attribute.id];
+
+            buttonContainer.appendChild(leftButton);
+        }
+
+        let attributeText = document.createElement("p");
+        attributeText.innerText = attribute.display;
+        attributeDiv.appendChild(attributeText);
+
+        if (idx < storage.get("specified-favorite-attributes").length-1) {
+        
+            let rightButton = document.createElement("button");
+        rightButton.innerText = "Right";
+        rightButton.classList.add("move-attribute-button");
+        rightButton.value = [1, attribute.id];
+
+        buttonContainer.appendChild(rightButton);
+        }
+        
+        attributeDiv.appendChild(buttonContainer)
+        favoriteVillagerAttributes.appendChild(attributeDiv)
+        
+        idx++;
+    }
+
+    let allButtons = document.querySelectorAll(".move-attribute-button");
+    console.log(allButtons)
+
+    let mutableOrdering = storage.get("specified-favorite-attributes")
+    let idMap = mutableOrdering.map(ele => ele.id) 
+        
+    Array.prototype.forEach.call(allButtons, (button => {
+        
+        button.addEventListener("click", () => {
+            
+            
+            console.log(button.value.split(",")[1])
+            console.log(mutableOrdering.map(ele => ele.id))
+            let sourceIndex = idMap.indexOf(button.value.split(",")[1])
+            let shift = parseInt(button.value.split(",")[0]);
+            console.log(sourceIndex)
+
+            console.log(sourceIndex, shift)
+            
+            
+            let currentItem = mutableOrdering[sourceIndex];
+            let newPosition = mutableOrdering[sourceIndex+shift];
+
+            mutableOrdering[sourceIndex] = newPosition;
+            mutableOrdering[sourceIndex+shift] = currentItem;
+
+            storage.set("specified-favorite-attributes", mutableOrdering)
+        });
+    }));
+
+
+}
 
 document.getElementById("reset-favorites").addEventListener("click", () => {
     storage.set("favorite", {});
