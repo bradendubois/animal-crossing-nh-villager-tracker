@@ -32,6 +32,22 @@ module.exports = {
         return filtered; 
     },
 
+    filter: () => { 
+    
+        // The dictionary indicating if a villager is "favorited"
+        const favorites = storage.get("favorite");
+    
+        let filtered = {};
+
+        for (let villager in favorites) {
+            if (favorites[villager]) {
+                filtered[villager] = villagerData[villager];
+            }
+        }
+        
+        return filtered; 
+    },
+
     primaryName: (villager) => {
         if (Storage.nameFormat() === "name_en")
             return villagerData[villager]["name_en"] || "English N/A ";

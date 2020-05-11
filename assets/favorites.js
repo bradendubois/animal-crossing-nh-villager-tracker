@@ -27,7 +27,6 @@ module.exports = {
             let newTD = document.createElement("th");
             newTD.innerText = column.display;
 
-            console.log(column.id, document.getElementById(column.id))
             if (document.getElementById(column.id)) {
                 newTD.classList.add("clickable");
                 newTD.addEventListener("click", () => {
@@ -37,12 +36,13 @@ module.exports = {
 
             thead.appendChild(newTD);
         }
-
-        return;
-        
         
         // Get the favorited villagers and sort by alphabetical order
-        let villagerData = require("./villager-data").access(true);
+        let villagerData = require("./villager-data").filter();
+        
+        let villagers = [];
+        for (let villager in villagerData)
+            villagers.push(villager);
         villagers.sort();
 
         // Create a new tbody that will contain the villagers
@@ -52,61 +52,98 @@ module.exports = {
         // Add each villager
         for (let villager of villagers) {
 
+
             let newRow = document.createElement("tr");
 
             // Figure
-            let figure = document.createElement("img");
-            figure.src = encodeURI("../assets/villager-data/images/" + villager + ".jpg");
-            figure.title = villagerDataModule.primaryName(villager);
-            figure.onclick = () => { 
-                document.getElementById("villager-"+villager).click();
+            if (storage.get("show-mini-icons")) {
+                let figure = document.createElement("img");
+                figure.src = encodeURI("../assets/villager-data/images/" + villager + ".jpg");
+                figure.title = villagerDataModule.primaryName(villager);
+                figure.onclick = () => { 
+                    document.getElementById("villager-"+villager).click();
+                }
+                figure.classList.add("clickable");
+                newRow.appendChild(figure);
             }
-            figure.classList.add("clickable");
-            newRow.appendChild(figure);
 
-            // Name
-            let name = document.createElement("td");
-            name.innerText = villagerDataModule.primaryName(villager);
-            name.addEventListener("click", () => { 
-                document.getElementById("villager-"+villager).click();
-            });
-            name.classList.add("clickable");
-            newRow.appendChild(name);
+            // Figure out some birthday info to reduce code reuse later
+            let birthday;
+            let starSign;
 
-            // Birthday / Star Sign
-            if (Array.isArray(villagerData[villager]["birthday"])) {
-
-                let birthday = document.createElement("td");
-                birthday.innerText = villagerData[villager]["birthday"][0];
-                newRow.appendChild(birthday);
-
-                let sign = document.createElement("td");
-                sign.innerText = villagerData[villager]["birthday"][1];
-                newRow.appendChild(sign);
+            let birthdayData = villagerData[villager]["birthday"];
+            if (Array.isArray(birthdayData) && birthdayData.length == 1)
+                birthdayData = birthdayData[0];
             
-            } else {
-                // Unknown Rows
-                let unk = document.createElement("td");
-                name.innerText = "Unknown";
-                newRow.appendChild(unk);
-                newRow.appendChild(unk);
+            if (!Array.isArray(birthdayData)) {
+                if (birthdayData.indexOf(" ") !== -1)
+                    birthday = birthdayData;
+                else
+                    starSign = birthdayData;
+            } else if (birthdayData.length == 2) {
+                birthday = birthdayData[0];
+                starSign = birthdayData[1];
             }
 
-            // Some easy to read params
-            for (let param of ["species", "personality", "initial phrase"]) {
-                
+            // Add each attribute in the order specified
+            for (let attribute of storage.get("specified-favorite-attributes")) {
+                let id = attribute.id;
                 let newTD = document.createElement("td");
-                newTD.innerText = villagerData[villager][param] || "Unknown";
+                newTD.innerText = "Unknown";    // Set default placeholder
+
+                switch (id) {
+                    case "villager-name":
+                        
+                        newTD.innerText = villagerDataModule.primaryName(villager);
+                        newTD.addEventListener("click", () => { 
+                            document.getElementById("villager-"+villager).click();
+                        });
+                        newTD.classList.add("clickable");
+
+                        break;
+                    
+                    case "birthday":
+                        if (birthday) newTD.innerText = birthday;
+                        newTD.addEventListener("click", () => { 
+                            document.getElementById("upcoming-birthdays").click();
+                        });
+                        newTD.classList.add("clickable");
+                        break;
+                    case "star-sign":
+                        if (starSign) newTD.innerText = starSign;
+                        break;
+                    case "initial-phrase":
+                        newTD.innerText = villagerData[villager]["initial phrase"] || "Unknown";
+                        break;
+                    case "appearances":
+                        let appearances = villagerData[villager]["appearances"];
+                        if (Array.isArray(appearances))
+                            newTD.innerText = appearances.join(", ") || "Unknown";
+                        else
+                            newTD.innerText = appearances || "Unknown";
+                        
+                        newTD.addEventListener("click", () => { 
+                            document.getElementById("appearances").click();
+                        });
+                        newTD.classList.add("clickable");
+                        break;
+                    default:
+                        newTD.innerText = villagerData[villager][id] || "Unknown";
+                        
+                        // Make clickable if this attribute has a page to go to
+                        if (document.getElementById(id)) {
+                            newTD.addEventListener("click", () => { 
+                                document.getElementById("appearances").click();
+                            });
+                            newTD.classList.add("clickable");
+                        }
+                        break;
+                }
+
+                // Add the TD
                 newRow.appendChild(newTD);
             }
 
-            // Appearances
-            // TODO - Improve
-            let appearances = document.createElement("td");
-            appearances.innerText = villagerData[villager]["appearances"].join(", ") || "Unknown";
-            newRow.appendChild(appearances);
-
-            // Add the row to the body
             emptyBody.appendChild(newRow);
         }
 

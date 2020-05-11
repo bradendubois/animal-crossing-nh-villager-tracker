@@ -79,7 +79,7 @@ npm start
 - [x] A navigation feature enabling the user to "go back" to previous pages.
 - [ ] Improved localization support; the game has villagers with named localized to various languages beyond EN/JP.
 This Roadmap does not necessarily indicate the order things will be prioritized, and is always open to suggestions.
-- [ ] Have the Favorites page be customizable so that the user can choose what attributes will be listed and in what order.
+- [x] Have the Favorites page be customizable so that the user can choose the order in which attributes are listed.
 
 ## Acknowledgements
 

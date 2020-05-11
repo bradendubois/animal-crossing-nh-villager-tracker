@@ -1,7 +1,7 @@
 const {shell} = require("electron");
 
-const storageAccess = require("./storage");
-const storage = storageAccess.access();
+const Storage = require("./storage");
+const storage = Storage.access();
 
 // Feature to open save data in a file browser
 document.getElementById("open-save-data").addEventListener('click', () => {
@@ -26,7 +26,12 @@ const resetStackLimit = document.getElementById("reset-stack-limit");
 const stackLimitSize = document.getElementById("change-stack-limit");
 
 const stackButtons = document.querySelectorAll(".stack-reset-button");
+
+const resetFavoriteVillagerAttributesButtons = document.getElementById("reset-favorite-villager-attributes");
 const favoriteVillagerAttributes = document.getElementById("favorite-villager-attributes-container");
+resetFavoriteVillagerAttributesButtons.addEventListener("click", () => {
+    storage.set("specified-favorite-attributes", Storage.favoriteOptionsDefaults());
+});
 
 function updateAboutSection() {
 
@@ -83,14 +88,16 @@ function loadFavoriteAttributeCustomizationTable() {
         
 
         let attributeDiv = document.createElement("div");
-
+        attributeDiv.classList.add("favoriteAttribute")
+        let buttonContainer = document.createElement("div");
+        
         if (idx > 0) {
             let leftButton = document.createElement("button");
             leftButton.innerText = "Left";
             leftButton.classList.add("move-attribute-button");
             leftButton.value = [-1, attribute.id];
 
-            attributeDiv.appendChild(leftButton);
+            buttonContainer.appendChild(leftButton);
         }
 
         let attributeText = document.createElement("p");
@@ -98,15 +105,18 @@ function loadFavoriteAttributeCustomizationTable() {
         attributeDiv.appendChild(attributeText);
 
         if (idx < storage.get("specified-favorite-attributes").length-1) {
-        let rightButton = document.createElement("button");
+        
+            let rightButton = document.createElement("button");
         rightButton.innerText = "Right";
         rightButton.classList.add("move-attribute-button");
         rightButton.value = [1, attribute.id];
 
-        attributeDiv.appendChild(rightButton);
+        buttonContainer.appendChild(rightButton);
         }
-
+        
+        attributeDiv.appendChild(buttonContainer)
         favoriteVillagerAttributes.appendChild(attributeDiv)
+        
         idx++;
     }
 

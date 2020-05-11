@@ -99,5 +99,7 @@ module.exports = {
             return "name_en";
         else
             return "name_jp";
-    }
+    },
+
+    favoriteOptionsDefaults : () => favoriteOptions
 }
