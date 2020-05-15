@@ -96,7 +96,7 @@ module.exports = {
                         
                         newTD.innerText = villagerDataModule.primaryName(villager);
                         newTD.addEventListener("click", () => { 
-                            document.getElementById("villager-"+villager).click();
+                            Navigation.clickSection("villager-"+villager);
                         });
                         newTD.classList.add("clickable");
 
@@ -105,7 +105,7 @@ module.exports = {
                     case "birthday":
                         if (birthday) newTD.innerText = birthday;
                         newTD.addEventListener("click", () => { 
-                            document.getElementById("upcoming-birthdays").click();
+                            Navigation.clickSection("upcoming-birthdays");
                         });
                         newTD.classList.add("clickable");
                         break;
@@ -123,7 +123,7 @@ module.exports = {
                             newTD.innerText = appearances || "Unknown";
                         
                         newTD.addEventListener("click", () => { 
-                            document.getElementById("appearances").click();
+                            Navigation.clickSection("appearances");
                         });
                         newTD.classList.add("clickable");
                         break;
@@ -133,7 +133,7 @@ module.exports = {
                         // Make clickable if this attribute has a page to go to
                         if (document.getElementById(id)) {
                             newTD.addEventListener("click", () => { 
-                                document.getElementById("appearances").click();
+                                Navigation.clickSection("appearances");
                             });
                             newTD.classList.add("clickable");
                         }
