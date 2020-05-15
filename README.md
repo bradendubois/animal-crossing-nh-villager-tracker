@@ -80,6 +80,7 @@ npm start
 - [ ] Improved localization support; the game has villagers with named localized to various languages beyond EN/JP.
 This Roadmap does not necessarily indicate the order things will be prioritized, and is always open to suggestions.
 - [x] Have the Favorites page be customizable so that the user can choose the order in which attributes are listed.
+- [x] A search bar above the main list of villagers in the navbar.
 
 ## Acknowledgements
 
