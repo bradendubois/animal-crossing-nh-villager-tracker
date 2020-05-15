@@ -13,7 +13,7 @@ searchInputBox.addEventListener("input", () => {
 function updateSearchShown() {
 
     console.log(searchInputBox.value.toLowerCase())
-    let value = searchInputBox.value.toLowerCase();
+    let value = searchInputBox.value.toLowerCase().trim();
 
     for (let idx = 0; idx < villagerButtons.children.length;  idx++) {
 
